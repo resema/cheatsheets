@@ -31,6 +31,8 @@
   - [3.3. Cheats](#33-cheats)
 - [4. curl](#4-curl)
   - [4.1. Resolve local DNS for Docker use of Istio](#41-resolve-local-dns-for-docker-use-of-istio)
+- [5. k9s](#5-k9s)
+  - [5.1. Shortcuts](#51-shortcuts)
 
 ---
 ---
@@ -131,6 +133,7 @@
     hosts:
     - "*.address.com"
   ```
+- by adding TLS secret to the ingress, all services from this Ingress object are secured
 
 #### 2.2.2.2. Commands
 - inspect a deployed ingress object
@@ -174,8 +177,26 @@ Like a distruted service bus.
 ---
 # 4. curl
 ## 4.1. Resolve local DNS for Docker use of Istio
-```
-curl <HOST/PATH> --resolve <URL>:<PORT>:<IPAddress>
+``` s
+curl <HOST/PATH> --resolve <URL>:<PORT>:<IPAddress> -v  # v: verbose
+
+# with TLS and TLS terminating at ingress
+curl https://<HOST/PATH> --resolve <URL>:443:127.0.0.1 -v -k # k: insecure
 ```
 - alternatively add following entry to `/etc/hosts`
   `<IPAddress> <URL>`
+
+---
+---
+# 5. k9s
+## 5.1. Shortcuts
+``` s
+:context
+:service
+:pod
+:ingress
+:secret
+:configmap
+
+shift-f -> "port forwarding"
+```
