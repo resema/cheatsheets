@@ -14,9 +14,12 @@
 - [2. Kubernetes](#2-kubernetes)
   - [2.1. Nice to know](#21-nice-to-know)
   - [2.2. Components](#22-components)
+    - [Config Maps & Secrets](#config-maps--secrets)
+      - [Secret](#secret)
     - [2.2.1. Service](#221-service)
     - [2.2.2. Ingress/Egress](#222-ingressegress)
       - [2.2.2.1. Ingress Mappings](#2221-ingress-mappings)
+      - [Terminating TLS at ingress](#terminating-tls-at-ingress)
       - [2.2.2.2. Commands](#2222-commands)
   - [2.3. Configurations](#23-configurations)
     - [2.3.1. Config Maps](#231-config-maps)
@@ -59,6 +62,21 @@
     - ...
 - TLS Passthrough := *TODO*
 ## 2.2. Components
+
+### Config Maps & Secrets
+#### Secret
+- defined as kind of secret
+  ``` yml
+  apiVersion: v1
+  kind: Secret
+  metadata:
+    name: <NAME>
+  type: kubernetes.io/tls
+  data:
+    tls.crt: <TOKEN>
+    tls.key: <PWD>
+  ```
+
 ### 2.2.1. Service
 - the label selector defines the pod that belong to this service
   ``` yaml
@@ -102,6 +120,17 @@
 - **wildcard** can be used within host field matchings
   - `*.example.com`
 
+#### Terminating TLS at ingress
+- ingress controlloer impls support **TLS termination at the ingress proxy**
+  - forwards the HTTP request unencrypted
+  - to terminate the proxy needs TLS certificate and private key
+- add TLS secret
+  ``` yml
+  tls:
+  - secretName: <SECRET_NAME>
+    hosts:
+    - "*.address.com"
+  ```
 
 #### 2.2.2.2. Commands
 - inspect a deployed ingress object

@@ -4,7 +4,7 @@
   - [1.1. Definitions of software architecture (R1)](#11-definitions-of-software-architecture-r1)
     - [1.1.1 Key Terms](#111-key-terms)
   - [1.2. Goals and benefits of software architecture (R1)](#12-goals-and-benefits-of-software-architecture-r1)
-  - [1.3 Software architectue in the software lifecycle (R2)](#13-software-architectue-in-the-software-lifecycle-r2)
+  - [1.3 Software architecture in the software lifecycle (R2)](#13-software-architecture-in-the-software-lifecycle-r2)
 ---
 ---
 # 1. Basic Concepts
@@ -33,7 +33,7 @@ Essential goals and benefits:
 - specifiy **architectural relevant guidelines** for implementation and operation
   
 ---
-## 1.3 Software architectue in the software lifecycle (R2)
+## 1.3 Software architecture in the software lifecycle (R2)
 SW architects can:
 - **identify the consequences** of changes in requirements (functional, quality), technologies or the system environment in relation to software architecture
 - **elaborate on relationships** between IT-systems and the supported business and operational processes
