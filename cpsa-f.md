@@ -66,7 +66,7 @@ SW architects can:
 - **decide how to decompose the system** into building blocks, while determining dependencies and interfaces
 - **determine and decide on cross-cutting concepts**
 - **communicate and document the software architecture** based on views, architectural patterns, cross-cutting and technical concepts
-- **accompany the realization and implementation** of the architecture, integrate feedback, an ensure the consistency of src code
+- **accompany the realization and implementation** of the architecture, integrate feedback, and ensure the consistency of src code
 - **analyze and evaluate SW architecture** with respect to risks involving quality requirements
 - **identify, highlight, and justify the consequences of ADs** to other stakeholders
   
@@ -97,7 +97,7 @@ Software architects need to fulfill 6 important tasks:
    - stability, validity, and importance of all previous points
 2. design cross-cutting concepts
    - designing belongs to the primary tasks
-   - concepts from the basis for conceptual integrity
+   - concepts form the basis for conceptual integrity
    - important contribution to achieve the intrinsic qualities of system
    - cannot be handled by individual building blocks
 3. design structures
