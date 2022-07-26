@@ -3,12 +3,12 @@
 - [1. Basic Concepts](#1-basic-concepts)
   - [1.1. Definitions of software architecture (R1)](#11-definitions-of-software-architecture-r1)
   - [1.2. Goals and benefits of software architecture (R1)](#12-goals-and-benefits-of-software-architecture-r1)
-  - [1.3 Software architecture in the software lifecycle (R2)](#13-software-architecture-in-the-software-lifecycle-r2)
-  - [1.4 Software architects' tasks and responsibilities (R1)](#14-software-architects-tasks-and-responsibilities-r1)
-  - [1.5 Software architects and other stakeholders (R1)](#15-software-architects-and-other-stakeholders-r1)
-  - [1.6 Development approach and software architeture (R1)](#16-development-approach-and-software-architeture-r1)
-  - [Short- and long-term goals (R1)](#short--and-long-term-goals-r1)
-  - [Explicit statement versus implicit assumptions](#explicit-statement-versus-implicit-assumptions)
+  - [1.3. Software architecture in the software lifecycle (R2)](#13-software-architecture-in-the-software-lifecycle-r2)
+  - [1.4. Software architects' tasks and responsibilities (R1)](#14-software-architects-tasks-and-responsibilities-r1)
+  - [1.5. Software architects and other stakeholders (R1)](#15-software-architects-and-other-stakeholders-r1)
+  - [1.6. Development approach and software architeture (R1)](#16-development-approach-and-software-architeture-r1)
+  - [1.7. Short- and long-term goals (R1)](#17-short--and-long-term-goals-r1)
+  - [1.8. Explicit statement versus implicit assumptions](#18-explicit-statement-versus-implicit-assumptions)
 ---
 ---
 # 1. Basic Concepts
@@ -37,7 +37,7 @@ Essential goals and benefits:
 - specifiy **architectural relevant guidelines** for implementation and operation
   
 ---
-## 1.3 Software architecture in the software lifecycle (R2)
+## 1.3. Software architecture in the software lifecycle (R2)
 SW architects can:
 - **identify the consequences** of changes in requirements (functional, quality), technologies or the system environment in relation to software architecture
 - **elaborate on relationships** between IT-systems and the supported business and operational processes
@@ -61,7 +61,7 @@ SW architects can:
     - data migration still needed to be considered
 
 ---
-## 1.4 Software architects' tasks and responsibilities (R1)
+## 1.4. Software architects' tasks and responsibilities (R1)
 *Software architects are responsible for achieving the required or necessary quality and creating the architecture design for a solution.*
 - **clarify and scrutinize requirements and constraints**, and refine them if necessary (functional & quality (non-functional) requirements)
 - **decide how to decompose the system** into building blocks, while determining dependencies and interfaces
@@ -119,7 +119,7 @@ Software architects need to fulfill 6 important tasks:
         - quantitative evaluation
 
 ---
-## 1.5 Software architects and other stakeholders (R1)
+## 1.5. Software architects and other stakeholders (R1)
 Software architects are able to explain their role. 
 
 *Many problems in software development cannot be solved by good programming alone, but need communication between stakeholders.*
@@ -147,7 +147,7 @@ Software Architects will have at least the following four different categories o
 4. **stakeholders focused on specific quality attributes**, like IT security or QA
 
 ---
-## 1.6 Development approach and software architeture (R1)
+## 1.6. Development approach and software architeture (R1)
 *Architecture work needs feedback, which is an inherent feature of iterative development approaches. Architects have to systematically optain feedback from other stakeholders.*
 
 Benefits of iterative approach:
@@ -164,7 +164,7 @@ Benefits of iterative approach:
 - **adjust**: improve or refine decisions
 
 ---
-## Short- and long-term goals (R1)
+## 1.7. Short- and long-term goals (R1)
 *Usually project goals tend to be more short-term, whereas architecture goals tend to be long-term.*
 
 Short-term and long-term:
@@ -172,7 +172,7 @@ Short-term and long-term:
 - systems often remains in use for several years.
 
 ---
-## Explicit statement versus implicit assumptions
+## 1.8. Explicit statement versus implicit assumptions
 *Very often things go wrong due to different people having different implicit assumptions about something. Software architects should be explicit in their decisions.*
 
 Ensure explicitness in your work by:
