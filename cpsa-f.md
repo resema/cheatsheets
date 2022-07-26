@@ -5,7 +5,8 @@
   - [1.2. Goals and benefits of software architecture (R1)](#12-goals-and-benefits-of-software-architecture-r1)
   - [1.3 Software architecture in the software lifecycle (R2)](#13-software-architecture-in-the-software-lifecycle-r2)
   - [1.4 Software architects' tasks and responsibilities (R1)](#14-software-architects-tasks-and-responsibilities-r1)
-  - [1.5 Software architects and other stakeholders](#15-software-architects-and-other-stakeholders)
+  - [1.5 Software architects and other stakeholders (R1)](#15-software-architects-and-other-stakeholders-r1)
+  - [1.6 Development approach and software architeture (R1)](#16-development-approach-and-software-architeture-r1)
 ---
 ---
 # 1. Basic Concepts
@@ -116,7 +117,7 @@ Software architects need to fulfill 6 important tasks:
         - quantitative evaluation
 
 ---
-## 1.5 Software architects and other stakeholders
+## 1.5 Software architects and other stakeholders (R1)
 Software architects are able to explain their role. 
 
 *Many problems in software development cannot be solved by good programming alone, but need communication between stakeholders.*
@@ -142,3 +143,22 @@ Software Architects will have at least the following four different categories o
      - coach or help-to-coach
      - moderate in the discussion and design of interfaces
 4. **stakeholders focused on specific quality attributes**, like IT security or QA
+
+---
+## 1.6 Development approach and software architeture (R1)
+*Architecture work needs feedback, which is an inherent feature of iterative development approaches. Architects have to systematically optain feedback from other stakeholders.*
+
+Benefits of iterative approach:
+- early feedback
+- early risk identification
+- more time to fix problems
+- better changes to adapt to changes in requirements, constraints, technology, team, etc.
+- opportunities to practice every activity in dev process, especially deploy- and release-related
+
+### Deming-Cycle or Plan-Do-Check-Adjust <!-- omit in toc -->
+- **plan**: make architectural decisions to meet the known/given requirements
+- **do**: exectue plan, implement decisions
+- **check**: get feedback and evaluate
+- **adjust**: improve or refine decisions
+
+---
