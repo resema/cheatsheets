@@ -2,18 +2,16 @@
 ### Table of Content <!-- omit in toc -->
 - [1. Basic Concepts](#1-basic-concepts)
   - [1.1. Definitions of software architecture (R1)](#11-definitions-of-software-architecture-r1)
-    - [1.1.1 Key Terms](#111-key-terms)
   - [1.2. Goals and benefits of software architecture (R1)](#12-goals-and-benefits-of-software-architecture-r1)
   - [1.3 Software architecture in the software lifecycle (R2)](#13-software-architecture-in-the-software-lifecycle-r2)
-    - [Software lifecycle (SLC)](#software-lifecycle-slc)
   - [1.4 Software architects' tasks and responsibilities (R1)](#14-software-architects-tasks-and-responsibilities-r1)
-    - [Explanation](#explanation)
+  - [1.5 Software architects and other stakeholders](#15-software-architects-and-other-stakeholders)
 ---
 ---
 # 1. Basic Concepts
 ## 1.1. Definitions of software architecture (R1)
 *Software architecture: the fundamental organization of a system embodied in its component, their relationships to each other and to the environment, and the principles guiding its design and evolution.*
-### 1.1.1 Key Terms
+### 1.1.1 Key Terms <!-- omit in toc -->
 - **Fundamental organization**: ordering and given designated place
 - **Components (aka Building Blocks)**: strutctural elements: subsystems, modules, classes, functions
 - **Relationships**: interfaces, dependencies, associations
@@ -41,7 +39,7 @@ SW architects can:
 - **identify the consequences** of changes in requirements (functional, quality), technologies or the system environment in relation to software architecture
 - **elaborate on relationships** between IT-systems and the supported business and operational processes
 
-### Software lifecycle (SLC)
+### Software lifecycle (SLC) <!-- omit in toc -->
 - describes all phases of a software product (planning, dev, use & retirement)
   - initial development:
     - designed and implemented from scratch
@@ -70,7 +68,7 @@ SW architects can:
 - **analyze and evaluate SW architecture** with respect to risks involving quality requirements
 - **identify, highlight, and justify the consequences of ADs** to other stakeholders
   
-### Explanation
+### Explanation <!-- omit in toc -->
 - no algorithmic approach; iteration to the rescue
   - architecture needs feedback, therefore architecture work is inherently iterative
 
@@ -116,3 +114,31 @@ Software architects need to fulfill 6 important tasks:
      2. **how it meets non-functional requirements that support the delivery of functional requirements**
         - qualitative evaluation
         - quantitative evaluation
+
+---
+## 1.5 Software architects and other stakeholders
+Software architects are able to explain their role. 
+
+*Many problems in software development cannot be solved by good programming alone, but need communication between stakeholders.*
+
+Software Architects will have at least the following four different categories of stakeholder:
+1. **stakeholders with a business-, product- or domain focus**, e.g.PO, RE, business analyst.
+   - communicate on requirements and/or their feasibility
+     - clarify requirements
+     - help identify conflicting requirements
+     - support finding trade-offs between conflicting goals and requirements
+     - explain the impact of requirements and constraints
+     - support in prioritiying requirements and their development
+2. **management stakeholders**, like PM or SM
+   - communicate over organizational constraints, resources, schedules, etc.
+     - technical consultancy
+     - risk management
+     - support in staffing
+     - support in defining and sizing work packages
+3. **technical stakeholders**, like SW devs, HW devs or IT operations
+   - communicate on a detailed and specific technical level
+     - communicate and explain AD
+     - enable and prepare technical decisions
+     - coach or help-to-coach
+     - moderate in the discussion and design of interfaces
+4. **stakeholders focused on specific quality attributes**, like IT security or QA
