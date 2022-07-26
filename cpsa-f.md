@@ -7,6 +7,7 @@
   - [1.4 Software architects' tasks and responsibilities (R1)](#14-software-architects-tasks-and-responsibilities-r1)
   - [1.5 Software architects and other stakeholders (R1)](#15-software-architects-and-other-stakeholders-r1)
   - [1.6 Development approach and software architeture (R1)](#16-development-approach-and-software-architeture-r1)
+  - [Short- and long-term goals (R1)](#short--and-long-term-goals-r1)
 ---
 ---
 # 1. Basic Concepts
@@ -160,5 +161,13 @@ Benefits of iterative approach:
 - **do**: exectue plan, implement decisions
 - **check**: get feedback and evaluate
 - **adjust**: improve or refine decisions
+
+---
+## Short- and long-term goals (R1)
+*Usually project goals tend to be more short-term, whereas architecture goals tend to be long-term.*
+
+Short-term and long-term:
+- projects (sprints) typically last for a couple of weeks up to one or two years
+- systems often remains in use for several years.
 
 ---
