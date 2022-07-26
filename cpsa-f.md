@@ -8,6 +8,7 @@
   - [1.5 Software architects and other stakeholders (R1)](#15-software-architects-and-other-stakeholders-r1)
   - [1.6 Development approach and software architeture (R1)](#16-development-approach-and-software-architeture-r1)
   - [Short- and long-term goals (R1)](#short--and-long-term-goals-r1)
+  - [Explicit statement versus implicit assumptions](#explicit-statement-versus-implicit-assumptions)
 ---
 ---
 # 1. Basic Concepts
@@ -169,5 +170,19 @@ Benefits of iterative approach:
 Short-term and long-term:
 - projects (sprints) typically last for a couple of weeks up to one or two years
 - systems often remains in use for several years.
+
+---
+## Explicit statement versus implicit assumptions
+*Very often things go wrong due to different people having different implicit assumptions about something. Software architects should be explicit in their decisions.*
+
+Ensure explicitness in your work by:
+- **explicitly documenting** quality requirements, e.g in form of quality scenarios
+- **explicitly documenting** ADs
+- **using clear and unambiguous terminology**, especially domain/business terminology
+- **explicitly defining technical or cross-cutting concepts**
+- **explicitly considering different perspectives**, f.ex. quality requirements, domain struture, interfaces, building blocks structure, technical infrastructure, etc.
+- **explicitly devoloping cross-cutting concepts** to improve conceptual integrity (consistency)
+- **explicitly analyzing and evaluating** your system, its architecture and code
+- **explicitly asking stakeholders for feedback**
 
 ---
