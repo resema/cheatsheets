@@ -12,13 +12,16 @@
   - [1.9. Responsibilities of SW architects in the greater architectural context (R3)](#19-responsibilities-of-sw-architects-in-the-greater-architectural-context-r3)
   - [1.10. Types of IT systems (R3)](#110-types-of-it-systems-r3)
   - [1.11. Challenges of distributed systems (R3)](#111-challenges-of-distributed-systems-r3)
+- [2. Design and Development](#2-design-and-development)
+  - [2.1. Approaches and heuristics for architecture development (R1, R3)](#21-approaches-and-heuristics-for-architecture-development-r1-r3)
 ---
 ---
-# 1. Basic Concepts
 
+# 1. Basic Concepts
 ## 1.1. Definitions of software architecture (R1)
 
 *Software architecture: the fundamental organization of a system embodied in its component, their relationships to each other and to the environment, and the principles guiding its design and evolution.*
+
 ### 1.1.1 Key Terms <!-- omit in toc -->
 - **Fundamental organization**: ordering and given designated place
 - **Components (aka Building Blocks)**: strutctural elements: subsystems, modules, classes, functions
@@ -44,6 +47,7 @@ Essential goals and benefits:
   
 ---
 ## 1.3. Software architecture in the software lifecycle (R2)
+
 SW architects can:
 - **identify the consequences** of changes in requirements (functional, quality), technologies or the system environment in relation to software architecture
 - **elaborate on relationships** between IT-systems and the supported business and operational processes
@@ -229,3 +233,51 @@ Software architects know:
 - there are limitations regarding consistency in real-world databases
 - what the "split-brain" problem is and why it is difficult
 - that it is impossible to determine the temporal order of events in a distributed system
+
+---
+---
+
+# 2. Design and Development
+## 2.1. Approaches and heuristics for architecture development (R1, R3)
+
+Software architects are able to **name, explain, and use the fundamental approaches** of architecture development, f.ex.:
+- **top-down** and **bottom-up** approaches for design (R1)
+  - top-down, used for:
+    - keep overview
+    - abstract away details
+    - keep things consistent over various components
+    - work from abstract/large elements to specific/smaller ones
+  - bottom-up, used for:
+    - reduce risks
+    - build proof-of-concept implementations
+    - validate decisions or proposals, proving that they work in practice
+    - build-up knowledge and experience
+    - work from detailed, specific or concrete elements up to larger more abstract ones
+- **view-based** architecture development (R1)
+  - views focus on specific concerns, parts or aspects of a system
+    - building-block, runtime, deployment and context view
+      - facilitate structural, runtime or hardware decisions
+      - fascilitate communication and documentation
+      - gain flexibility in the degree of detail
+      - address specific stakeholder concerns
+- **iterative** and **incremental** design (R1)
+  - necessity of iterations is affected by uncertainties (R1)
+  - necessity of feedback on design decisions (R1)
+  - iterative:
+    - in repeated cycles
+    - make appropriate design modifications **parallel** to development
+    - learning and improvement is based on feedback
+  - incremental:
+    - done in pieces, building open each other
+    - each increment delivers a slice of functionality through cross-discipline work (requirements, architecture/design, implementation and deployment)
+  - **major advantage of combined approach**:
+    - problems are detected early, allowing more time to resolve them
+    - typical development and rollout performed in every iteration
+    - changes in requirements and technologies can be taken into account
+    - development risks and uncertainties are minimized
+- domain-driven design (R3)
+  - integrates quite well with the microservice architecture pattern
+- evolutionary architecture (R3)
+  - 
+- global analysis (R3)
+- model-driven architecture (R3)
