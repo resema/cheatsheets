@@ -5,7 +5,8 @@
     - [1.1.1. Virtual Machines](#111-virtual-machines)
     - [1.1.2. Containers](#112-containers)
     - [1.1.3. Pods](#113-pods)
-    - [1.1.4. Nodes](#114-nodes)
+    - [1.1.4. Resource Management for Pods and Containers](#114-resource-management-for-pods-and-containers)
+    - [1.1.5. Nodes](#115-nodes)
   - [1.2. Components](#12-components)
     - [1.2.1. Services](#121-services)
     - [1.2.2. Load Balancers](#122-load-balancers)
@@ -46,7 +47,30 @@
 ### 1.1.1. Virtual Machines
 ### 1.1.2. Containers
 ### 1.1.3. Pods
-### 1.1.4. Nodes
+### 1.1.4. Resource Management for Pods and Containers
+
+- If the node where a Pod is running has enough of a resource available, **it's possible (and allowed) for a container to use more resource than its request for that resource specifies**.
+- However, a container is **not allowed to use more than its resource limit**.
+
+``` yml
+apiVersion: v1
+kind: Pod
+#...
+spec:
+  containers:
+  - name: app
+    image: images.my-company.example/app:v4
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+```
+
+### 1.1.5. Nodes
+
 
 ---
 ## 1.2. Components
@@ -58,6 +82,9 @@
 ## 1.3. Cheats
 ### 1.3.1. Setup
 ``` sh
+# list projects
+gcloud projects list
+
 # set project
 gcloud config set project prj-ligcore-eu-dev-wkuh
 # get project
@@ -205,7 +232,7 @@ Like a distruted service bus.
 # 4. Tools
 ## 4.1. curl
 ### 4.1.1. Resolve local DNS for Docker use of Istio
-``` s
+``` sh
 curl <HOST/PATH> --resolve <URL>:<PORT>:<IPAddress> -v  # v: verbose
 
 # with TLS and TLS terminating at ingress
