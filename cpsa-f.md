@@ -278,6 +278,7 @@ Software architects are able to **name, explain, and use the fundamental approac
 - domain-driven design (R3)
   - integrates quite well with the microservice architecture pattern
 - evolutionary architecture (R3)
-  - 
+  - combines the concept of global analysis with executable specifications
 - global analysis (R3)
+  - starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
 - model-driven architecture (R3)
