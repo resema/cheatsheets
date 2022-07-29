@@ -14,6 +14,7 @@
   - [1.11. Challenges of distributed systems (R3)](#111-challenges-of-distributed-systems-r3)
 - [2. Design and Development](#2-design-and-development)
   - [2.1. Approaches and heuristics for architecture development (R1, R3)](#21-approaches-and-heuristics-for-architecture-development-r1-r3)
+  - [2.2. Design software architectures (R1)](#22-design-software-architectures-r1)
 ---
 ---
 
@@ -282,3 +283,57 @@ Software architects are able to **name, explain, and use the fundamental approac
 - global analysis (R3)
   - starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
 - model-driven architecture (R3)
+
+---
+## 2.2. Design software architectures (R1)
+
+SW architects are able to:
+- **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor business-critical
+  - designing belongs to the core task of the architectural role
+    - take ino account at least:
+      - requirements and constraints
+      - available components, technologies or other elements
+      - available skills in dev team
+      - potential conflicts between goals, requirements or constraints
+    - communicate such decisions and options might involve:
+      - conquering resistance
+      - identifying proper arguments for pros and cons
+      - finding right language / communiation media
+      - balancing written and verbal communication
+- make **structurally-relevant decisions** regarding **system decomposition** and **building block structure** and **deliberate dependencies** between building blocks
+  - structure contains of structural elements and their dependencies
+    - structural elements (building blocks) are:
+      - source code
+      - pre-compiled libs
+      - frameworks
+      - files or similar things
+    - building blocks themself have more specific categories:
+      - subsystems
+      - parts
+      - components
+      - packages
+      - namespaces
+      - or smaller elements
+- **recognize** and **justify** the **interdependencies and tradeoffs** of design decisions
+- explain the terms **black box** and **white box** and apply them purposefully
+  - building block is the **most general term** for all kinds of artifacts
+  - **black box** hides the interior structure --> information hidding principle
+    - exposes by appropriate name and description:
+      - its responsibilities
+      - provided interface(s)
+      - required interface(s)
+      - additional attributes like qualities, restrictions, risks or problems
+  - **white box** shows the interios structure --> design rationale
+    - explains the reason why it is structured exactly in this specifc way
+      - name
+      - reference or link to its black box
+      - overview of its internal structure
+      - design rational (reason for this structure)
+      - list of contained black boxes
+  - **decomposition by changing rom black to white box**
+    - 
+- apply **stepwise refinement** and **specify building blocks**
+- **architectural views**, especially building blocks view, runtime view and deployment view
+- **explain the consequences** of decisions to corresponding src code
+- **separate technical and domain-related elements** of architecture and justify these decision
+- **identify risks** related to architecture decisions
