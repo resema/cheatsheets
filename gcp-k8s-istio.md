@@ -1,36 +1,37 @@
 # Cheetsheet for GCP, Kubernetes & Istio <!-- omit in toc -->
 ### Table of Content <!-- omit in toc -->
 - [1. GCP](#1-gcp)
-  - [1.1. Infrastructure](#11-infrastructure)
-    - [1.1.1. Virtual Machines](#111-virtual-machines)
-    - [1.1.2. Containers](#112-containers)
-    - [1.1.3. Pods](#113-pods)
-    - [1.1.4. Resource Management for Pods and Containers](#114-resource-management-for-pods-and-containers)
-    - [1.1.5. Nodes](#115-nodes)
-  - [1.2. Components](#12-components)
-    - [1.2.1. Services](#121-services)
-    - [1.2.2. Load Balancers](#122-load-balancers)
-    - [1.2.3. Deployments](#123-deployments)
-  - [1.3. Cheats](#13-cheats)
-    - [1.3.1. Setup](#131-setup)
+  - [1.1. Cheats](#11-cheats)
+  - [1.2. Infrastructure](#12-infrastructure)
+    - [1.2.1. Virtual Machines](#121-virtual-machines)
+    - [1.2.2. Containers](#122-containers)
+    - [1.2.3. Pods](#123-pods)
+    - [1.2.4. Resource Management for Pods and Containers](#124-resource-management-for-pods-and-containers)
+    - [1.2.5. Nodes](#125-nodes)
+    - [1.2.6. Setup](#126-setup)
+  - [1.3. Components](#13-components)
+    - [1.3.1. Services](#131-services)
+    - [1.3.2. Load Balancers](#132-load-balancers)
+    - [1.3.3. Deployments](#133-deployments)
 - [2. Kubernetes](#2-kubernetes)
-  - [2.1. Nice to know](#21-nice-to-know)
-  - [2.2. Components](#22-components)
-    - [2.2.1. Config Maps & Secrets](#221-config-maps--secrets)
-      - [2.2.1.1. Secret](#2211-secret)
-    - [2.2.2. Service](#222-service)
-    - [2.2.3. Ingress/Egress](#223-ingressegress)
-      - [2.2.3.1. Ingress Mappings](#2231-ingress-mappings)
-      - [2.2.3.2. Terminating TLS at ingress](#2232-terminating-tls-at-ingress)
-      - [2.2.3.3. Commands](#2233-commands)
-  - [2.3. Configurations](#23-configurations)
-    - [2.3.1. Config Maps](#231-config-maps)
-  - [2.4. Cheats](#24-cheats)
+  - [2.1. Cheats](#21-cheats)
+  - [2.2. Nice to know](#22-nice-to-know)
+  - [2.3. Components](#23-components)
+    - [2.3.1. Config Maps & Secrets](#231-config-maps--secrets)
+      - [2.3.1.1. Secret](#2311-secret)
+    - [2.3.2. Service](#232-service)
+    - [2.3.3. Ingress/Egress](#233-ingressegress)
+      - [2.3.3.1. Ingress Mappings](#2331-ingress-mappings)
+      - [2.3.3.2. Terminating TLS at ingress](#2332-terminating-tls-at-ingress)
+      - [2.3.3.3. Commands](#2333-commands)
+  - [2.4. Configurations](#24-configurations)
+    - [2.4.1. Config Maps](#241-config-maps)
 - [3. Istio](#3-istio)
-  - [3.1. Service Mesh](#31-service-mesh)
-  - [3.2. Components](#32-components)
-    - [3.2.1. VirtualServices](#321-virtualservices)
-  - [3.3. Cheats](#33-cheats)
+  - [3.1. Cheats](#31-cheats)
+  - [3.2. Service Mesh](#32-service-mesh)
+  - [3.3. Components](#33-components)
+    - [3.3.1. VirtualServices](#331-virtualservices)
+  - [3.4. Cheats](#34-cheats)
 - [4. Tools](#4-tools)
   - [4.1. curl](#41-curl)
     - [4.1.1. Resolve local DNS for Docker use of Istio](#411-resolve-local-dns-for-docker-use-of-istio)
@@ -43,11 +44,12 @@
 ---
 ---
 # 1. GCP
-## 1.1. Infrastructure
-### 1.1.1. Virtual Machines
-### 1.1.2. Containers
-### 1.1.3. Pods
-### 1.1.4. Resource Management for Pods and Containers
+## 1.1. Cheats
+## 1.2. Infrastructure
+### 1.2.1. Virtual Machines
+### 1.2.2. Containers
+### 1.2.3. Pods
+### 1.2.4. Resource Management for Pods and Containers
 
 - If the node where a Pod is running has enough of a resource available, **it's possible (and allowed) for a container to use more resource than its request for that resource specifies**.
 - However, a container is **not allowed to use more than its resource limit**.
@@ -69,18 +71,9 @@ spec:
         cpu: "500m"
 ```
 
-### 1.1.5. Nodes
+### 1.2.5. Nodes
 
-
----
-## 1.2. Components
-### 1.2.1. Services
-### 1.2.2. Load Balancers
-### 1.2.3. Deployments
-
----
-## 1.3. Cheats
-### 1.3.1. Setup
+### 1.2.6. Setup
 ``` sh
 # list projects
 gcloud projects list
@@ -105,11 +98,19 @@ gcloud container clusters get-credentials d-eu-west4 --zone=europe-west4
 # use context
 kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-b
 ```
+---
+## 1.3. Components
+### 1.3.1. Services
+### 1.3.2. Load Balancers
+### 1.3.3. Deployments
 
 ---
 ---
 # 2. Kubernetes
-## 2.1. Nice to know
+## 2.1. Cheats
+
+---
+## 2.2. Nice to know
 - use an ingress for forwarding all paths to `defaultBackend` instead of simply setting the service type to `LoadBalancer`
   - ingress can provide additional HTTP features
     - securing the communication
@@ -117,10 +118,10 @@ kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-
       - terminating the TLS connection at the ingress proxy
     - ...
 - TLS Passthrough := *TODO*
-## 2.2. Components
+## 2.3. Components
 
-### 2.2.1. Config Maps & Secrets
-#### 2.2.1.1. Secret
+### 2.3.1. Config Maps & Secrets
+#### 2.3.1.1. Secret
 - defined as kind of secret
   ``` yml
   apiVersion: v1
@@ -133,7 +134,7 @@ kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-
     tls.key: <PWD>
   ```
 
-### 2.2.2. Service
+### 2.3.2. Service
 - the label selector defines the pod that belong to this service
   ``` yaml
   apiVersion: v1
@@ -144,13 +145,13 @@ kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-
         app: fun404
   # ...
   ```
-### 2.2.3. Ingress/Egress
+### 2.3.3. Ingress/Egress
 - In/Output gateways (kindof)
 - **exposes a single URL** and routes the paths to different internal services
   - *GCP LoadBalancers would expose an URL for every microservice*
 - has a `default backend` for non matching route rules
 
-#### 2.2.3.1. Ingress Mappings
+#### 2.3.3.1. Ingress Mappings
 - request to path to different services
   - done with rules in the `Ingress.spec`
   ``` yaml
@@ -176,7 +177,7 @@ kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-
 - **wildcard** can be used within host field matchings
   - `*.example.com`
 
-#### 2.2.3.2. Terminating TLS at ingress
+#### 2.3.3.2. Terminating TLS at ingress
 - ingress controlloer impls support **TLS termination at the ingress proxy**
   - forwards the HTTP request unencrypted
   - to terminate the proxy needs TLS certificate and private key
@@ -189,7 +190,7 @@ kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-
   ```
 - by adding TLS secret to the ingress, all services from this Ingress object are secured
 
-#### 2.2.3.3. Commands
+#### 2.3.3.3. Commands
 - inspect a deployed ingress object
   - GCP already provides ingress and egress
   
@@ -209,23 +210,26 @@ kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-
   <y>
   ```  
 ---
-## 2.3. Configurations
-### 2.3.1. Config Maps
+## 2.4. Configurations
+### 2.4.1. Config Maps
 - used to bring ENV variables to the pods
 
----
-## 2.4. Cheats
 
 ---
 ---
 # 3. Istio
-## 3.1. Service Mesh
-Like a distruted service bus.
-## 3.2. Components
-### 3.2.1. VirtualServices
+## 3.1. Cheats
 
 ---
-## 3.3. Cheats
+## 3.2. Service Mesh
+Like a distruted service bus.
+
+---
+## 3.3. Components
+### 3.3.1. VirtualServices
+
+---
+## 3.4. Cheats
 
 ---
 ---
