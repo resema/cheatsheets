@@ -19,7 +19,7 @@
 ---
 # 1. Terraform
 ## 1.1. Cheats
-```terraform
+```sh
 # initialize
 terraform init
 
