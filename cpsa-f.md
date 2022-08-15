@@ -23,6 +23,8 @@
 
 *Software architecture: the fundamental organization of a system embodied in its component, their relationships to each other and to the environment, and the principles guiding its design and evolution.*
 
+*Defines the essential structures, overall technical concepts, and design decisions of a software system, and is the basis for the development of the entire system.*
+
 ### 1.1.1 Key Terms <!-- omit in toc -->
 - **Fundamental organization**: ordering and given designated place
 - **Components (aka Building Blocks)**: strutctural elements: subsystems, modules, classes, functions
@@ -30,6 +32,14 @@
 - **Environment**: data, control flow, events are transferred to and from possible different kinds of neighbors (--> context view)
 - **Principles (aka Concept)**: rule that holds for the whole system or several parts of it
 - **Design and evolution**: cross-cutting and system-wide decisions might become necessary during both initial design and ongoing evolution and maintenance of systems
+-  **Software-Intensive Systems**: computer programs, procedures, and possibly associated documentation and data pertaining to the operation of a computer system
+   -  a collection of building blocks
+   -  **interface**: represents a well-defined access point to the system or its building blocks
+   -  **building block**: is the central basic element from which the static structure of a software architecture is constructed
+
+@startuml
+component
+@enduml
 
 ---
 ## 1.2. Goals and benefits of software architecture (R1)
@@ -234,6 +244,7 @@ Software architects know:
 - there are limitations regarding consistency in real-world databases
 - what the "split-brain" problem is and why it is difficult
 - that it is impossible to determine the temporal order of events in a distributed system
+  
 
 ---
 ---

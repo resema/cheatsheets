@@ -4,29 +4,32 @@
   - [1.2. Best Practices](#12-best-practices)
     - [1.2.1. Files in Folder](#121-files-in-folder)
     - [1.2.2. Bubbling Up & Trinkleing Down](#122-bubbling-up--trinkleing-down)
-  - [1.3. Lifetime](#13-lifetime)
-    - [1.3.1. Terraform's Initial Settings](#131-terraforms-initial-settings)
-    - [1.3.2. Terraform's Current State](#132-terraforms-current-state)
-    - [1.3.3. Destroying Resources](#133-destroying-resources)
-  - [1.4. Building Blocks](#14-building-blocks)
-    - [1.4.1. Resources](#141-resources)
-    - [1.4.2. Providers](#142-providers)
-    - [1.4.3. Data Sources](#143-data-sources)
-  - [1.5. Modules](#15-modules)
-  - [1.6. Flat Modules](#16-flat-modules)
-  - [1.7. Functional Programming Language](#17-functional-programming-language)
-    - [1.7.1. Input Variables](#171-input-variables)
-    - [1.7.2. Output Variables](#172-output-variables)
-    - [1.7.3. for Expression](#173-for-expression)
-    - [1.7.4. Local Values](#174-local-values)
-    - [1.7.5. Conditional Expressions](#175-conditional-expressions)
-    - [1.7.6. Local File](#176-local-file)
-  - [1.8. Usage](#18-usage)
-    - [1.8.1. Initilialization](#181-initilialization)
-    - [1.8.2. Planning](#182-planning)
-    - [1.8.3. Execution](#183-execution)
+  - [1.3. Usage](#13-usage)
+    - [1.3.1. Initilialization](#131-initilialization)
+    - [1.3.2. Planning](#132-planning)
+    - [1.3.3. Execution](#133-execution)
+  - [1.4. Lifetime](#14-lifetime)
+    - [1.4.1. Terraform's Initial Settings](#141-terraforms-initial-settings)
+    - [1.4.2. Terraform's Current State](#142-terraforms-current-state)
+    - [1.4.3. Destroying Resources](#143-destroying-resources)
+    - [1.4.4. Reusing Configuration Code with Workspaces](#144-reusing-configuration-code-with-workspaces)
+  - [1.5. Building Blocks](#15-building-blocks)
+    - [1.5.1. Resources](#151-resources)
+    - [1.5.2. Providers](#152-providers)
+    - [1.5.3. Data Sources](#153-data-sources)
+  - [1.6. Modules](#16-modules)
+  - [1.7. Flat Modules](#17-flat-modules)
+  - [1.8. Functional Programming Language](#18-functional-programming-language)
+    - [1.8.1. Input Variables](#181-input-variables)
+    - [1.8.2. Output Variables](#182-output-variables)
+    - [1.8.3. for Expression](#183-for-expression)
+    - [1.8.4. Local Values](#184-local-values)
+    - [1.8.5. Conditional Expressions](#185-conditional-expressions)
+    - [1.8.6. Local File](#186-local-file)
 - [2. Kustomize](#2-kustomize)
   - [2.1. General](#21-general)
+- [3. Docker](#3-docker)
+  - [3.1. Cheats](#31-cheats)
 
 ---
 ---
@@ -66,8 +69,24 @@ terraform destroy -auto-approve
 - `var.<Name>`
 
 ---
-## 1.3. Lifetime
-### 1.3.1. Terraform's Initial Settings
+## 1.3. Usage
+### 1.3.1. Initilialization
+- Terraform creates a hidden `.terraform` directory for installing plugins and modules
+
+### 1.3.2. Planning
+- 3 main stages of `terraform plan`
+  1. read the configuration and state
+     - reads main.tf
+     - reads terraform.tfstate
+  2. determine actions to take
+  3. output the plan
+
+### 1.3.3. Execution
+- execute functions and their side effects
+
+---
+## 1.4. Lifetime
+### 1.4.1. Terraform's Initial Settings
 ```terraform
 terraform {
   required_bersion = ">= 0.15"
@@ -80,17 +99,27 @@ terraform {
 }
 ```
 
-### 1.3.2. Terraform's Current State
+### 1.4.2. Terraform's Current State
 - `terraform.tfstate` file used to keep track of the managed resources
 
-### 1.3.3. Destroying Resources
+### 1.4.3. Destroying Resources
 - first generates an execution plan
   - as if there were no resources
   - marking all resources for deletion
 
+### 1.4.4. Reusing Configuration Code with Workspaces
+- allow to have more than one state file for the same configuration code
+  - deploy to multiple environments
+```terraform
+# list workspaces
+terraform workspace list
+
+# 
+```
+
 ---
-## 1.4. Building Blocks
-### 1.4.1. Resources
+## 1.5. Building Blocks
+### 1.5.1. Resources
 - most important elements in Terraform
 - provision infrastructure, such as VMS, load balancers, gateways and so forth
 ```terraform
@@ -98,7 +127,7 @@ resource "<TYPE>" "<Name>" {
 }
 ```
 
-### 1.4.2. Providers
+### 1.5.2. Providers
 - responsible for understanding API interactions
 - making authenticated requests
 - exposing resources to Terraform
@@ -107,14 +136,14 @@ provider "<Name>" {
 }
 ```
 
-### 1.4.3. Data Sources
+### 1.5.3. Data Sources
 ```terraform
 data "<TYPE>" "<Name>" {
 }
 ```
 
 ---
-## 1.5. Modules
+## 1.6. Modules
 ```terraform
 module "<Name>" {
   source    = "<MetaArguments>"
@@ -139,15 +168,17 @@ module "<Name>" {
 - namespace variable is **project identifier**
 
 ---
-## 1.6. Flat Modules
+## 1.7. Flat Modules
 - reduces the nested modules in standard cascaded modules
+- organize codebase as lots of little `.tf` files within a single monolithic module
+- most effective in **small-to-medium** codebases
 
 ---
-## 1.7. Functional Programming Language
+## 1.8. Functional Programming Language
 - HCL modules are like un-pure functions
   1.3. - functions with side effects, like building infrastructure
 
-### 1.7.1. Input Variables
+### 1.8.1. Input Variables
 ```terraform
 variable "<Name>" {
   description = "Contains some useful information"
@@ -165,7 +196,7 @@ variable "<Name>" {
 #### Assigning Values with a Variable Definition File  <!-- omit in toc -->
 - set variable values with any files ending in either `.tfvars` or `.tfvars.json`
 
-### 1.7.2. Output Variables
+### 1.8.2. Output Variables
 ```terraform
 output "<Name>" {
 }
@@ -175,7 +206,7 @@ output "<Name>" {
   1. pass values between modules
   2. print to cli
 
-### 1.7.3. for Expression
+### 1.8.3. for Expression
 ```terraform
 # Output is defined as list '[ ... ]'
 [ for s in [ <Sequence-to-iterate> ] : upper(s) ]
@@ -184,7 +215,7 @@ output "<Name>" {
 { for k,v in var.<Name> : k => length(v) }
 ```
 
-### 1.7.4. Local Values
+### 1.8.4. Local Values
 ``` terraform
 locals { ... }
 ```
@@ -194,35 +225,28 @@ locals { ... }
   - output variables analogous to return values
   - local variables analogous to local temporary symbols
 
-### 1.7.5. Conditional Expressions
+### 1.8.5. Conditional Expressions
 ```terraform
 <Condition> ? <Value1> : <Value2>
 ```
 
-### 1.7.6. Local File
+### 1.8.6. Local File
 ```terraform
 resource "local_file" "<Name>" {
 }
 ```
 
 ---
-## 1.8. Usage
-### 1.8.1. Initilialization
-- Terraform creates a hidden `.terraform` directory for installing plugins and modules
-
-### 1.8.2. Planning
-- 3 main stages of `terraform plan`
-  1. read the configuration and state
-     - reads main.tf
-     - reads terraform.tfstate
-  2. determine actions to take
-  3. output the plan
-
-### 1.8.3. Execution
-- execute functions and their side effects
-
-
----
 ---
 # 2. Kustomize
 ## 2.1. General
+
+
+---
+---
+# 3. Docker
+## 3.1. Cheats
+```sh
+# accessing a crashing container
+docker run -it --entrypoint /bin/bash eu.gcr.io/prj-ene-dev-dlbm/services/compute-close-trim-gingiva-service:v6885a626df
+```
