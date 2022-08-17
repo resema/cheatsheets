@@ -1,3 +1,6 @@
- @startuml component
-Building --> Interface
+ @startuml
+component "building blocks" as bb
+component "interfaces" as iface
+
+bb --> iface
 @enduml

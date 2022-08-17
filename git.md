@@ -3,8 +3,8 @@
 - [1. Git](#1-git)
   - [1.1. Submodule](#11-submodule)
   - [1.2. Update with origin/main](#12-update-with-originmain)
-- [1.3. GPG & git-crypt](#13-gpg--git-crypt)
-  - [1.3.1. Link](#131-link)
+- [2. GPG & git-crypt](#2-gpg--git-crypt)
+  - [2.1. Link](#21-link)
 
 ---
 ---
@@ -48,8 +48,8 @@ git rebase -i origin/main
 ```
 
 ---
-# 1.3. GPG & git-crypt
-## 1.3.1. Link
+# 2. GPG & git-crypt
+## 2.1. Link
 - https://medium.com/@sumitkum/securing-your-secret-keys-with-git-crypt-b2fa6ffed1a6
 - Creating a **public key**
   ``` sh
