@@ -38,8 +38,6 @@
   - [4.2. grpcurl](#42-grpcurl)
   - [4.3. k9s](#43-k9s)
     - [4.3.1. Shortcuts](#431-shortcuts)
-  - [4.4. GPG & git-crypt](#44-gpg--git-crypt)
-    - [4.4.1. Link](#441-link)
 
 ---
 ---
@@ -274,13 +272,3 @@ y -> yaml
 d -> describe
 ```
 
----
-## 4.4. GPG & git-crypt
-### 4.4.1. Link
-- https://medium.com/@sumitkum/securing-your-secret-keys-with-git-crypt-b2fa6ffed1a6
-- Creating a **public key**
-  ``` sh
-  gpg --list-keys
-
-  gpg --armor --export --output /Users/someuser/user_pubkey.gpg <ID>
-  ```
