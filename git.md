@@ -59,4 +59,10 @@ git rebase -i origin/main
 
   # generate key with specified encryption
   gpg --full-generate-key
+
+  # Basic Auth
+  echo "Basic: $(echo "username:pwd4dummy" | base64)"
   ```
+
+
+  │ {"application":"compute-case-complexity","env":"","level":"info","logger":"tracer","text":"DATADOG TRACER CONFIGURATION - {\"agent_url\":\"http://10.244.26.29:8126\",\"analytics_enabled\":false,\"analytics_sample_rate\":null,\"date\":\"2022-08-18T10:10:12+0000\",\"dd_version\":\"a593e735d0\",\"enabled\":true,\"env\": │
