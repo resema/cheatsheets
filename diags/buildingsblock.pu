@@ -1,6 +1,23 @@
  @startuml
 component "building blocks" as bb
-component "interfaces" as iface
+component "packages" as pkg
+component "programming constructs" as cons
+component "libraries, frameworks" as libs
+component "configuration, declaration" as cfg
+component "classes, modules, functions" as func
+component "components, programs" as progs
+component "script" as script
+component "data structure, DB-Table" as data
+component "layout/mapping, definition" as def
 
-bb --> iface
+cfg <-- def
+cfg <-- data
+bb <-- cfg
+cons <-- script
+cons <-- progs
+cons <-- func
+bb <-- cons
+bb <-- pkg
+bb <-- libs
+bb *-- bb : "consists of"
 @enduml
