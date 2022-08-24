@@ -1,8 +1,9 @@
 # Glossary <!-- omit in toc -->
 ### Table of Content <!-- omit in toc -->
 - [1. Git](#1-git)
-  - [1.1. Submodule](#11-submodule)
-  - [1.2. Update with origin/main](#12-update-with-originmain)
+  - [1.1. Checkout](#11-checkout)
+  - [1.2. Submodule](#12-submodule)
+  - [1.3. Update with origin/main](#13-update-with-originmain)
 - [2. GPG & git-crypt](#2-gpg--git-crypt)
   - [2.1. Link](#21-link)
 
@@ -11,7 +12,13 @@
 # 1. Git
 
 ---
-## 1.1. Submodule
+## 1.1. Checkout
+```sh
+git checkout --recurse-submodules <URL_Repo>
+```
+
+---
+## 1.2. Submodule
 
 https://devconnected.com/how-to-add-and-update-git-submodules/
 
@@ -39,7 +46,7 @@ Or
 `git submodule update --remote --merge`
 
 ---
-## 1.2. Update with origin/main
+## 1.3. Update with origin/main
 ```
 # create branch with name backup
 git branch backup
@@ -61,8 +68,6 @@ git rebase -i origin/main
   gpg --full-generate-key
 
   # Basic Auth
-  echo "Basic: $(echo "username:pwd4dummy" | base64)"
+  echo "Basic $(echo -n "outsim:W2NXU82dxBxsglAWwX2TSD4UZ3NX8ghm" | base64)"
   ```
 
-
-  │ {"application":"compute-case-complexity","env":"","level":"info","logger":"tracer","text":"DATADOG TRACER CONFIGURATION - {\"agent_url\":\"http://10.244.26.29:8126\",\"analytics_enabled\":false,\"analytics_sample_rate\":null,\"date\":\"2022-08-18T10:10:12+0000\",\"dd_version\":\"a593e735d0\",\"enabled\":true,\"env\": │

@@ -8,7 +8,6 @@
     - [1.2.3. Pods](#123-pods)
     - [1.2.4. Resource Management for Pods and Containers](#124-resource-management-for-pods-and-containers)
     - [1.2.5. Nodes](#125-nodes)
-    - [1.2.6. Setup](#126-setup)
   - [1.3. Components](#13-components)
     - [1.3.1. Services](#131-services)
     - [1.3.2. Load Balancers](#132-load-balancers)
@@ -31,7 +30,6 @@
   - [3.2. Service Mesh](#32-service-mesh)
   - [3.3. Components](#33-components)
     - [3.3.1. VirtualServices](#331-virtualservices)
-  - [3.4. Cheats](#34-cheats)
 - [4. Tools](#4-tools)
   - [4.1. curl](#41-curl)
     - [4.1.1. Resolve local DNS for Docker use of Istio](#411-resolve-local-dns-for-docker-use-of-istio)
@@ -43,6 +41,32 @@
 ---
 # 1. GCP
 ## 1.1. Cheats
+``` sh
+# list projects
+gcloud projects list
+
+# set project
+gcloud config set project prj-ligcore-eu-dev-wkuh
+# get project
+gcloud config get project
+
+# auth
+gcloud auth login
+gcloud auth login --no-launch-browser
+
+gcloud auth application-default login --no-launch-browser
+
+# list clusters
+gcloud container clusters list
+
+# get credentials
+gcloud container clusters get-credentials d-eu-west4 --zone=europe-west4
+
+# use context
+kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-b
+```
+
+---
 ## 1.2. Infrastructure
 ### 1.2.1. Virtual Machines
 ### 1.2.2. Containers
@@ -71,31 +95,6 @@ spec:
 
 ### 1.2.5. Nodes
 
-### 1.2.6. Setup
-``` sh
-# list projects
-gcloud projects list
-
-# set project
-gcloud config set project prj-ligcore-eu-dev-wkuh
-# get project
-gcloud config get project
-
-# auth
-gcloud auth login
-gcloud auth login --no-launch-browser
-
-gcloud auth application-default login --no-launch-browser
-
-# list clusters
-gcloud container clusters list
-
-# get credentials
-gcloud container clusters get-credentials d-eu-west4 --zone=europe-west4
-
-# use context
-kubectl config use-context gke_prj-ene-dev-dlbm_europe-west4-b_dev-europe-west4-b
-```
 ---
 ## 1.3. Components
 ### 1.3.1. Services
@@ -225,9 +224,6 @@ Like a distruted service bus.
 ---
 ## 3.3. Components
 ### 3.3.1. VirtualServices
-
----
-## 3.4. Cheats
 
 ---
 ---
