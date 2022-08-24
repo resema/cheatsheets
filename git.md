@@ -4,6 +4,7 @@
   - [1.1. Checkout](#11-checkout)
   - [1.2. Submodule](#12-submodule)
   - [1.3. Update with origin/main](#13-update-with-originmain)
+  - [Update Submodule in Another Repo](#update-submodule-in-another-repo)
 - [2. GPG & git-crypt](#2-gpg--git-crypt)
   - [2.1. Link](#21-link)
 
@@ -47,13 +48,29 @@ Or
 
 ---
 ## 1.3. Update with origin/main
-```
+``` sh
 # create branch with name backup
 git branch backup
 
 git rebase -i origin/main
 ```
 
+---
+## Update Submodule in Another Repo
+```sh
+# submodule root folder
+git pull # OR checkout the correct version
+
+# step out of folder, add and commit
+git add <Submodule>
+git commit -m 'blub'
+git push
+
+# create PR
+```
+
+
+---
 ---
 # 2. GPG & git-crypt
 ## 2.1. Link
