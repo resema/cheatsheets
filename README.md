@@ -1,7 +1,18 @@
-# cheatsheets
+# cheatsheets<!-- omit in toc -->
 My second brain, to help me remember stuff
 
-
+# Glossary <!-- omit in toc -->
+- [A](#a)
+- [B](#b)
+- [C](#c)
+- [D](#d)
+- [G](#g)
+- [K](#k)
+- [P](#p)
+- [S](#s)
+- [T](#t)
+- [V](#v)
+- [Y](#y)
 ---
 ---
 # A
@@ -25,7 +36,7 @@ My second brain, to help me remember stuff
 ---
 # C
 - **Cluster**:: Collection of services within in a specific topic, zone, region, others, see
-  - [gcloud container clusters list [1]](/gcp-k8s-istio.md#11-cheats)
+  - [gcloud container clusters list [1]](/gcp-k8s-istio.md#11-cheats)<!-- omit in toc -->
 ---
 - **curl**: Ping url, see
   - [Tools [1]](/gcp-k8s-istio.md#41-curl)
@@ -40,13 +51,13 @@ My second brain, to help me remember stuff
 ---
 # G
 - **GCP**: Google Cloud Project, see
-  - [cheats [1]](/gcp-k8s-istio.md#11-cheats) 
+  - [cheats [1]](/gcp-k8s-istio.md#11-cheats) <!-- omit in toc -->
 ---
 - **git-crypt**: lock/unlock repositories, see
-  - [cheats [1]](/git.md#2-gpg--git-crypt) 
+  - [cheats [1]](/git.md#2-gpg--git-crypt) <!-- omit in toc -->
 ---
 - **gpg**: create private/public keys, see
-  - [cheats [1]](/git.md#2-gpg--git-crypt) 
+  - [cheats [1]](/git.md#2-gpg--git-crypt) <!-- omit in toc -->
 ---
 - **grpcurl**: like curl but with grpc payload, see
   - [Tools [1]](/gcp-k8s-istio.md#42-grpcurl)
@@ -55,7 +66,7 @@ My second brain, to help me remember stuff
 ---
 # K
 - **k9s**: Tool to interact with Istio, Kubernetes, Configmaps, Secrets, Services, Pods and much more, see
-  - [Tools [1]](/gcp-k8s-istio.md#431-cheats)
+  - [Tools [1]](/gcp-k8s-istio.md#431-cheats) <!-- omit in toc -->
 ---
 - **kustomize**: Tool to handle manifests, see
   - [Tools [1]](/cloud-infrastructure.md#2-kustomize)
@@ -77,7 +88,7 @@ My second brain, to help me remember stuff
 ---
 # T
 - **Terraform**: Infrastructure-as-Code (IAC) Tool, see
-  - [IAC [1]](/cloud-infrastructure.md#11-cheats)
+  - [IAC [1]](/cloud-infrastructure.md#11-cheats) <!-- omit in toc -->
 ---
 ---
 # V
