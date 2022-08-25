@@ -1,6 +1,7 @@
-# Glossary <!-- omit in toc -->
+# Procedure & Steps
 ### Table of Content <!-- omit in toc -->
 
+- [Procedure & Steps](#procedure--steps)
 - [1. Procedure Service](#1-procedure-service)
   - [1.1. General](#11-general)
     - [1.1.1. Examples](#111-examples)
