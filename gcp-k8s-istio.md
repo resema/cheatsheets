@@ -35,7 +35,7 @@
     - [4.1.1. Resolve local DNS for Docker use of Istio](#411-resolve-local-dns-for-docker-use-of-istio)
   - [4.2. grpcurl](#42-grpcurl)
   - [4.3. k9s](#43-k9s)
-    - [4.3.1. Shortcuts](#431-shortcuts)
+    - [4.3.1. Cheats](#431-cheats)
 
 ---
 ---
@@ -250,7 +250,7 @@ grpcurl -d '{"min": 10, "max":10}' -proto ../../../../services/random-generator/
 
 ---
 ## 4.3. k9s
-### 4.3.1. Shortcuts
+### 4.3.1. Cheats
 ``` sh
 := help
 / := filter
