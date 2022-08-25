@@ -1,4 +1,4 @@
-# Outtake of some DSCore Concepts <!-- omit in toc -->
+# B+ <!-- omit in toc -->
 ## Table of Contents <!-- omit in toc -->
 - [1. Introduction](#1-introduction)
 - [2. Open Questions](#2-open-questions)
@@ -75,6 +75,7 @@
 - [ ] Find overlaps, similar patterns, similar workflows, data representation, and more
 - [ ] Definition & description for treatment planning within DSCore
 - [ ] Separate topics/issues into UX, services, workflow, data model and others
+- [ ] Having a running instance of Byte
 
 ---
 ---

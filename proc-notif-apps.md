@@ -1,4 +1,4 @@
-# Outtake of some DSCore Concepts <!-- omit in toc -->
+# Outtake of some DSC Concepts <!-- omit in toc -->
 ### Table of Content <!-- omit in toc -->
 
 - [1. Introduction](#1-introduction)
