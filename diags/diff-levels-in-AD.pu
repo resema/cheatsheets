@@ -1,0 +1,15 @@
+ @startuml
+component "architectural style" as style
+component "technical infrastructure" as infra
+component "functional architecture level" as func
+component "technical architecture level" as tech
+
+S --------r-> Perspective
+S -d-> Abstraction
+style <-r-> infra
+infra <-d-> tech
+style <-d-> func
+func <-r-> tech
+style <-[norank]> tech
+func <-[norank]> infra
+@enduml

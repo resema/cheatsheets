@@ -332,6 +332,7 @@ SW architects are able to:
       - provided interface(s)
       - required interface(s)
       - additional attributes like qualities, restrictions, risks or problems
+  - **gray box** shows additionally mostly technical interfaces, f.ex. configuration interfaces or interfaces to the runtime environment
   - **white box** shows the interios structure --> design rationale
     - explains the reason why it is structured exactly in this specifc way
       - name
@@ -339,10 +340,17 @@ SW architects are able to:
       - overview of its internal structure
       - design rational (reason for this structure)
       - list of contained black boxes
-  - **decomposition by changing rom black to white box**
-    - 
+  - **decomposition by changing from black to white box**
+    - hierarchical decomposition
+- **interfaces** are used to connect building blocks
+  - **standard interface** defined by an external third party
+  - **provided interface** defined by the building block that **provided** it
+  - **required interface** defined by the building block that **requires** it
+  - **independent interface** defined by both building blocks that **requires** and **provides** it
 - apply **stepwise refinement** and **specify building blocks**
 - **architectural views**, especially building blocks view, runtime view and deployment view
 - **explain the consequences** of decisions to corresponding src code
 - **separate technical and domain-related elements** of architecture and justify these decision
 - **identify risks** related to architecture decisions
+- **different levels** in an **architectural description**
+  ![AD-levels](./out/diags/diff-levels-in-AD/diff-levels-in-AD.svg)
