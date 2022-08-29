@@ -17,7 +17,9 @@
 
 ### 1.1.1. Checkout
 ```sh
-git checkout --recurse-submodules <URL_Repo>
+git clone --recurse-submodules <URL_Repo>
+
+git checkout --recurse-submodules <Revision>
 ```
 
 ### 1.1.2. Submodule
