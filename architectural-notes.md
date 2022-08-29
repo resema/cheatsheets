@@ -25,6 +25,16 @@
 
 ---
 - [ ] End-2-End Narrow Path aka OutSim: Lessons Learned
-  - [ ] Define TechLeads, up to 2 names
+  - [x] Define TechLeads, up to 2 names
+    - [ ] Adapt the Domain/Subdomain Page <!--TODO: rensem-->
   - [ ] Have narrow path
-  - [ ] Adapt the Domain/Subdomain Page <!--TODO: rensem-->
+  - [x] CI/CD
+    - [ ] new approach
+    - [ ] diffuse organization
+
+---
+- [ ] Byte+
+  - [ ] PMS -> Alexei
+  - [ ] Align with DSCore -> Renato
+  - [x] Sept 19./20. in Zurich
+  - [ ] 2 persons from Byte will be ramped up in CaseCollaboration Team
