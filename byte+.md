@@ -9,8 +9,10 @@
   - [2.5. Components for Byte+](#25-components-for-byte)
   - [2.6. Architectural Tasks](#26-architectural-tasks)
 - [3. Notes](#3-notes)
-- [Next Steps](#next-steps)
-- [4. Glossary](#4-glossary)
+- [4. Next Steps](#4-next-steps)
+  - [4.1. Architectural Tasks](#41-architectural-tasks)
+  - [4.2. OnBoarding](#42-onboarding)
+- [5. Glossary](#5-glossary)
 
 # 1. Introduction
 ![Overview](img/byte+/overview.png)
@@ -121,14 +123,19 @@
 
 ---
 ---
-# Next Steps
+# 4. Next Steps
+## 4.1. Architectural Tasks
 - [ ] First draft for diagrams (views)
   - [ ] Before Sept 19./20. <!-- TODO: rensem -->
     - [ ] Involvement of other teams?
 
 ---
+## 4.2. OnBoarding
+
+
 ---
-# 4. Glossary
+---
+# 5. Glossary
 - [ ] Account CTR / Act CTR: <!-- TODO: rensem -->
 - [x] referrals := *Empfehlung*
 - [x] Byte+ will be scanner-agnostic := *Unabhängig von einem spezifischen Scanner; alle möglich*
