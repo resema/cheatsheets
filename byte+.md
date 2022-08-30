@@ -4,10 +4,12 @@
 - [2. Open Questions](#2-open-questions)
   - [2.1. General Concept](#21-general-concept)
   - [2.2. Integration / Connection to DSCore](#22-integration--connection-to-dscore)
-  - [2.3. Data Model](#23-data-model)
-  - [2.4. Components for Byte+](#24-components-for-byte)
-  - [2.5. Architectural Tasks](#25-architectural-tasks)
-- [3. Glossary](#3-glossary)
+  - [2.3. !NotifBoard](#23-)
+  - [2.4. Data Model](#24-data-model)
+  - [2.5. Components for Byte+](#25-components-for-byte)
+  - [2.6. Architectural Tasks](#26-architectural-tasks)
+- [3. Notes](#3-notes)
+- [4. Glossary](#4-glossary)
 
 # 1. Introduction
 ![Overview](img/byte+/overview.png)
@@ -37,52 +39,92 @@
 ---
 # 2. Open Questions
 ## 2.1. General Concept
+- [ ] Definitions of **ByteApp**, **Byte+** and **Hybrid Model**?
 - [ ] Hybrid Model mentioned in Marketing Pages?
   - Integrate platform topics into existing application
-- [ ] Definitions of ByteApp, Byte+ and Hybrid **Model**?
-- [ ] Is the app mainly consumer driven and oriented
-- [ ] Treatment handling is something B+ is a head of DSCore
-  - Take a look at kanban-ish notification board for example
-  
+- [ ] Is the app mainly **consumer driven and oriented**?
+  - [ ] Platform(s)
+  - [ ] User database
 
 ## 2.2. Integration / Connection to DSCore
-- [ ] Landing page specific for B+ or not?
+- [ ] **Landing page** specific for B+ or not?
   - [ ] Activity Page on Dashboard would be a possible extension for DSCore
   - [ ] Notification Board could be elaborated as well in DSCore
-  ![NotifBoard](img/byte+/Byte-NotificationBoard.png)
-- [ ] Find a Dentist matching algorithm?
-- [ ] NexHealth only US?
-- [ ] Patient Account within DSCore?
-- [ ] Billing/Subscription Integration?
-- [ ] Treatment plan for Provider Account: is this a procedure?
-- [ ] Email to customers from DSCore?
+  2.3. ![NotifBoard](img/byte+/Byte-NotificationBoard.png)
+---
+- **Patient**, **Subscription**, **Treatment**
+  - [ ] Patient Account within DSCore?
+  - [ ] Billing/Subscription Integration?
+  - [ ] Treatment plan for Provider Account: is this a procedure?
+  - [ ] Treatment handling is something B+ is a head of DSCore
+    - Take a look at kanban-ish notification board for example
+---
+- Algorithms
+  - [ ] Find a Dentist **matching algorithm**? <!-- omit in toc -->
+---
+- Patient booking (PMS)
+  - [ ] **NexHealth** only US?
+    - [ ] Global Alternative?
+    - [x] Alexei / Maryna
+  - [ ] Email to customers from DSCore?
 
-## 2.3. Data Model
+## 2.4. Data Model
 - [ ] What data model is used for the meshes?
 - [ ] How is data exchange between App/Byte and DSCore?
 - [ ] How is the dataflow between customer &harr; dentist &harr; DSCore &harr; Byte+?
 
 ---
 ---
-## 2.4. Components for Byte+
-- [ ] Upload patient data, such as pictures of patient (aka "smile selfies") in a separate app/url?
-- [ ] 3D model view for the customer?
+## 2.5. Components for Byte+
+- [ ] Upload patient data, such as pictures of patient (aka "smile selfies") in a **separate app/ur**l?
+  - [ ] Platform(s)?
+- [ ] **3D model** view for the customer?
+  - [ ] Renderer integration will be **needed**
 
 ---
 ---
-## 2.5. Architectural Tasks
+## 2.6. Architectural Tasks
 - [ ] Different views for the complete situation
-- [ ] Find overlaps, similar patterns, similar workflows, data representation, and more
+- [ ] Find overlaps, similar patterns, similar workflows, data representation, rendering and more
 - [ ] Definition & description for treatment planning within DSCore
 - [ ] Separate topics/issues into UX, services, workflow, data model and others
 - [ ] Having a running instance of Byte
+  - [x] Access received -> Geppi could help out
+  - [ ] Realisation needed <!-- TODO: rensem -->
+- [ ] Byte Team doesn't know that much about DSCore
+- [ ] Strategic approach
+- [ ] Take a look at the backend
+  - [x] integrate COTS
+- [ ] Integrate current Byte solution as intermediate
+  - [ ] Data migration
+- [ ] Salesforce <!-- TODO: rensem -->
+- [ ] Move to DS Repo at some point
+  - [ ] Concept for transition <!-- TODO: rensem -->
 
 ---
 ---
-# 3. Glossary
-- [ ] Account CTR / Act CTR: <!-- TODO -->
+# 3. Notes
+- Context view
+  - Achieveable architecture not crystal clear
+  - Integration into DSCore
+  - UX concept
+- Building block view
+  - Blocks not completely clear
+- Runtime view
+  - How an order works unclear
+- Deployment view
+  - How the system is distributed
+    - single cluster
+    - separate app
+    - multiple OS
+
+---
+---
+# 4. Glossary
+- [ ] Account CTR / Act CTR: <!-- TODO: rensem -->
 - [x] referrals := *Empfehlung*
-- [x] Byte+ will be scanner-agnostic := <!-- TODO -->
-- [ ] App is focused on handled the treatment by the customer
+- [x] Byte+ will be scanner-agnostic := *Unabhängig von einem spezifischen Scanner; alle möglich*
+- [ ] App is focused on handling the treatment by the customer
+  - [ ] Dentist approves different steps
 - [ ] Byte+ shall step into the gap between Byte and SureSmile
   
