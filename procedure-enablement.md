@@ -7,28 +7,30 @@
 ---
 # Technical Reviews
 ## Order Form
-- [ ] LigPen-1377 - Integrate Order Form with Suresmile Backend
-  - Content, Overview?
-- [ ] LigPen-1353 - Enabling outcome simulation integration
-  - create state?
-  - open an order?
-- [ ] LigPen-1455: Add Mapping for Teeth Status in Start Order API
-  - `prefillOrderData`
-- [ ] LigPen-1459 cleanup order form
-  - `OrderDefinitions` rough overview, how used in FE?
+- [x] LigPen-1377 - Integrate Order Form with Suresmile Backend
+  - Working, Bug on Suresmile side
+- [x] LigPen-1353 - Enabling outcome simulation integration
+  - use `prefillOrderData` & `OrderDefinitions`
+- [x] LigPen-1455: Add Mapping for Teeth Status in Start Order API
+  - `prefillOrderData` single method for Outsim
+- [x] LigPen-1459 cleanup order form
+  - `OrderDefinitions` optional content to be filled by Outsim
+- [x] LigPen-1456 DS World Demo: Design Order
+  - mocked data for payment and taxes
 
 
 ---
 ## Procedures/Steps
-- [ ] LigPen-1313 - Provide Steps in Breadcrumbs to Procedures
-  - general concept and impl?
+- [x] LigPen-1313 - Provide Steps in Breadcrumbs to Procedures
+  - already discussed <!--TODO: rensem -->
 
 ---
 ## Zuora
-- [ ] LigPen-1065 - Download Invoice using data stream
-  - rough overview?
+- [x] LigPen-1065 - Download Invoice using data stream
+  - just streaming, nothing fancy
 
 ---
 ## Development
-- [ ] Feature Flags
+- [x] LigPen-1463 Feature Flags
   - Current concept using IaC
+    - terraform apply and restart (kill) pod (*instead* of using k8s manifests)
