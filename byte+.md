@@ -9,6 +9,7 @@
   - [2.5. Components for Byte+](#25-components-for-byte)
   - [2.6. Architectural Tasks](#26-architectural-tasks)
 - [3. Notes](#3-notes)
+- [Next Steps](#next-steps)
 - [4. Glossary](#4-glossary)
 
 # 1. Introduction
@@ -117,6 +118,13 @@
     - single cluster
     - separate app
     - multiple OS
+
+---
+---
+# Next Steps
+- [ ] First draft for diagrams (views)
+  - [ ] Before Sept 19./20. <!-- TODO: rensem -->
+    - [ ] Involvement of other teams?
 
 ---
 ---
