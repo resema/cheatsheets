@@ -22,7 +22,7 @@
 ---
 ## 2.2. Procedures/Steps
 - [x] LigPen-1313 - Provide Steps in Breadcrumbs to Procedures
-  - already discussed <!--TODO: rensem -->
+  - already discussed <!-- TODO: rensem -->
 
 ---
 ## 2.3. Zuora

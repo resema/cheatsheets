@@ -125,6 +125,7 @@
 ---
 # 4. Next Steps
 ## 4.1. Architectural Tasks
+- [ ] Clarify questions with Byte Team <!-- TODO: rensem -->
 - [ ] First draft for diagrams (views)
   - [ ] Before Sept 19./20. <!-- TODO: rensem -->
     - [ ] Involvement of other teams?
