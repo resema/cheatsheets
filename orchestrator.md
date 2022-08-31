@@ -20,16 +20,16 @@
     - compromised service could allow attacker to use other services
   - service accounts are 1-to-1 mapping
 
-### Structure
+### 2.1.2. Structure
 - LRO Facade
 - Orchestrator
 - Executor
 
 ---
-## Use Cases
-### CAM Production Item Service (PIS)
+## 2.2. Use Cases
+### 2.2.1. CAM Production Item Service (PIS)
 
-### Tooth Morphology
+### 2.2.2. Tooth Morphology
 
 ---
 ---
@@ -40,6 +40,7 @@
   - [ ] Does this fit for other use cases?
 - [ ] What is the core concept of workflows
   - [ ] Is it extendable to this use case?
+- [ ] What's Vertex AI? -> Will most probably not fit here.
 
 # 4. Architectural Tasks
 - [ ] Stakeholder meeting, gather use cases
