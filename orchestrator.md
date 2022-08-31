@@ -20,10 +20,8 @@
     - compromised service could allow attacker to use other services
   - service accounts are 1-to-1 mapping
 
-### 2.1.2. Structure
-- LRO Facade
-- Orchestrator
-- Executor
+### 2.1.2. Technical Design Document (TDD)
+- link: https://docs.google.com/document/d/1DwU8djdHaVAeO_jxNWhejRVov5Q8rb83Ouac7HhzGOY/edit#**
 
 ---
 ## 2.2. Use Cases

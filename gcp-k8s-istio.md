@@ -8,6 +8,9 @@
     - [1.2.3. Pods](#123-pods)
     - [1.2.4. Resource Management for Pods and Containers](#124-resource-management-for-pods-and-containers)
     - [1.2.5. Nodes](#125-nodes)
+    - [1.2.6. Cloud Run](#126-cloud-run)
+    - [1.2.7. Managed Instance Group (MIG)](#127-managed-instance-group-mig)
+    - [1.2.8. Workflow](#128-workflow)
   - [1.3. Components](#13-components)
     - [1.3.1. Services](#131-services)
     - [1.3.2. Load Balancers](#132-load-balancers)
@@ -94,6 +97,19 @@ spec:
 ```
 
 ### 1.2.5. Nodes
+
+### 1.2.6. Cloud Run
+- is basically managed GKE
+- good option for small workloads
+  - other end to MIG
+
+### 1.2.7. Managed Instance Group (MIG)
+- a **collection of Virtual Machine (VM) instances** that can be managed as a single entity.
+
+### 1.2.8. Workflow
+- Workflows is Google Cloud’s managed orchestration platform that executes services in an order that is defined as a workflow. These workflows can combine services including custom services hosted on Cloud Run, in Managed Instance Groups (MIG) or on any HTTP-based Application Programming Interface (API) endpoint
+- Workflows consist of a series of steps defined using the Workflows syntax. They are written in YAML which lends itself well to deployment strategies backed by Source Code Management (SCM) version controlled Infrastructure as Code (IaC)
+- The Cloud Console also offers a graphical view of workflows that is more suitable for human inspection. The figure below depicts the graphical representation of the sample workflow developed during the workshops.
 
 ---
 ## 1.3. Components

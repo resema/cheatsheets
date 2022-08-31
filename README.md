@@ -9,11 +9,14 @@ My second brain, to help me remember stuff
 - [D](#d)
 - [G](#g)
 - [K](#k)
+- [M](#m)
 - [O](#o)
 - [P](#p)
+- [R](#r)
 - [S](#s)
 - [T](#t)
 - [V](#v)
+- [W](#w)
 - [Y](#y)
 
 # Topics <!-- omit in toc -->
@@ -99,14 +102,26 @@ My second brain, to help me remember stuff
 
 ---
 ---
+# M
+- **Managed Instance Group**: a collection of Virtual Machine (VM) instances that can be managed as a single entity
+  - [Definition](/gcp-k8s-istio.md#127-managed-instance-group-mig)
+
+---
+---
 # O
-- **OAuth**: not an API or a service: it’s an open standard for authorization and anyone can implement it.
+- **OAuth**: not an API or a service: it’s an open standard for authorization and anyone can implement it
   - [Definition](/security.md#11-comparison-of-oauth2-and-jwt)
 
 ---
 ---
 # P
 - **PEM**: Privacy Enhanced Mail is a Base64 encoded DER certificate.  PEM certificates are frequently used for web servers as they can easily be translated into readable data using a simple text editor.
+
+---
+---
+# R
+- **Cloud Run**: basically a managed GKE
+  - [Description](/gcp-k8s-istio.md#126-cloud-run)
 
 ---
 ---
@@ -131,6 +146,12 @@ My second brain, to help me remember stuff
   - [Task & Reponsibilities [2]](/cpsa-f.md#14-software-architects-tasks-and-responsibilities-r1)
   - [Design & Development [3]](/cpsa-f.md#21-approaches-and-heuristics-for-architecture-development-r1-r3)
   - [Design [4]](/cpsa-f.md#22-design-software-architectures-r1)
+
+---
+---
+# W
+- **Workflow**: is Google Cloud’s managed orchestration platform that executes services in an order that is defined as a workflow
+  - [Description](/gcp-k8s-istio.md#128-workflow)
 
 ---
 ---
