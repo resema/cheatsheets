@@ -132,7 +132,18 @@
 
 ---
 ## 4.2. OnBoarding
-
+- Proposal
+  - 2 senior engineers transfer for ramp up to CaseCollaboration
+    - fullstack (no FE or BE)
+      - from conceptional to deployment
+      - as independent as possible
+    - small teams (max 5 pers)
+    - short iterations
+      - know-how transfer before implementation
+  - Ben (15y) & Bill (less)
+    - JavaScript/TypeScript
+  - CaseCollaboration
+- Ping Michael Grosshans about Dailies <!-- TODO: rensem -->
 
 ---
 ---
