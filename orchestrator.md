@@ -8,7 +8,7 @@
 ---
 
 # 2. Analysis
-## 2.1. Google Solution
+## 2.1. Google Solution for ATM
 
 ### 2.1.1. Lessons Learned
 - signed URL are not *that* save
@@ -20,18 +20,30 @@
     - compromised service could allow attacker to use other services
   - service accounts are 1-to-1 mapping
 
-### 2.1.2. LRO Facade
+### Structure
+- LRO Facade
+- Orchestrator
+- Executor
 
-### 2.1.3. Orchestrator
+---
+## Use Cases
+### CAM Production Item Service (PIS)
 
-### 2.1.4. Executor
+### Tooth Morphology
 
+---
+---
 # 3. Open Questions
 - [ ] How is it related to other treatments?
 - [ ] What are the possible use cases for merging of procedures?
 - [ ] What is the CAM solution?
   - [ ] Does this fit for other use cases?
-- [ ] 
+- [ ] What is the core concept of workflows
+  - [ ] Is it extendable to this use case?
 
 # 4. Architectural Tasks
 - [ ] Stakeholder meeting, gather use cases
+- [ ] Architectural meeting
+- [ ] Draft
+  - [ ] Diagrams
+  - [ ] Requirements
