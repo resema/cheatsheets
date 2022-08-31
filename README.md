@@ -3,22 +3,48 @@ My second brain, to help me remember stuff
 
 # Glossary <!-- omit in toc -->
 - [A](#a)
+  - [- [Definition [1]](/security.md#2-terminology)](#--definition-1)
 - [B](#b)
 - [C](#c)
 - [D](#d)
 - [G](#g)
 - [K](#k)
+- [O](#o)
 - [P](#p)
 - [S](#s)
 - [T](#t)
 - [V](#v)
 - [Y](#y)
+
+# Topics <!-- omit in toc -->
+## DP&S <!-- omit in toc -->
+### Architecture <!-- omit in toc -->
+- [Notes](/architectural-notes.md)
+- [Education](cpsa-f.md)
+- [Q3 - Orchestrator](orchestrator.md)
+
+### Byte+ <!-- omit in toc -->
+- [notes](/byte%2B.md)
+
+### Lightning Procedure Enablement <!-- omit in toc -->
+- [Technical Reviews](/procedure-enablement.md)
+- [Overview](proc-notif-apps.md)
+
+### Cheats <!-- omit in toc -->
+- [Cloud infrastructure](/cloud-infrastructure.md)
+- [GCP, k8s, Istio](/gcp-k8s-istio.md)
+- [Git](git.md)
+
 ---
 ---
 # A
 - **Authenthication**: Authenticate your user, see
   - [gcloud [1]](/gcp-k8s-istio.md#11-cheats)
-
+  - [Overview [2]](/security.md#2-terminology)
+  
+---
+- **Authorization**: Process of allowing an authenticated user to access his resources by checking whether the user has access rights to the system.
+  - [Definition [1]](/security.md#2-terminology)
 ---
 ---
 # B
@@ -73,12 +99,20 @@ My second brain, to help me remember stuff
 
 ---
 ---
+# O
+- **OAuth**: not an API or a service: it’s an open standard for authorization and anyone can implement it.
+  - [Definition](/security.md#11-comparison-of-oauth2-and-jwt)
+
+---
+---
 # P
 - **PEM**: Privacy Enhanced Mail is a Base64 encoded DER certificate.  PEM certificates are frequently used for web servers as they can easily be translated into readable data using a simple text editor.
 
 ---
 ---
 # S
+- **Service Account**:special types of accounts used by applications and services
+  - [description [1]](/security.md)
 - **Submodule**: child repository in parent repository, see 
   - [cheats [1]](/git.md#112-submodule)
   - [cheats [2]](/git.md#113-update-with-originmain)
