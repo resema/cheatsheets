@@ -36,7 +36,7 @@
    -  a collection of building blocks
    -  **interface**: represents a well-defined access point to the system or its building blocks
    -  **building block**: is the central basic element from which the static structure of a software architecture is constructed
-   ![Building Blocks Example](./out/diags/buildingsblock/buildingsblock.svg)
+   ![Building Blocks Example](./out/diags/cpsa-f/buildingsblock/buildingsblock.svg)
 
 
 ---
@@ -353,4 +353,4 @@ SW architects are able to:
 - **separate technical and domain-related elements** of architecture and justify these decision
 - **identify risks** related to architecture decisions
 - **different levels** in an **architectural description**
-  ![AD-levels](./out/diags/diff-levels-in-AD/diff-levels-in-AD.svg)
+  ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)

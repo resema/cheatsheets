@@ -13,7 +13,7 @@ link infra to tech--><g id="link_infra_tech"><path d="M520.733,58.353 C522.728,7
 link style to func--><g id="link_style_func"><path d="M264.516,58.353 C262.674,75.2381 260.319,96.8215 258.478,113.6972 " fill="none" id="style-func" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="257.925,118.773,262.8776,110.26,258.4673,113.8025,254.9248,109.3922,257.925,118.773" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="265.072,53.26,260.1208,61.7739,264.5305,58.2306,268.0738,62.6403,265.072,53.26" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[fbbe95da6dd1bed03935031151f33681]
 link func to tech--><g id="link_func_tech"><path d="M382.312,142 C390.479,142 398.646,142 406.812,142 " fill="none" id="func-tech" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="411.897,142,402.897,138,406.897,142,402.897,146,411.897,142" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="377.155,142,386.155,146,382.155,142,386.155,138,377.155,142" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0d1995f9170d7f4d3457cf2ab09591d8]
 link style to tech--><g id="link_style_tech"><path d="M325.028,55.061 C368.904,73.4124 429.066,98.5751 472.948,116.929 " fill="none" id="style-tech" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="477.679,118.9075,470.9184,111.7455,473.0659,116.9788,467.8326,119.1264,477.679,118.9075" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="320.406,53.128,327.1647,60.2918,325.0185,55.0579,330.2525,52.9117,320.406,53.128" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5b1e5b5abff2bd178dd56c2d4fbcafdf]
-link func to infra--><g id="link_func_infra"><path d="M312.823,116.9331 C356.448,98.6172 416.227,73.5191 459.916,55.176 " fill="none" id="func-infra" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="464.796,53.128,454.9492,52.9243,460.1859,55.0637,458.0464,60.3004,464.796,53.128" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="308.12,118.9075,317.9667,119.1113,312.7301,116.9718,314.8696,111.7352,308.12,118.9075" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7d436358db5049c86867b4b5c31f68f1]
+link func to infra--><g id="link_func_infra"><path d="M312.823,116.9331 C356.448,98.6172 416.227,73.5191 459.916,55.176 " fill="none" id="func-infra" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="464.796,53.128,454.9492,52.9243,460.1859,55.0637,458.0464,60.3004,464.796,53.128" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="308.12,118.9075,317.9667,119.1113,312.7301,116.9718,314.8696,111.7352,308.12,118.9075" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9f047d71120e9336a5d74578e8965037]
 @startuml
 component "architectural style" as style
 component "technical infrastructure" as infra
@@ -30,7 +30,7 @@ style <-[norank]> tech
 func <-[norank]> infra
 @enduml
 
-PlantUML version 1.2022.7beta11(Unknown compile time)
+PlantUML version 1.2022.8beta2(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

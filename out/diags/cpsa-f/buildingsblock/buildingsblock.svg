@@ -18,7 +18,7 @@ reverse link cons to func--><g id="link_cons_func"><path d="M321.178,161.921 C27
 reverse link bb to cons--><g id="link_bb_cons"><path d="M508.606,55.786 C480.258,73.399 442.521,96.845 415.172,113.837 " fill="none" id="bb-backto-cons" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="513.072,53.011,503.3167,54.3651,508.8255,55.6506,507.54,61.1594,513.072,53.011" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[23c2083b5431087e52a12f74da4ef983]
 reverse link bb to pkg--><g id="link_bb_pkg"><path d="M469.463,52.536 C409.744,68.96 325.815,92.367 252.5,114 C247.054,115.607 241.383,117.311 235.725,119.032 " fill="none" id="bb-backto-pkg" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="474.442,51.168,464.7039,49.6953,469.6207,52.4927,466.8233,57.4094,474.442,51.168" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e4d13a05bf8fa843d5130a161a3ac5f1]
 reverse link bb to libs--><g id="link_bb_libs"><path d="M566.289,57.308 C578.028,74.668 593.24,97.165 604.391,113.656 " fill="none" id="bb-backto-libs" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="563.384,53.011,565.1134,62.7068,566.1855,57.1525,571.7398,58.2245,563.384,53.011" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[162e505f95c54f5935cc523319d6f149]
-reverse link bb to bb--><g id="link_bb_bb"><path d="M635.646,21.146 C648.679,22.519 657.5,25.471 657.5,30 C657.5,35.916 642.451,39.14 622.626,39.671 " fill="none" id="bb-backto-bb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="622.626,20.329,628.3637,24.697,634.6024,21.0807,628.8648,16.7127,622.626,20.329" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="69" x="663.5" y="34.5669">consists of</text></g><!--MD5=[dd146354423fe90a397c5bc87ad8f62d]
+reverse link bb to bb--><g id="link_bb_bb"><path d="M635.646,21.146 C648.679,22.519 657.5,25.471 657.5,30 C657.5,35.916 642.451,39.14 622.626,39.671 " fill="none" id="bb-backto-bb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="622.626,20.329,628.3637,24.697,634.6024,21.0807,628.8648,16.7127,622.626,20.329" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="69" x="663.5" y="34.5669">consists of</text></g><!--MD5=[2cec364f966f685aea268cdac6c0b4b1]
 @startuml
 component "building blocks" as bb
 component "packages" as pkg
@@ -43,7 +43,7 @@ bb <- - libs
 bb *- - bb : "consists of"
 @enduml
 
-PlantUML version 1.2022.7beta11(Unknown compile time)
+PlantUML version 1.2022.8beta2(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM
