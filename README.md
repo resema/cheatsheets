@@ -8,6 +8,7 @@ My second brain, to help me remember stuff
 - [C](#c)
 - [D](#d)
 - [G](#g)
+- [L](#l)
 - [K](#k)
 - [M](#m)
 - [O](#o)
@@ -90,6 +91,12 @@ My second brain, to help me remember stuff
 ---
 - **grpcurl**: like curl but with grpc payload, see
   - [Tools [1]](/gcp-k8s-istio.md#42-grpcurl)
+
+---
+---
+# L
+- **Long Running Operations**: defines a standard interface to work with Long Running Operations so the client can use it to track the progress and receive the result
+  - [Description](/gcp-k8s-istio.md#129-long-running-operations)
 
 ---
 ---

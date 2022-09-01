@@ -1,4 +1,5 @@
 # Localization <!-- omit in toc -->
+- [- 3. Discussions](#--3-discussions)
 - [1. Overview](#1-overview)
   - [1.1. Figma](#11-figma)
   - [1.2. Lokalise](#12-lokalise)
@@ -10,6 +11,23 @@
   - [2.2. Build Artifact Versioning](#22-build-artifact-versioning)
   - [2.3. Multi vs Single-Domain Repo](#23-multi-vs-single-domain-repo)
 - [3. Discussions](#3-discussions)
+- [- !simplified graphic](#--)
+<<<<<<< HEAD
+- [- 3. Discussions](#--3-discussions)
+- [1. Overview](#1-overview)
+  - [1.1. Figma](#11-figma)
+  - [1.2. Lokalise](#12-lokalise)
+  - [1.3. Bitbucket](#13-bitbucket)
+  - [1.4. Current Situation](#14-current-situation)
+  - [1.5. Vision of Future](#15-vision-of-future)
+- [2. Versioning](#2-versioning)
+  - [2.1. Versioning Schemes](#21-versioning-schemes)
+  - [2.2. Build Artifact Versioning](#22-build-artifact-versioning)
+  - [2.3. Multi vs Single-Domain Repo](#23-multi-vs-single-domain-repo)
+- [3. Discussions](#3-discussions)
+- [- !simplified graphic](#--)
+=======
+>>>>>>> f5c6b3380a (feat: add multiple stuff)
 
 # 1. Overview
 Mentioned topics are **Figma**, **Lokalise** and **Bitbucket**.
@@ -80,3 +98,4 @@ Any build artifact is versioned using a `MAJOR.MINOR.PATCH` semantic scheme.
 
 ### Simon Egg, Sept. 05 <!-- omit in toc -->
 - ![simplified graphic](/out/diags/l10n/simplification/simplification.svg)
+=======

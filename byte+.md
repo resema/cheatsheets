@@ -6,8 +6,11 @@
   - [2.2. Integration / Connection to DSCore](#22-integration--connection-to-dscore)
   - [2.3. !NotifBoard](#23-)
   - [2.4. Data Model](#24-data-model)
-  - [2.5. Components for Byte+](#25-components-for-byte)
-  - [2.6. Architectural Tasks](#26-architectural-tasks)
+  - [2.5. Mobile Application](#25-mobile-application)
+  - [2.6. Components for Byte+](#26-components-for-byte)
+  - [2.7. User Journey of Treatment Planing](#27-user-journey-of-treatment-planing)
+    - [Synchronise User Journey (Byte+ & DSCore)](#synchronise-user-journey-byte--dscore)
+  - [2.8. Architectural Tasks](#28-architectural-tasks)
 - [3. Notes](#3-notes)
 - [4. Next Steps](#4-next-steps)
   - [4.1. Architectural Tasks](#41-architectural-tasks)
@@ -76,17 +79,36 @@
 - [ ] How is data exchange between App/Byte and DSCore?
 - [ ] How is the dataflow between customer &harr; dentist &harr; DSCore &harr; Byte+?
 
+## 2.5. Mobile Application
+- [ ] Based on DSCore widgets and flutter?
+
 ---
 ---
-## 2.5. Components for Byte+
+## 2.6. Components for Byte+
 - [ ] Upload patient data, such as pictures of patient (aka "smile selfies") in a **separate app/ur**l?
   - [ ] Platform(s)?
 - [ ] **3D model** view for the customer?
   - [ ] Renderer integration will be **needed**
 
+## 2.7. User Journey of Treatment Planing
+- [ ] Onboarding of new dentists
+  - [ ] DSCore based
+  - [ ] FAQ pages
+- [ ] Share information to smartphone application with patient
+- [ ] Accounts from DSCore
+  - [ ] Owner, Lab, Assistent, Guest
+  - [ ] Subscription (or bundle)
+- [ ] Connectivity/Integration to Implant Planning Software
+
+### Synchronise User Journey (Byte+ & DSCore)
+- [ ] Where to fork the implementation?
+  - [ ] different landing pages?
+- [ ] Light-weight integration?
+  - [ ] just a separate treatment as first step?
+
 ---
 ---
-## 2.6. Architectural Tasks
+## 2.8. Architectural Tasks
 - [ ] Different views for the complete situation
 - [ ] Find overlaps, similar patterns, similar workflows, data representation, rendering and more
 - [ ] Definition & description for treatment planning within DSCore
@@ -126,6 +148,8 @@
 # 4. Next Steps
 ## 4.1. Architectural Tasks
 - [ ] Clarify questions with Byte Team <!-- TODO: rensem -->
+  - [ ] Alignment with DSCore UI
+  - [ ] Repository structure / Working style / ...
 - [ ] First draft for diagrams (views)
   - [ ] Before Sept 19./20. <!-- TODO: rensem -->
     - [ ] Involvement of other teams?

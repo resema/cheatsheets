@@ -34,3 +34,12 @@
 - [x] LigPen-1463 Feature Flags
   - Current concept using IaC
     - terraform apply and restart (kill) pod (*instead* of using k8s manifests)
+
+---
+# 3. Technical Topics
+## Notification & Notification-Storage
+### Code Quality
+- JSON between BE and FE -> Legacy: <!-- TODO: rensem Create Tech.Topic -->
+- Switch case needed for language specific data which can NOT be handled in the backend
+  - links, f.ex. specific routes based on languages/id
+  - parameters

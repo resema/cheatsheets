@@ -29,6 +29,15 @@
 
 ### 2.2.2. Tooth Morphology
 
+## Workflow
+- postpone/wait for somebody call callback
+- no grpc -> authentication with token or pub/sub
+- Workflow has conditional steps
+  - pass a pipeline as argument to another graph
+- Google Composer -> take a look
+
+- AliCloud -> Serverless Workflow
+
 ---
 ---
 # 3. Open Questions

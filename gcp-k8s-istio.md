@@ -11,6 +11,7 @@
     - [1.2.6. Cloud Run](#126-cloud-run)
     - [1.2.7. Managed Instance Group (MIG)](#127-managed-instance-group-mig)
     - [1.2.8. Workflow](#128-workflow)
+    - [1.2.9. Long Running Operations](#129-long-running-operations)
   - [1.3. Components](#13-components)
     - [1.3.1. Services](#131-services)
     - [1.3.2. Load Balancers](#132-load-balancers)
@@ -110,6 +111,9 @@ spec:
 - Workflows is Google Cloud’s managed orchestration platform that executes services in an order that is defined as a workflow. These workflows can combine services including custom services hosted on Cloud Run, in Managed Instance Groups (MIG) or on any HTTP-based Application Programming Interface (API) endpoint
 - Workflows consist of a series of steps defined using the Workflows syntax. They are written in YAML which lends itself well to deployment strategies backed by Source Code Management (SCM) version controlled Infrastructure as Code (IaC)
 - The Cloud Console also offers a graphical view of workflows that is more suitable for human inspection. The figure below depicts the graphical representation of the sample workflow developed during the workshops.
+
+### 1.2.9. Long Running Operations
+- defines a standard interface to work with Long Running Operations so the client can use it to track the progress and receive the result
 
 ---
 ## 1.3. Components
