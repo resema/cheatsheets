@@ -15,8 +15,39 @@
 - [2. Design and Development](#2-design-and-development)
   - [2.1. Approaches and heuristics for architecture development (R1, R3)](#21-approaches-and-heuristics-for-architecture-development-r1-r3)
   - [2.2. Design software architectures (R1)](#22-design-software-architectures-r1)
+  - [2.3. Influencing factors and constraints (R1-R3)](#23-influencing-factors-and-constraints-r1-r3)
+  - [2.4. Cross-cutting concepts (R1)](#24-cross-cutting-concepts-r1)
+  - [2.5. Patterns (R1, R3)](#25-patterns-r1-r3)
+  - [2.6. Design principles (R1-R3)](#26-design-principles-r1-r3)
+  - [2.7. Managing dependencies (R1)](#27-managing-dependencies-r1)
+  - [2.8. Achieve quality requirements (R1)](#28-achieve-quality-requirements-r1)
+  - [2.9. Design and define interfaces (R1-R3)](#29-design-and-define-interfaces-r1-r3)
+- [3. Specification and communication of software architectures](#3-specification-and-communication-of-software-architectures)
+  - [3.1. Quality requirements for technical documentation (R1)](#31-quality-requirements-for-technical-documentation-r1)
+  - [3.2. Describe and communicate software architectures (R1, R3)](#32-describe-and-communicate-software-architectures-r1-r3)
+  - [3.3. Models and notations to describe (R2-R3)](#33-models-and-notations-to-describe-r2-r3)
+  - [3.4. Architectural views (R1)](#34-architectural-views-r1)
+  - [3.5. Context view (R1)](#35-context-view-r1)
+  - [3.6. Document cross-cutting concepts (R2)](#36-document-cross-cutting-concepts-r2)
+  - [3.7. Describe interfaces (R1)](#37-describe-interfaces-r1)
+  - [3.8. Document architectural decisions (R1-R2)](#38-document-architectural-decisions-r1-r2)
+  - [3.9. Documentation as written communication (R2)](#39-documentation-as-written-communication-r2)
+  - [3.10. Resources and tools for documentation (R3)](#310-resources-and-tools-for-documentation-r3)
+- [4. Software architecture and quality](#4-software-architecture-and-quality)
+  - [4.1. Quality models and quality characteristics (R1)](#41-quality-models-and-quality-characteristics-r1)
+  - [4.2. Clarify quality requirements (R1)](#42-clarify-quality-requirements-r1)
+  - [4.3. Qualitative analysis (R2-R3)](#43-qualitative-analysis-r2-r3)
+  - [4.4. Quantitative evaluation (R2)](#44-quantitative-evaluation-r2)
+- [5. Examples of software architectur](#5-examples-of-software-architectur)
+  - [5.1. From requirements to solution (R3)](#51-from-requirements-to-solution-r3)
+  - [5.2. Rationale of a technical implementation (R3)](#52-rationale-of-a-technical-implementation-r3)
 ---
 ---
+
+# Introduction <!-- omit in toc -->
+- R1 - Being able to ... - Will be part of examination
+- R2 - Understanding ... - May be part of examination
+- R3 - Knowing ... - Will **not** be part of examination
 
 # 1. Basic Concepts
 ## 1.1. Definitions of software architecture (R1)
@@ -354,3 +385,187 @@ SW architects are able to:
 - **identify risks** related to architecture decisions
 - **different levels** in an **architectural description**
   ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
+
+---
+## 2.3. Influencing factors and constraints (R1-R3)
+
+SW architects are able to gather and consider constraints and influencing factors:
+- **Product-related** factors:
+  - functional requirements (R1)
+  - quality requirements and quality goals (R1)
+  - additional factors such as product cost, intended licensing model or business model (R1)
+- **Technological** factors:
+  - externally mandated technical decisions and concepts (R1)
+  - existing or planned hardware and software infrastructure (R1)
+  - technological constraints on data structures and interfaces (R2)
+  - reference architectures, libraries, components, and frameworkds (R1)
+  - programming languages (R3)
+- **Organizational** factors:
+  - organizational structure of dev team and customers (R1)
+  - company and team cultures (R3)
+  - partnerships and cooperation agreements (R2)
+  - standards, guidelines, and process models (R2)
+  - available resources like budget, time, and staff (R1)
+  - availability, skill set, and commitment of staff (R1)
+- **Regulatory** factors:
+  - legal constraints (R2)
+  - contract and liability issues (R2)
+  - data protection and privacy laws (R2)
+  - compliance issues or obligations to provide burden of proof (R2)
+- **Trends**:
+  - market trends (R3)
+  - technology trends (R3)
+  - methodology trends (R3)
+  - impact of further stakeholder concerns and mandated design decisions (R3)
+
+---
+## 2.4. Cross-cutting concepts (R1)
+
+SW architects are able to:
+- **explain the significance** of such cross-cutting concepts
+- **decide on and design** cross-cutting concepts, f.ex. persistence, communication, GUI, error handling, concurrency
+- **identify and assess potential interdependencies** between these decisions
+
+---
+## 2.5. Patterns (R1, R3)
+
+SW architects know:
+- **various architectural patterns** and can apply them when appropriate (R1)
+- that **patterns are a way to achieve certain qualities** for given problems and requirements within given contexts (R1)
+- that **various categories of patterns** exist (R3)
+- **additional sources** for patterns (R3)
+
+SW architects can explain and provide examples for the following patterns (R1):
+- Layers:
+  - abstraction layers hide details
+  - layers used to **separate functionality or responsibility**
+- Pipes-and-filters:
+  - Representation for **data flow patterns**
+  - **series of processing-activities** ("filter")
+  - **associated data transport/buffering capabilities** ("pipes")
+- Microservices:
+  - **split application** in separate executables that communicate via network
+- Dependency injection:
+  - possible solution for the **dependency-inversion-principle**
+
+SW architects can explain several of the following patterns (R3):
+- blackboard
+- broker
+- combinator
+- CQRS (Command-Query-Responsibility-Segregation)
+- event-sourcing
+- interpreter
+- integartion and messaging pattern
+- MVC family (MVC, MVVM, MV-Update, PAC)
+- interfacing patterns (adapter, facade, proxy)
+- observer
+- plug-in
+- ports&adapter (syn. onion-architecture, hexagonal-architecture)
+- remote procedure call
+- SOA
+- template
+- strategy
+- visitor
+
+---
+## 2.6. Design principles (R1-R3)
+
+SW architects are able to explain what design principles are. They can outline their general objectives and applications (R2).
+- **explain and illustrate** with examples
+- explain **how quality requirements determine which principle** should be applied
+- explain **impact** of design principles **on the implementation**
+- **analyze src code and architecture designs** to evaluate wheter these design principles have been applied or should be applied
+
+Design Principles:
+- Abstraction (R1)
+  - in the sense of a means for **deriving useful generalizations**
+  - as a design construct, where **building blocks are dependent** on the **abstraction** rather then depending on implementations
+  - **interfaces as abstractions**
+- Modularizations
+  - **information hiding** and **encapsulation** (R1)
+  - **separation of concerns** (R1)
+  - **loose, but functionally sufficient, coupling** of building blocks (R1)
+  - **SOLID** principles
+    - S: single responsibility principle (R1)
+    - O: open/closed principle (R1)
+    - L: Liskov substituation principle (R3)
+    - I: interface segregation principle (R2)
+    - D: dependency inversion principle (R1)
+- Conceptual integrity
+  - **uniformity of solutions for similar problems** (R2)
+  - achieve the **principle of least surprise** (R3)
+- Simplicity
+  - **reduce complexity** (R1)
+  - **KISS** and **YAGNI** (R2)
+- Expect Errors
+  - design for **robust and resilient systems** (R1)
+  - **generalisation of robustness principle** aka. Postel's Law (R2)
+
+---
+## 2.7. Managing dependencies (R1)
+
+---
+## 2.8. Achieve quality requirements (R1)
+
+---
+## 2.9. Design and define interfaces (R1-R3)
+
+
+
+---
+---
+
+# 3. Specification and communication of software architectures
+## 3.1. Quality requirements for technical documentation (R1)
+
+---
+## 3.2. Describe and communicate software architectures (R1, R3)
+
+---
+## 3.3. Models and notations to describe (R2-R3)
+
+---
+## 3.4. Architectural views (R1)
+
+---
+## 3.5. Context view (R1)
+
+---
+## 3.6. Document cross-cutting concepts (R2)
+
+---
+## 3.7. Describe interfaces (R1)
+
+---
+## 3.8. Document architectural decisions (R1-R2)
+
+---
+## 3.9. Documentation as written communication (R2)
+
+---
+## 3.10. Resources and tools for documentation (R3)
+
+---
+---
+
+# 4. Software architecture and quality
+## 4.1. Quality models and quality characteristics (R1)
+
+---
+## 4.2. Clarify quality requirements (R1)
+
+---
+## 4.3. Qualitative analysis (R2-R3)
+
+---
+## 4.4. Quantitative evaluation (R2)
+
+
+---
+---
+
+# 5. Examples of software architectur
+## 5.1. From requirements to solution (R3)
+
+---
+## 5.2. Rationale of a technical implementation (R3)
