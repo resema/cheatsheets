@@ -483,7 +483,7 @@ Design Principles:
   - **interfaces as abstractions**
 - Modularizations
   - **information hiding** and **encapsulation** (R1)
-  - **separation of concerns** (R1)
+  - **separation of concerns** aka. SOC (R1)
   - **loose, but functionally sufficient, coupling** of building blocks (R1)
   - **SOLID** principles
     - S: single responsibility principle (R1)
