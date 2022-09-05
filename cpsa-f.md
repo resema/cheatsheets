@@ -488,8 +488,11 @@ Design Principles:
   - **SOLID** principles
     - S: single responsibility principle (R1)
     - O: open/closed principle (R1)
+      - open for extension / closed for modification
     - L: Liskov substituation principle (R3)
+      - promote consistency and conceptual integry aka. avoid unexpected behavior
     - I: interface segregation principle (R2)
+      - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
     - D: dependency inversion principle (R1)
 - Conceptual integrity
   - **uniformity of solutions for similar problems** (R2)
@@ -503,13 +506,41 @@ Design Principles:
 
 ---
 ## 2.7. Managing dependencies (R1)
+Software architects understand dependencies and coupling between building blocks:
+- know and understand **different types of dependencies**
+  - coupling via **use/delegation**
+  - coupling via **data**, **data types** or **hardware**
+- understand **how dependencies increase coupling**
+- can use such types of coupling in a targeted manner
+- know and can **apply possibilities to reduce or eliminate coupling**
+  - patterns
+  - basic design principles
+  - externalization of dependencies, f.ex. dependency injection
 
 ---
 ## 2.8. Achieve quality requirements (R1)
+Software architects understand and consider the considerable influence of quality requirements:
+- **effency / performance**
+- **availability**
+- **maintainability, modifiability, extensibility, adaptability**
+
+They can:
+- explain and apply **solution options**, **architectural tactics**, **suitable practices**
+- identify and communicate **possible trade-offs between such solutions** and their **associated risks**
 
 ---
 ## 2.9. Design and define interfaces (R1-R3)
+Software architects know about the importance of interfaces. They are able to design or specify interfaces.
 
+They know:
+- desired **characteristics of interfaces** and can use them in the design (R1)
+  - **easy to learn, easy to use, easy to extend**
+  - **hard to abuse**
+  - **functionally complete** from the perspective of users/building blocks
+- the necessity to **treat internal and external interfaces differently** (R1)
+- different approaches for implementing interface (R3)
+  - **resource-oriented** approach (REST)
+  - **service-oriented** approach (WS*/SOAP-based web services)
 
 
 ---

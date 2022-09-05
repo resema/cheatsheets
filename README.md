@@ -7,12 +7,14 @@ My second brain, to help me remember stuff
 - [B](#b)
 - [C](#c)
 - [D](#d)
+  - [- [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3)](#--concepts-1)
 - [G](#g)
 - [L](#l)
 - [K](#k)
 - [M](#m)
 - [O](#o)
 - [P](#p)
+  - [- [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3)](#--concepts-1-1)
 - [R](#r)
 - [S](#s)
 - [T](#t)
@@ -74,6 +76,9 @@ My second brain, to help me remember stuff
 ---
 ---
 # D
+- **Design Principles**: F.ex. abstraction, modularization, conceptual integrity, simplicity, expect errors
+  - [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3)
+---
 - **Docker**: Container platform, see
   - [Cheats [1]](/cloud-infrastructure.md#31-cheats)
 
@@ -122,6 +127,9 @@ My second brain, to help me remember stuff
 ---
 ---
 # P
+- **Patterns**: F.ex. layers, pipe-and-filters, microservices, dependency injection
+  - [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3)
+---
 - **PEM**: Privacy Enhanced Mail is a Base64 encoded DER certificate.  PEM certificates are frequently used for web servers as they can easily be translated into readable data using a simple text editor.
 
 ---
