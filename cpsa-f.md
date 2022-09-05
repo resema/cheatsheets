@@ -548,18 +548,56 @@ They know:
 
 # 3. Specification and communication of software architectures
 ## 3.1. Quality requirements for technical documentation (R1)
+Software architects know the quality requirements of technical documentation and can consider and fulfil those when documenting systems:
+- **understandability**, **correctnes**, **efficiency**, **appropriateness** and **maintainability**
+- **form**, **content** and **level of detail** tailored to the stakeholders
+
+They know that only the target audiences can assess the understandability of technical documentation.
 
 ---
 ## 3.2. Describe and communicate software architectures (R1, R3)
+Software architect are able to: (R1)
+- **documented and communicate architectures for corresponding stakeholders**, thereby addressing different target groups, e.g. management, development teams, QA, other architects, and additional stakeholders
+- **consolidate and harmonize the style and content of contributions** from differnet groups of authors
+- know the **benefits of template-based documentation**
+
+They know that various properties of documentation depend on specifics of the system, its requirements, risks, development process, organization or other factors.
+These factors have an impact:
+- whether **written** or **verbal communication** should be prioritized
+- **amount of level of detail** of documentation needed at each stage of development
+- **documentation format**
+- **accessibility to the documentation**
+- **formality of documentation**
+- **formal reviews and sign-off process** for documentation
+
+They are aware of these factors and can adjust the documentation characteristics according to the situation.
 
 ---
 ## 3.3. Models and notations to describe (R2-R3)
+Software architects know at least the following UML diagrams to describe architectural views:
+- **class**, **package**, **component** and composite-structure diagrams (R2)
+- **deployment** diagrams (R2)
+- **sequence and activity** diagrams (R2)
+- **state machine** diagrams (R3)
+
+They know alternative notations to UML diagrams, f.ex.
+- ArchiMate
+- **flow charts**, **numbered lists** or **business-process-modeling-notation (BPMN)**
 
 ---
 ## 3.4. Architectural views (R1)
+Software architects are able to use the architectural views:
+- **context view**
+- **building block** or **component view** (composition of software building blocks)
+- **run-time view** (dynamic view, interaction between bblocks, state machine)
+- **deployment view** (hardware and technical infrastructure, as well as the mapping of bblocks onto the infrastructure)
 
 ---
 ## 3.5. Context view (R1)
+Software architects can:
+- **depict the context systems**, e.g. in the form of context diagrams
+- represent **external interfaces** of systems in context view
+- **differentiate between business and technical context**
 
 ---
 ## 3.6. Document cross-cutting concepts (R2)

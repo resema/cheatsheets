@@ -17,6 +17,10 @@ My second brain, to help me remember stuff
   - [- [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3)](#--concepts-1-1)
 - [R](#r)
 - [S](#s)
+  - [- [description [1]](/security.md)](#--description-1)
+  - [- **SLA**: service level agreement; the agreement made with clients or users](#--sla-service-level-agreement-the-agreement-made-with-clients-or-users)
+  - [- **SLI**: service level indicator; the real number on performance](#--sli-service-level-indicator-the-real-number-on-performance)
+  - [- **SLO**: service level objective; the objectives the team must hit to meet the agreement.](#--slo-service-level-objective-the-objectives-the-team-must-hit-to-meet-the-agreement)
 - [T](#t)
 - [V](#v)
 - [W](#w)
@@ -141,8 +145,15 @@ My second brain, to help me remember stuff
 ---
 ---
 # S
-- **Service Account**:special types of accounts used by applications and services
+- **Service Account**: special types of accounts used by applications and services
   - [description [1]](/security.md)
+---
+- **SLA**: service level agreement; the agreement made with clients or users
+---
+- **SLI**: service level indicator; the real number on performance
+---
+- **SLO**: service level objective; the objectives the team must hit to meet the agreement.
+---
 - **Submodule**: child repository in parent repository, see 
   - [cheats [1]](/git.md#112-submodule)
   - [cheats [2]](/git.md#113-update-with-originmain)
@@ -161,6 +172,7 @@ My second brain, to help me remember stuff
   - [Task & Reponsibilities [2]](/cpsa-f.md#14-software-architects-tasks-and-responsibilities-r1)
   - [Design & Development [3]](/cpsa-f.md#21-approaches-and-heuristics-for-architecture-development-r1-r3)
   - [Design [4]](/cpsa-f.md#22-design-software-architectures-r1)
+  - [Concepts [5]](/cpsa-f.md#34-architectural-views-r1)
 
 ---
 ---
