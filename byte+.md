@@ -4,12 +4,12 @@
 - [2. Open Questions](#2-open-questions)
   - [2.1. General Concept](#21-general-concept)
   - [2.2. Integration / Connection to DSCore](#22-integration--connection-to-dscore)
-  - [2.3. !NotifBoard](#23-)
-  - [2.4. Data Model](#24-data-model)
-  - [2.5. Mobile Application](#25-mobile-application)
+  - [2.3. Data Model](#23-data-model)
+  - [2.4. Mobile Application](#24-mobile-application)
+  - [2.5. Payment](#25-payment)
   - [2.6. Components for Byte+](#26-components-for-byte)
   - [2.7. User Journey of Treatment Planing](#27-user-journey-of-treatment-planing)
-    - [Synchronise User Journey (Byte+ & DSCore)](#synchronise-user-journey-byte--dscore)
+    - [2.7.1. Synchronise User Journey (Byte+ & DSCore)](#271-synchronise-user-journey-byte--dscore)
   - [2.8. Architectural Tasks](#28-architectural-tasks)
 - [3. Notes](#3-notes)
 - [4. Next Steps](#4-next-steps)
@@ -51,12 +51,14 @@
 - [ ] Is the app mainly **consumer driven and oriented**?
   - [ ] Platform(s)
   - [ ] User database
+- [ ] Is the backend on Azure?
+- [ ] Treatment planners -> actual dentists?
 
 ## 2.2. Integration / Connection to DSCore
 - [ ] **Landing page** specific for B+ or not?
-  - [ ] Activity Page on Dashboard would be a possible extension for DSCore
-  - [ ] Notification Board could be elaborated as well in DSCore
-  2.3. ![NotifBoard](img/byte+/Byte-NotificationBoard.png)
+- [ ] Activity Page on Dashboard would be a possible extension for DSCore
+- [ ] Notification Board could be elaborated as well in DSCore
+  - ![NotifBoard](img/byte+/Byte-NotificationBoard.png) <!-- omit in toc -->
 ---
 - **Patient**, **Subscription**, **Treatment**
   - [ ] Patient Account within DSCore?
@@ -71,17 +73,20 @@
 - Patient booking (PMS)
   - [ ] **NexHealth** only US?
     - [ ] Global Alternative?
+      - If suited, why not?
     - [x] Alexei / Maryna
   - [ ] Email to customers from DSCore?
 
-## 2.4. Data Model
+## 2.3. Data Model
 - [ ] What data model is used for the meshes?
 - [ ] How is data exchange between App/Byte and DSCore?
 - [ ] How is the dataflow between customer &harr; dentist &harr; DSCore &harr; Byte+?
 
-## 2.5. Mobile Application
+## 2.4. Mobile Application
 - [ ] Based on DSCore widgets and flutter?
 
+## 2.5. Payment
+- [ ] Shopify integration <!-- omit in toc -->
 ---
 ---
 ## 2.6. Components for Byte+
@@ -100,7 +105,7 @@
   - [ ] Subscription (or bundle)
 - [ ] Connectivity/Integration to Implant Planning Software
 
-### Synchronise User Journey (Byte+ & DSCore)
+### 2.7.1. Synchronise User Journey (Byte+ & DSCore)
 - [ ] Where to fork the implementation?
   - [ ] different landing pages?
 - [ ] Light-weight integration?
@@ -178,4 +183,5 @@
 - [ ] App is focused on handling the treatment by the customer
   - [ ] Dentist approves different steps
 - [ ] Byte+ shall step into the gap between Byte and SureSmile
+- [ ] Opportunity := <!-- TODO: rensem -->
   
