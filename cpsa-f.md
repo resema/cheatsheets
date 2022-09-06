@@ -470,12 +470,11 @@ SW architects can explain several of the following patterns (R3):
 
 ---
 ## 2.6. Design principles (R1-R3)
-
-SW architects are able to explain what design principles are. They can outline their general objectives and applications (R2).
-- **explain and illustrate** with examples
-- explain **how quality requirements determine which principle** should be applied
-- explain **impact** of design principles **on the implementation**
-- **analyze src code and architecture designs** to evaluate wheter these design principles have been applied or should be applied
+> SW architects are able to explain what design principles are. They can outline their general objectives and applications (R2).
+> - **explain and illustrate** with examples
+> - explain **how quality requirements determine which principle** should be applied
+> - explain **impact** of design principles **on the implementation**
+> - **analyze src code and architecture designs** to evaluate wheter these design principles have been applied or should be applied
 
 Design Principles:
 - Abstraction (R1)
@@ -556,22 +555,22 @@ Design Principles:
 > 
 ---
 ## 3.2. Describe and communicate software architectures (R1, R3)
-Software architect are able to: (R1)
-- **documented and communicate architectures for corresponding stakeholders**, thereby addressing different target groups, e.g. management, development teams, QA, other architects, and additional stakeholders
-- **consolidate and harmonize the style and content of contributions** from differnet groups of authors
-- know the **benefits of template-based documentation**
+> Software architect are able to: (R1)
+> - **documented and communicate architectures for corresponding stakeholders**, thereby addressing different target groups, e.g. management, development teams, QA, other architects, and additional stakeholders
+> - **consolidate and harmonize the style and content of contributions** from differnet groups of authors
+> - know the **benefits of template-based documentation**
 
-They know that various properties of documentation depend on specifics of the system, its requirements, risks, development process, organization or other factors.
-These factors have an impact:
-- whether **written** or **verbal communication** should be prioritized
-- **amount of level of detail** of documentation needed at each stage of development
-- **documentation format**
-- **accessibility to the documentation**
-- **formality of documentation**
-- **formal reviews and sign-off process** for documentation
+> They know that various properties of documentation depend on specifics of the system, its requirements, risks, development process, organization or other factors.
+> These factors have an impact:
+> - whether **written** or **verbal communication** should be prioritized
+> - **amount of level of detail** of documentation needed at each stage of development
+> - **documentation format**
+> - **accessibility to the documentation**
+> - **formality of documentation**
+> - **formal reviews and sign-off process** for documentation
 
-They are aware of these factors and can adjust the documentation characteristics according to the situation.
-
+> They are aware of these factors and can adjust the documentation characteristics according to the situation.
+ 
 ---
 ## 3.3. Models and notations to describe (R2-R3)
 Software architects know at least the following UML diagrams to describe architectural views:
