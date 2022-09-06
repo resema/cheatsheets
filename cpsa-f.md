@@ -24,6 +24,7 @@
   - [2.9. Design and define interfaces (R1-R3)](#29-design-and-define-interfaces-r1-r3)
 - [3. Specification and communication of software architectures](#3-specification-and-communication-of-software-architectures)
   - [3.1. Quality requirements for technical documentation (R1)](#31-quality-requirements-for-technical-documentation-r1)
+  - [>](#)
   - [3.2. Describe and communicate software architectures (R1, R3)](#32-describe-and-communicate-software-architectures-r1-r3)
   - [3.3. Models and notations to describe (R2-R3)](#33-models-and-notations-to-describe-r2-r3)
   - [3.4. Architectural views (R1)](#34-architectural-views-r1)
@@ -506,54 +507,53 @@ Design Principles:
 
 ---
 ## 2.7. Managing dependencies (R1)
-Software architects understand dependencies and coupling between building blocks:
-- know and understand **different types of dependencies**
-  - coupling via **use/delegation**
-  - coupling via **data**, **data types** or **hardware**
-- understand **how dependencies increase coupling**
-- can use such types of coupling in a targeted manner
-- know and can **apply possibilities to reduce or eliminate coupling**
-  - patterns
-  - basic design principles
-  - externalization of dependencies, f.ex. dependency injection
+> Software architects understand dependencies and coupling between building blocks:
+> - know and understand **different types of dependencies**
+>   - coupling via **use/delegation**
+>   - coupling via **data**, **data types** or **hardware**
+> - understand **how dependencies increase coupling**
+> - can use such types of coupling in a targeted manner
+> - know and can **apply possibilities to reduce or eliminate coupling**
+>   - patterns
+>   - basic design principles
+>   - externalization of dependencies, f.ex. dependency injection
 
 ---
 ## 2.8. Achieve quality requirements (R1)
-Software architects understand and consider the considerable influence of quality requirements:
-- **efficiency / performance**
-- **availability**
-- **maintainability, modifiability, extensibility, adaptability**
+> Software architects understand and consider the considerable influence of quality requirements:
+> - **efficiency / performance**
+> - **availability**
+> - **maintainability, modifiability, extensibility, adaptability**
 
-They can:
-- explain and apply **solution options**, **architectural tactics**, **suitable practices**
-- identify and communicate **possible trade-offs between such solutions** and their **associated risks**
+> They can:
+> - explain and apply **solution options**, **architectural tactics**, **suitable practices**
+> - identify and communicate **possible trade-offs between such solutions** and their **associated risks**
 
 ---
 ## 2.9. Design and define interfaces (R1-R3)
-Software architects know about the importance of interfaces. They are able to design or specify interfaces.
-
-They know:
-- desired **characteristics of interfaces** and can use them in the design (R1)
-  - **easy to learn, easy to use, easy to extend**
-  - **hard to abuse**
-  - **functionally complete** from the perspective of users/building blocks
-- the necessity to **treat internal and external interfaces differently** (R1)
-- different approaches for implementing interface (R3)
-  - **resource-oriented** approach (REST)
-  - **service-oriented** approach (WS*/SOAP-based web services)
-
+> Software architects know about the importance of interfaces. They are able to design or specify interfaces.
+ 
+> They know:
+> - desired **characteristics of interfaces** and can use them in the design (R1)
+>   - **easy to learn, easy to use, easy to extend**
+>   - **hard to abuse**
+>   - **functionally complete** from the perspective of users/building blocks
+> - the necessity to **treat internal and external interfaces differently** (R1)
+> - different approaches for implementing interface (R3)
+>   - **resource-oriented** approach (REST)
+>   - **service-oriented** approach (WS*/SOAP-based web services)
 
 ---
 ---
 
 # 3. Specification and communication of software architectures
 ## 3.1. Quality requirements for technical documentation (R1)
-Software architects know the quality requirements of technical documentation and can consider and fulfil those when documenting systems:
-- **understandability**, **correctnes**, **efficiency**, **appropriateness** and **maintainability**
-- **form**, **content** and **level of detail** tailored to the stakeholders
+> Software architects know the quality requirements of technical documentation and can consider and fulfil those when documenting systems:
+> - **understandability**, **correctnes**, **efficiency**, **appropriateness** and **maintainability**
+> - **form**, **content** and **level of detail** tailored to the stakeholders
 
-They know that only the target audiences can assess the understandability of technical documentation.
-
+> They know that only the target audiences can assess the understandability of technical documentation.
+> 
 ---
 ## 3.2. Describe and communicate software architectures (R1, R3)
 Software architect are able to: (R1)
@@ -622,9 +622,18 @@ Software architects know about Architecture Decision Records (ADR) and can apply
 
 ---
 ## 3.9. Documentation as written communication (R2)
+Software architects use documentation to support the **design**, **implementation** and **further development (maintenance/evolution)** of systems
 
 ---
 ## 3.10. Resources and tools for documentation (R3)
+Software architects know:
+- basics of several published frameworkds for the description of software architectures
+  - **ISO/IEEE-42010**
+  - **ar42**
+  - **C4**
+  - **FMC** (Wendt-FMC)
+- ideas and examples of checklists for the creation, documentation and testing of software architectures
+- possible tools for creating and maintaining architectural documentation
 
 ---
 ---
@@ -632,11 +641,25 @@ Software architects know about Architecture Decision Records (ADR) and can apply
 # 4. Software architecture and quality
 ## 4.1. Quality models and quality characteristics (R1)
 
+Software architects can explain:
+> - **concept of quality** (DIN/ISO 25010) and **quality characteristics**
+> - **generic quality models**
+> - **correlation** and **trade-offs** of quality characteristics, f.ex.
+>   - **configurability** versus **reliability**
+>   - **memory requirements** versus **performance efficiency**
+>   - **security** versus **usability**
+>   - **runtime flexibility** versus **maintainability**
+
+
 ---
 ## 4.2. Clarify quality requirements (R1)
+> Software architects can
+> - clarify and formulate **specific quality requirements**, f.ex. in the form of scenarios and quality trees
+> - explain and apply **scenarios** and **quality trees**
 
 ---
 ## 4.3. Qualitative analysis (R2-R3)
+
 
 ---
 ## 4.4. Quantitative evaluation (R2)

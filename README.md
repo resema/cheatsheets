@@ -15,6 +15,7 @@ My second brain, to help me remember stuff
 - [O](#o)
 - [P](#p)
   - [- [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3)](#--concepts-1-1)
+- [Q](#q)
 - [R](#r)
 - [S](#s)
   - [- [description [1]](/security.md)](#--description-1)
@@ -138,6 +139,12 @@ My second brain, to help me remember stuff
   - [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3)
 ---
 - **PEM**: Privacy Enhanced Mail is a Base64 encoded DER certificate.  PEM certificates are frequently used for web servers as they can easily be translated into readable data using a simple text editor.
+
+---
+---
+# Q
+- **Quality models and characteristics**: such as configurability, reliability, memory requirements, performance efficiency, securit, usability, runtime flexibility or maintainability, see
+  - [Examples [1]](/cpsa-f.md#41-quality-models-and-quality-characteristics-r1)
 
 ---
 ---
