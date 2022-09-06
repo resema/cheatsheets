@@ -3,25 +3,18 @@ My second brain, to help me remember stuff
 
 # Glossary <!-- omit in toc -->
 - [A](#a)
-  - [- [Definition [1]](/security.md#2-terminology)](#--definition-1)
 - [B](#b)
 - [C](#c)
 - [D](#d)
-  - [- [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3)](#--concepts-1)
 - [G](#g)
 - [L](#l)
 - [K](#k)
 - [M](#m)
 - [O](#o)
 - [P](#p)
-  - [- [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3)](#--concepts-1-1)
 - [Q](#q)
 - [R](#r)
 - [S](#s)
-  - [- [description [1]](/security.md)](#--description-1)
-  - [- **SLA**: service level agreement; the agreement made with clients or users](#--sla-service-level-agreement-the-agreement-made-with-clients-or-users)
-  - [- **SLI**: service level indicator; the real number on performance](#--sli-service-level-indicator-the-real-number-on-performance)
-  - [- **SLO**: service level objective; the objectives the team must hit to meet the agreement.](#--slo-service-level-objective-the-objectives-the-team-must-hit-to-meet-the-agreement)
 - [T](#t)
 - [V](#v)
 - [W](#w)
@@ -49,13 +42,13 @@ My second brain, to help me remember stuff
 ---
 ---
 # A
-- **Authenthication**: Authenticate your user, see
+- **Authenthication**: Authenticate your user, see <!-- omit in toc -->
   - [gcloud [1]](/gcp-k8s-istio.md#11-cheats)
   - [Overview [2]](/security.md#2-terminology)
   
 ---
 - **Authorization**: Process of allowing an authenticated user to access his resources by checking whether the user has access rights to the system.
-  - [Definition [1]](/security.md#2-terminology)
+  - [Definition [1]](/security.md#2-terminology) <!-- omit in toc -->
 ---
 ---
 # B
@@ -85,7 +78,7 @@ My second brain, to help me remember stuff
 ---
 # D
 - **Design Principles**: F.ex. abstraction, modularization, conceptual integrity, simplicity, expect errors
-  - [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3)
+  - [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3) <!-- omit in toc -->
 ---
 - **Docker**: Container platform, see
   - [Cheats [1]](/cloud-infrastructure.md#31-cheats)
@@ -136,7 +129,7 @@ My second brain, to help me remember stuff
 ---
 # P
 - **Patterns**: F.ex. layers, pipe-and-filters, microservices, dependency injection
-  - [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3)
+  - [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3) <!-- omit in toc -->
 ---
 - **PEM**: Privacy Enhanced Mail is a Base64 encoded DER certificate.  PEM certificates are frequently used for web servers as they can easily be translated into readable data using a simple text editor.
 
@@ -156,13 +149,13 @@ My second brain, to help me remember stuff
 ---
 # S
 - **Service Account**: special types of accounts used by applications and services
-  - [description [1]](/security.md)
+  - [description [1]](/security.md) <!-- omit in toc -->
 ---
-- **SLA**: service level agreement; the agreement made with clients or users
+- **SLA**: service level agreement; the agreement made with clients or users <!-- omit in toc -->
 ---
-- **SLI**: service level indicator; the real number on performance
+- **SLI**: service level indicator; the real number on performance <!-- omit in toc -->
 ---
-- **SLO**: service level objective; the objectives the team must hit to meet the agreement.
+- **SLO**: service level objective; the objectives the team must hit to meet the agreement. <!-- omit in toc -->
 ---
 - **Submodule**: child repository in parent repository, see 
   - [cheats [1]](/git.md#112-submodule)

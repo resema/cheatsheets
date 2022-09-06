@@ -43,3 +43,8 @@
 - Switch case needed for language specific data which can NOT be handled in the backend
   - links, f.ex. specific routes based on languages/id
   - parameters
+- enveloppe
+- mqtt as example
+- payload, ...
+- handlers in dart
+  - localization by every team

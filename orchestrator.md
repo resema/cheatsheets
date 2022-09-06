@@ -28,6 +28,39 @@
 ### 2.2.1. CAM Production Item Service (PIS)
 
 ### 2.2.2. Tooth Morphology
+- backend service want the callers to know of each others
+  - [x] What should they know from each other
+    - antagonisten
+    - neighbors
+    - contacts
+    - stepwise computation
+    - **create new restoration (new second crown)**
+    - crowns as neighbors will be calculated differently as two crowns not as neighbors
+  - [x] Context passing
+    - https://wiki.dentsplysirona.com/pages/viewpage.action?pageId=48439111
+    - every service has its own context (serialised)
+- orchestration of services
+  - [x] services contain internally a DAG
+  - [x] use of google workflow possible
+    - [x] composer?
+- [x] biofit manager could retrigger part of DAG based on input context
+  - abstraction level is changing the output quality & performance
+  - `computation-strategy` could be an approach
+  - https://wiki.dentsplysirona.com/display/ONCTMA/Architecture+overview
+- [x] User interaction: when where how?
+  - callbacks in Google Workflow?
+- [x] Need for `tasksched` and `subproc` or `Google workflow`?
+  - Moloch: stakeholder of corelib or direct
+- [x] second solution for China in case of composer
+  - abstractions layer for Google Workflow
+- [x] optimization of computation
+  - Context contains intermediate data
+    - Graph node will be excluded
+    - [x] where to store?
+      - [x] binary blob for caller
+      - [x] passes location for storage context or ID for storage
+        - service would need some cached context
+          - [x] Redis?
 
 ## Workflow
 - postpone/wait for somebody call callback
