@@ -14,6 +14,7 @@
 - [3. Notes](#3-notes)
 - [4. Next Steps](#4-next-steps)
   - [4.1. Architectural Tasks](#41-architectural-tasks)
+  - [Technology Stack](#technology-stack)
   - [4.2. OnBoarding](#42-onboarding)
 - [5. Glossary](#5-glossary)
 
@@ -53,6 +54,8 @@
   - [ ] User database
 - [ ] Is the backend on Azure?
 - [ ] Treatment planners -> actual dentists?
+- [ ] Use of Azure API Management?
+  - [ ] Connection between GraphQL and Event Grid unclear?
 
 ## 2.2. Integration / Connection to DSCore
 - [ ] **Landing page** specific for B+ or not?
@@ -158,6 +161,24 @@
 - [ ] First draft for diagrams (views)
   - [ ] Before Sept 19./20. <!-- TODO: rensem -->
     - [ ] Involvement of other teams?
+
+- [ ] Separate parts NOT in DSCore
+- [ ] Define parts which shall be in DSCore
+  - [ ] Treatment plan
+  - [ ] Define API
+  - [ ] Intercloud communication
+- [ ] Product API
+  - [ ] Data synchronisation
+
+---
+## Technology Stack
+- [ ] React
+- [ ] GraphQL (Protocol)
+- [ ] Apollo client (client side and server side)
+- [ ] Azure Event Grid (Messaging)
+- [ ] Salesforce
+- [ ] NexHealth (connection to PMS)
+- [ ] Shopify
 
 ---
 ## 4.2. OnBoarding
