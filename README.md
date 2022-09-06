@@ -71,7 +71,10 @@ My second brain, to help me remember stuff
 ---
 ---
 # C
-- **Cluster**:: Collection of services within in a specific topic, zone, region, others, see
+- **Cross-cutting concepts**: Concepts which span over multiple areas, see
+  - [cross-cutting concepts [1]](/cpsa-f.md#24-cross-cutting-concepts-r1)
+  - [document cross-cutting concepts [2]](/cpsa-f.md#36-document-cross-cutting-concepts-r2)
+- **Cluster**: Collection of services within in a specific topic, zone, region, others, see
   - [gcloud container clusters list [1]](/gcp-k8s-istio.md#11-cheats)<!-- omit in toc -->
 ---
 - **curl**: Ping url, see

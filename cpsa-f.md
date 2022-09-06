@@ -520,7 +520,7 @@ Software architects understand dependencies and coupling between building blocks
 ---
 ## 2.8. Achieve quality requirements (R1)
 Software architects understand and consider the considerable influence of quality requirements:
-- **effency / performance**
+- **efficiency / performance**
 - **availability**
 - **maintainability, modifiability, extensibility, adaptability**
 
@@ -601,12 +601,24 @@ Software architects can:
 
 ---
 ## 3.6. Document cross-cutting concepts (R2)
+Software architects are able to adequately document and communicate typical cross-cutting concepts, e.g.
+- `persistence`
+- `workflow management`
+- `UI`
+- `deployment/integration`
+- `logging`
 
 ---
 ## 3.7. Describe interfaces (R1)
+Software architects are able to describe and specify both internal and external interfaces.
 
 ---
 ## 3.8. Document architectural decisions (R1-R2)
+Software architects are able to:
+- **systematically** take, justify, communicate, and document **architectural decisions**
+- identify, communicate and document the **interdependencies between design decisions**
+
+Software architects know about Architecture Decision Records (ADR) and can apply these to document decisions
 
 ---
 ## 3.9. Documentation as written communication (R2)
