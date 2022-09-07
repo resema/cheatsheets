@@ -89,9 +89,9 @@ Essential goals and benefits:
 ---
 ## 1.3. Software architecture in the software lifecycle (R2)
 
-SW architects can:
-- **identify the consequences** of changes in requirements (functional, quality), technologies or the system environment in relation to software architecture
-- **elaborate on relationships** between IT-systems and the supported business and operational processes
+> SW architects can:
+> - **identify the consequences** of changes in requirements (functional, quality), technologies or the system environment in relation to software architecture
+> - **elaborate on relationships** between IT-systems and the supported business and operational processes
 
 ### Software lifecycle (SLC) <!-- omit in toc -->
 - describes all phases of a software product (planning, dev, use & retirement)
@@ -114,14 +114,14 @@ SW architects can:
 ---
 ## 1.4. Software architects' tasks and responsibilities (R1)
 
-*Software architects are responsible for achieving the required or necessary quality and creating the architecture design for a solution.*
-- **clarify and scrutinize requirements and constraints**, and refine them if necessary (functional & quality (non-functional) requirements)
-- **decide how to decompose the system** into building blocks, while determining dependencies and interfaces
-- **determine and decide on cross-cutting concepts**
-- **communicate and document the software architecture** based on views, architectural patterns, cross-cutting and technical concepts
-- **accompany the realization and implementation** of the architecture, integrate feedback, and ensure the consistency of src code
-- **analyze and evaluate SW architecture** with respect to risks involving quality requirements
-- **identify, highlight, and justify the consequences of ADs** to other stakeholders
+> Software architects are responsible for achieving the required or necessary quality and creating the architecture design for a solution.
+> - **clarify and scrutinize requirements and constraints**, and refine them if necessary (functional & quality (non-functional) requirements)
+> - **decide how to decompose the system** into building blocks, while determining dependencies and interfaces
+> - **determine and decide on cross-cutting concepts**
+> - **communicate and document the software architecture** based on views, architectural patterns, cross-cutting and technical concepts
+> - **accompany the realization and implementation** of the architecture, integrate feedback, and ensure the consistency of src code
+> - **analyze and evaluate SW architecture** with respect to risks involving quality requirements
+> - **identify, highlight, and justify the consequences of ADs** to other stakeholders
   
 ### Explanation <!-- omit in toc -->
 - no algorithmic approach; iteration to the rescue
@@ -173,7 +173,7 @@ Software architects need to fulfill 6 important tasks:
 ---
 ## 1.5. Software architects and other stakeholders (R1)
 
-Software architects are able to explain their role. 
+> Software architects are able to explain their role. 
 
 *Many problems in software development cannot be solved by good programming alone, but need communication between stakeholders.*
 
@@ -202,7 +202,7 @@ Software Architects will have at least the following four different categories o
 ---
 ## 1.6. Development approach and software architecture (R1)
 
-*Architecture work needs feedback, which is an inherent feature of iterative development approaches. Architects have to systematically optain feedback from other stakeholders.*
+> Architecture work needs feedback, which is an inherent feature of iterative development approaches. Architects have to systematically optain feedback from other stakeholders.
 
 Benefits of iterative approach:
 - early feedback
@@ -244,36 +244,36 @@ Ensure explicitness in your work by:
 ---
 ## 1.9. Responsibilities of SW architects in the greater architectural context (R3)
 
-Software architects are familiear with other architectural domains, f.ex.:
-- enterprise IT architecture
-- business and process architecture
-- information architecture
-- infrastructure and process architecture
-- hardware and processor architecture
+> Software architects are familiear with other architectural domains, f.ex.:
+> - enterprise IT architecture
+> - business and process architecture
+> - information architecture
+> - infrastructure and process architecture
+> - hardware and processor architecture
 
 ---
 ## 1.10. Types of IT systems (R3)
 
-Software architects know different types of IT systems, f.ex.:
-- information systems
-- decision support, data warehouse or business intelligence systems
-- mobile systems
-- batch processing or systems
-- hardware-related systems
+> Software architects know different types of IT systems, f.ex.:
+> - information systems
+> - decision support, data warehouse or business intelligence systems
+> - mobile systems
+> - batch processing or systems
+> - hardware-related systems
 
 ---
 ## 1.11. Challenges of distributed systems (R3)
 
-Software architects are able to:
-- identify distribution in a given SW architecture
-- analyze consistency criteria for a given business problem
-- explain the causality of events in a distributed system
+> Software architects are able to:
+> - identify distribution in a given SW architecture
+> - analyze consistency criteria for a given business problem
+> - explain the causality of events in a distributed system
 
-Software architects know:
-- communication may fail in a distributed system
-- there are limitations regarding consistency in real-world databases
-- what the "split-brain" problem is and why it is difficult
-- that it is impossible to determine the temporal order of events in a distributed system
+> Software architects know:
+> - communication may fail in a distributed system
+> - there are limitations regarding consistency in real-world databases
+> - what the "split-brain" problem is and why it is difficult
+> - that it is impossible to determine the temporal order of events in a distributed system
   
 
 ---
@@ -422,87 +422,104 @@ SW architects are able to gather and consider constraints and influencing factor
 ---
 ## 2.4. Cross-cutting concepts (R1)
 
-SW architects are able to:
-- **explain the significance** of such cross-cutting concepts
-- **decide on and design** cross-cutting concepts, f.ex. persistence, communication, GUI, error handling, concurrency
-- **identify and assess potential interdependencies** between these decisions
+> SW architects are able to:
+> - **explain the significance** of such cross-cutting concepts
+> - **decide on and design** cross-cutting concepts, f.ex. persistence, communication, GUI, error handling, concurrency
+> - **identify and assess potential interdependencies** between these decisions
 
 ---
 ## 2.5. Patterns (R1, R3)
+> 
+> SW architects know:
+> - **various architectural patterns** and can apply them when appropriate (R1)
+> - that **patterns are a way to achieve certain qualities** for given problems and requirements within given contexts (R1)
+> - that **various categories of patterns** exist (R3)
+> - **additional sources** for patterns (R3)
 
-SW architects know:
-- **various architectural patterns** and can apply them when appropriate (R1)
-- that **patterns are a way to achieve certain qualities** for given problems and requirements within given contexts (R1)
-- that **various categories of patterns** exist (R3)
-- **additional sources** for patterns (R3)
+> SW architects can explain and provide examples for the following patterns (R1):
+> - Layers:
+>   - abstraction layers hide details
+>   - layers used to **separate functionality or responsibility**
+> - Pipes-and-filters:
+>   - Representation for **data flow patterns**
+>   - **series of processing-activities** ("filter")
+>   - **associated data transport/buffering capabilities** ("pipes")
+> - Microservices:
+>   - **split application** in separate executables that communicate via network
+> - Dependency injection:
+>   - possible solution for the **dependency-inversion-principle**
 
-SW architects can explain and provide examples for the following patterns (R1):
-- Layers:
-  - abstraction layers hide details
-  - layers used to **separate functionality or responsibility**
-- Pipes-and-filters:
-  - Representation for **data flow patterns**
-  - **series of processing-activities** ("filter")
-  - **associated data transport/buffering capabilities** ("pipes")
-- Microservices:
-  - **split application** in separate executables that communicate via network
-- Dependency injection:
-  - possible solution for the **dependency-inversion-principle**
-
-SW architects can explain several of the following patterns (R3):
-- blackboard
-- broker
-- combinator
-- CQRS (Command-Query-Responsibility-Segregation)
-- event-sourcing
-- interpreter
-- integartion and messaging pattern
-- MVC family (MVC, MVVM, MV-Update, PAC)
-- interfacing patterns (adapter, facade, proxy)
-- observer
-- plug-in
-- ports&adapter (syn. onion-architecture, hexagonal-architecture)
-- remote procedure call
-- SOA
-- template
-- strategy
-- visitor
+> SW architects can explain several of the following patterns (R3):
+> - blackboard
+> - broker
+> - combinator
+> - CQRS (Command-Query-Responsibility-Segregation)
+> - event-sourcing
+> - interpreter
+> - integartion and messaging pattern
+> - MVC family (MVC, MVVM, MV-Update, PAC)
+> - interfacing patterns (adapter, facade, proxy)
+> - observer
+> - plug-in
+> - ports&adapter (syn. onion-architecture, hexagonal-architecture)
+> - remote procedure call
+> - SOA
+> - template
+> - strategy
+> - visitor
 
 ---
 ## 2.6. Design principles (R1-R3)
 > SW architects are able to explain what design principles are. They can outline their general objectives and applications (R2).
 > - **explain and illustrate** with examples
-> - explain **how quality requirements determine which principle** should be applied
-> - explain **impact** of design principles **on the implementation**
+> - explain **how quality requirements determine which principle should be applied**
+> - explain **impact of design principles on the implementation**
 > - **analyze src code and architecture designs** to evaluate wheter these design principles have been applied or should be applied
 
-Design Principles:
-- Abstraction (R1)
-  - in the sense of a means for **deriving useful generalizations**
-  - as a design construct, where **building blocks are dependent** on the **abstraction** rather then depending on implementations
-  - **interfaces as abstractions**
-- Modularizations
-  - **information hiding** and **encapsulation** (R1)
-  - **separation of concerns** aka. SOC (R1)
-  - **loose, but functionally sufficient, coupling** of building blocks (R1)
-  - **SOLID** principles
-    - S: single responsibility principle (R1)
-    - O: open/closed principle (R1)
-      - open for extension / closed for modification
-    - L: Liskov substituation principle (R3)
-      - promote consistency and conceptual integry aka. avoid unexpected behavior
-    - I: interface segregation principle (R2)
-      - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
-    - D: dependency inversion principle (R1)
-- Conceptual integrity
-  - **uniformity of solutions for similar problems** (R2)
-  - achieve the **principle of least surprise** (R3)
-- Simplicity
-  - **reduce complexity** (R1)
-  - **KISS** and **YAGNI** (R2)
-- Expect Errors
-  - design for **robust and resilient systems** (R1)
-  - **generalisation of robustness principle** aka. Postel's Law (R2)
+- Patterns 
+  - resemble "cooking recipes"
+  - offer a proposal for the structured application
+
+> Design Principles:
+> - Abstraction (R1)
+>   - in the sense of a means for **deriving useful generalizations**
+>   - as a design construct, where **building blocks are dependent** on the **abstraction** rather then depending on implementations
+>   - **interfaces as abstractions**
+
+- Abstraction:
+  - crucial concept for handling complexity *aka. not to deal with all the details at once*
+  - this principal may be applied in various ways:
+    - **interfaces** omitting private details about internal structures
+    - **data abstractions** consider the abstract properties of data types while omitting details of implementation
+- DRY:
+  - try to introduce abstractions for components that provide similar functionality
+  - applies for architects as well
+- Information hiding principle:
+  - hiding design decisions within a module implementation, users don't need to be aware of inner workings
+- Separation of concers:
+
+> - Modularizations
+>   - **information hiding** and **encapsulation** (R1)
+>   - **separation of concerns** aka. SOC (R1)
+>   - **loose, but functionally sufficient, coupling** of building blocks (R1)
+>   - **SOLID** principles
+>     - S: single responsibility principle (R1)
+>     - O: open/closed principle (R1)
+>       - open for extension / closed for modification
+>     - L: Liskov substituation principle (R3)
+>       - promote consistency and conceptual integry aka. avoid unexpected behavior
+>     - I: interface segregation principle (R2)
+>       - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
+>     - D: dependency inversion principle (R1)
+> - Conceptual integrity
+>   - **uniformity of solutions for similar problems** (R2)
+>   - achieve the **principle of least surprise** (R3)
+> - Simplicity
+>   - **reduce complexity** (R1)
+>   - **KISS** and **YAGNI** (R2)
+> - Expect Errors
+>   - design for **robust and resilient systems** (R1)
+>   - **generalisation of robustness principle** aka. Postel's Law (R2)
 
 ---
 ## 2.7. Managing dependencies (R1)
@@ -530,9 +547,10 @@ Design Principles:
 
 ---
 ## 2.9. Design and define interfaces (R1-R3)
+
 > Software architects know about the importance of interfaces. They are able to design or specify interfaces.
  
-> They know:
+> Software architects know:
 > - desired **characteristics of interfaces** and can use them in the design (R1)
 >   - **easy to learn, easy to use, easy to extend**
 >   - **hard to abuse**
@@ -547,14 +565,16 @@ Design Principles:
 
 # 3. Specification and communication of software architectures
 ## 3.1. Quality requirements for technical documentation (R1)
+
 > Software architects know the quality requirements of technical documentation and can consider and fulfil those when documenting systems:
 > - **understandability**, **correctnes**, **efficiency**, **appropriateness** and **maintainability**
 > - **form**, **content** and **level of detail** tailored to the stakeholders
 
-> They know that only the target audiences can assess the understandability of technical documentation.
+> Software architects know that only the target audiences can assess the understandability of technical documentation.
 > 
 ---
 ## 3.2. Describe and communicate software architectures (R1, R3)
+
 > Software architect are able to: (R1)
 > - **documented and communicate architectures for corresponding stakeholders**, thereby addressing different target groups, e.g. management, development teams, QA, other architects, and additional stakeholders
 > - **consolidate and harmonize the style and content of contributions** from differnet groups of authors
@@ -573,51 +593,57 @@ Design Principles:
  
 ---
 ## 3.3. Models and notations to describe (R2-R3)
-Software architects know at least the following UML diagrams to describe architectural views:
-- **class**, **package**, **component** and composite-structure diagrams (R2)
-- **deployment** diagrams (R2)
-- **sequence and activity** diagrams (R2)
-- **state machine** diagrams (R3)
 
-They know alternative notations to UML diagrams, f.ex.
-- ArchiMate
-- **flow charts**, **numbered lists** or **business-process-modeling-notation (BPMN)**
+> Software architects know at least the following UML diagrams to describe architectural views:
+> - **class**, **package**, **component** and composite-structure diagrams (R2)
+> - **deployment** diagrams (R2)
+> - **sequence and activity** diagrams (R2)
+> - **state machine** diagrams (R3)
+
+> Software architects know alternative notations to UML diagrams, f.ex.
+> - ArchiMate
+> - **flow charts**, **numbered lists** or **business-process-modeling-notation (BPMN)**
 
 ---
 ## 3.4. Architectural views (R1)
-Software architects are able to use the architectural views:
-- **context view**
-- **building block** or **component view** (composition of software building blocks)
-- **run-time view** (dynamic view, interaction between bblocks, state machine)
-- **deployment view** (hardware and technical infrastructure, as well as the mapping of bblocks onto the infrastructure)
+
+> Software architects are able to use the architectural views:
+> - **context view**
+> - **building block** or **component view** (composition of software building blocks)
+> - **run-time view** (dynamic view, interaction between bblocks, state machine)
+> - **deployment view** (hardware and technical infrastructure, as well as the mapping of bblocks onto the infrastructure)
 
 ---
 ## 3.5. Context view (R1)
-Software architects can:
-- **depict the context systems**, e.g. in the form of context diagrams
-- represent **external interfaces** of systems in context view
-- **differentiate between business and technical context**
+
+> Software architects can:
+> - **depict the context systems**, e.g. in the form of context diagrams
+> - represent **external interfaces** of systems in context view
+> - **differentiate between business and technical context**
 
 ---
 ## 3.6. Document cross-cutting concepts (R2)
-Software architects are able to adequately document and communicate typical cross-cutting concepts, e.g.
-- `persistence`
-- `workflow management`
-- `UI`
-- `deployment/integration`
-- `logging`
+
+> Software architects are able to adequately document and communicate typical cross-cutting concepts, e.g.
+> - `persistence`
+> - `workflow management`
+> - `UI`
+> - `deployment/integration`
+> - `logging`
 
 ---
 ## 3.7. Describe interfaces (R1)
-Software architects are able to describe and specify both internal and external interfaces.
+
+> Software architects are able to describe and specify both internal and external interfaces.
 
 ---
 ## 3.8. Document architectural decisions (R1-R2)
-Software architects are able to:
-- **systematically** take, justify, communicate, and document **architectural decisions**
-- identify, communicate and document the **interdependencies between design decisions**
 
-Software architects know about Architecture Decision Records (ADR) and can apply these to document decisions
+> Software architects are able to:
+> - **systematically** take, justify, communicate, and document **architectural decisions**
+> - identify, communicate and document the **interdependencies between design decisions**
+
+> Software architects know about Architecture Decision Records (ADR) and can apply these to document decisions
 
 ---
 ## 3.9. Documentation as written communication (R2)
@@ -625,14 +651,15 @@ Software architects use documentation to support the **design**, **implementatio
 
 ---
 ## 3.10. Resources and tools for documentation (R3)
-Software architects know:
-- basics of several published frameworkds for the description of software architectures
-  - **ISO/IEEE-42010**
-  - **ar42**
-  - **C4**
-  - **FMC** (Wendt-FMC)
-- ideas and examples of checklists for the creation, documentation and testing of software architectures
-- possible tools for creating and maintaining architectural documentation
+
+> Software architects know:
+> - basics of several published frameworkds for the description of software architectures
+>   - **ISO/IEEE-42010**
+>   - **ar42**
+>   - **C4**
+>   - **FMC** (Wendt-FMC)
+> - ideas and examples of checklists for the creation, documentation and testing of software architectures
+> - possible tools for creating and maintaining architectural documentation
 
 ---
 ---
@@ -640,7 +667,7 @@ Software architects know:
 # 4. Software architecture and quality
 ## 4.1. Quality models and quality characteristics (R1)
 
-Software architects can explain:
+> Software architects can explain:
 > - **concept of quality** (DIN/ISO 25010) and **quality characteristics**
 > - **generic quality models**
 > - **correlation** and **trade-offs** of quality characteristics, f.ex.
@@ -652,6 +679,7 @@ Software architects can explain:
 
 ---
 ## 4.2. Clarify quality requirements (R1)
+
 > Software architects can
 > - clarify and formulate **specific quality requirements**, f.ex. in the form of scenarios and quality trees
 > - explain and apply **scenarios** and **quality trees**
@@ -659,10 +687,27 @@ Software architects can explain:
 ---
 ## 4.3. Qualitative analysis (R2-R3)
 
+> Software architects:
+> - know **methodical approaches** for the qualitative analysis and assessment of software architectures (R2), f.ex. as specified by ATAM (R3)
+> - can **qualitatively analyze and assess** smaller systems (R2)
+> - know the following **sources of information** can help in the qualitative analysis and assessment of architectures (R2)
+>   - quality requirements (quality trees and scenarios)
+>   - architecture documentation
+>   - architecture and design models
+>   - source code
+>   - metrics
+>   - requirements, operational or test documentation
 
 ---
 ## 4.4. Quantitative evaluation (R2)
 
+> Software architects know approaches for the quantitative analysis and evaluation
+> - quantitative evaluation can help to **identify critical parts** within systems
+> - further information
+>   - **requirements and architectural documentation**
+>   - source code and **related metrics** such as lines of of code, complexity, inbound and outbound dependencies
+>   - **known errors** in source code, especially error clusters
+> **test cases** and **test results**
 
 ---
 ---
@@ -670,5 +715,9 @@ Software architects can explain:
 # 5. Examples of software architectur
 ## 5.1. From requirements to solution (R3)
 
+> Software architects are expected to recognize and comprehend the correlation between requirements and constraints, and the chosen solutions using at least one example
+
 ---
 ## 5.2. Rationale of a technical implementation (R3)
+
+> Software architects understand the technical realization (implementation, techncial concepts, products used, architectural decisions, solution strategies) of a t least one solution
