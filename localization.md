@@ -1,54 +1,22 @@
 # Localization <!-- omit in toc -->
-- [- 3. Discussions](#--3-discussions)
 - [1. Overview](#1-overview)
-  - [1.1. Figma](#11-figma)
-  - [1.2. Lokalise](#12-lokalise)
-  - [1.3. Bitbucket](#13-bitbucket)
-  - [1.4. Current Situation](#14-current-situation)
-  - [1.5. Vision of Future](#15-vision-of-future)
+  - [1.1. Current Situation](#11-current-situation)
+  - [1.2. Vision of Future](#12-vision-of-future)
 - [2. Versioning](#2-versioning)
   - [2.1. Versioning Schemes](#21-versioning-schemes)
   - [2.2. Build Artifact Versioning](#22-build-artifact-versioning)
   - [2.3. Multi vs Single-Domain Repo](#23-multi-vs-single-domain-repo)
 - [3. Discussions](#3-discussions)
-- [- !simplified graphic](#--)
-<<<<<<< HEAD
-- [- 3. Discussions](#--3-discussions)
-- [1. Overview](#1-overview)
-  - [1.1. Figma](#11-figma)
-  - [1.2. Lokalise](#12-lokalise)
-  - [1.3. Bitbucket](#13-bitbucket)
-  - [1.4. Current Situation](#14-current-situation)
-  - [1.5. Vision of Future](#15-vision-of-future)
-- [2. Versioning](#2-versioning)
-  - [2.1. Versioning Schemes](#21-versioning-schemes)
-  - [2.2. Build Artifact Versioning](#22-build-artifact-versioning)
-  - [2.3. Multi vs Single-Domain Repo](#23-multi-vs-single-domain-repo)
-- [3. Discussions](#3-discussions)
-- [- !simplified graphic](#--)
-=======
->>>>>>> f5c6b3380a (feat: add multiple stuff)
+      - [3.0.0.1. Variante 1:](#3001-variante-1)
+      - [3.0.0.2. Variante 2:](#3002-variante-2)
 
 # 1. Overview
 Mentioned topics are **Figma**, **Lokalise** and **Bitbucket**.
 Also the ISO 17100:2015(s) has been mentioned here.
 
-## 1.1. Figma
-- [ ] is a design tool?
-
 ---
 
-## 1.2. Lokalise
-- [ ] helps to coordinate translations?
-
----
-
-## 1.3. Bitbucket
-- [ ] lists all missing translations?
-
----
-
-## 1.4. Current Situation
+## 1.1. Current Situation
 - Dev enters key and english text to the `app_de.arb`
 - Trigger make target to build all necessary files
 - Invite a translator to formulate other langugages
@@ -57,7 +25,7 @@ Also the ISO 17100:2015(s) has been mentioned here.
 
 ---
 
-## 1.5. Vision of Future
+## 1.2. Vision of Future
 - Dev/Figma enters key in Localize
 - Lokalize generates `arb` and other files 
 - Dev has to rebase with PR from Tool
@@ -97,5 +65,113 @@ Any build artifact is versioned using a `MAJOR.MINOR.PATCH` semantic scheme.
   - [ ] prod_topic_frame_key
 
 ### Simon Egg, Sept. 05 <!-- omit in toc -->
-- ![simplified graphic](/out/diags/l10n/simplification/simplification.svg)
+#### Variante 1: Only One Localization File pro Language <!-- omit in toc -->
+![simplified graphic](/out/diags/l10n/simplification/simplification.svg) <!-- omit in toc -->
+- **not usable for &rarr; every app == product**
+
+#### Variante 2: Multiple Localization File pro Language <!-- omit in toc -->
+![simplified graphic alternative](/out/diags/l10n/simplification-alt/simplification-alt.svg) <!-- omit in toc -->
 =======
+
+### Analysis Alexander Treptow, Sept. 07 <!-- omit in toc -->
+- configuration supports only, that every language is only one time available
+- possible to use multiple packages
+  - overhead for BuildContext
+    - multiple sources needs a mechanism
+- [] lightning repo contains currently 3 flutter aps
+  - dscore, backoffice and sidexis
+    - [ ] currently only one `l10n` folder
+    - [ ] must be splitted in that case
+
+### Ruwen Schnabel, Sept. 07 <!-- omit in toc -->
+- [ ] 1x l10n folder per app
+- [x] every app in one single product
+- [ ] structuring
+  - [ ] split arb files in folder into specific domains *or*
+  - [ ] add prefixes to keys
+- [x] Branching not wanted so far 
+
+#### 3.0.0.1. Variante 1:
+- having 1x `l10n` folder per app and therefor per product
+- having 1x `arb` file per language
+- prefixing `keys` with domain, product or likewise
+  
+```sh
+# Folder structure
+apps
+└───l10n
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+
+# Example keys without prefixing
+app_en.dart
+{
+  "backofficeDealerGetPopulatedDemoAccountHint": "Name for demo user account",
+  "dashboardPageSharesPlaceholderTitle": "Share media with others",
+}
+
+# Example keys with prefixing
+app_en.dart
+{
+  "DSCoreBackofficeDealerGetPopulatedDemoAccountHint": "Name for demo user account",
+  "OutsimDashboardPageSharesPlaceholderTitle": "Share media with others",
+}
+```
+
+#### 3.0.0.2. Variante 2:
+- having 1x `l10n` folder per app and therefore per product
+- having nx `lib` per domain, product or likewise
+  
+```sh
+# Folder structure
+apps
+└───l10n-dscore
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+└───l10n-outsim
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+
+# Example keys
+dscore_en.dart
+{
+  "backofficeDealerGetPopulatedDemoAccountHint": "Name for demo user account",
+  "dashboardPageSharesPlaceholderTitle": "Share media with others",
+}
+```

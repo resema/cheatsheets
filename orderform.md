@@ -17,3 +17,23 @@
 
 ### SureSmile
 ![SureSmileOrder](/out/diags/orderform/sd-suresmile-old/sd-suresmile-old.svg)
+
+
+### Meeting Anand
+- Product launches in different countries
+- OrderForm
+  - not extendable in FE
+- Rule Engine
+  - Rule management
+  - Country specific
+  - [x] open/~~closed~~ to 3rd parties
+    - in the futures, yes
+    - or labs only offer certain combinations
+  - rules not defined by business peoples (most probably)
+    - product maintainer
+- SAP or Google Commerce
+- eCommerce Departement
+  - SAP will be integrated there
+  - [ ] elaborate the extension to DSCore
+    - [ ] create a Gateway
+  - [ ] Timeline unclear

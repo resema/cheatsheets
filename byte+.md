@@ -17,6 +17,7 @@
   - [Technology Stack](#technology-stack)
   - [4.2. OnBoarding](#42-onboarding)
 - [5. Glossary](#5-glossary)
+- [References](#references)
 
 # 1. Introduction
 ![Overview](img/byte+/overview.png)
@@ -52,7 +53,7 @@
 - [ ] Is the app mainly **consumer driven and oriented**?
   - [ ] Platform(s)
   - [ ] User database
-- [ ] Is the backend on Azure?
+- [x] Is the backend on Azure?
 - [ ] Treatment planners -> actual dentists?
 - [ ] Use of Azure API Management?
   - [ ] Connection between GraphQL and Event Grid unclear?
@@ -177,8 +178,15 @@
 - [ ] Apollo client (client side and server side)
 - [ ] Azure Event Grid (Messaging)
 - [ ] Salesforce
+  - states (treatment states)
+  - customer journey managed by it
+  - lightning component framework
+    - JavaScript based App building framework
+    - No-code App builder included
 - [ ] NexHealth (connection to PMS)
 - [ ] Shopify
+- [ ] NoSQL COSMOS
+  - DB behind the scene
 
 ---
 ## 4.2. OnBoarding
@@ -205,4 +213,11 @@
   - [ ] Dentist approves different steps
 - [ ] Byte+ shall step into the gap between Byte and SureSmile
 - [ ] Opportunity := <!-- TODO: rensem -->
-  
+- Lead/Customer := ordered IK aka. impression kit
+- Patient := received the byte aligner 
+  - They use the app
+
+---
+---
+# References
+- [Technical Design Description](byte+/tdd.md#technical-design-description----omit-in-toc)

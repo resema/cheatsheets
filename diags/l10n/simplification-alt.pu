@@ -1,19 +1,22 @@
  @startuml
-component "Lokalise" as loc
+component "Lokalise A" as locA
+component "Lokalise B" as locB
 package "container A" {
     component "UI A" as uiA
 }
 package "container B" {
     component "UI B" as uiB
 }
-component "Services ..." as svcA
-component "Services ..." as svcB
+component "Service A" as svcA
+component "Service B" as svcB
 component "Product A" as prodA
 component "Product B" as prodB
 
 uiA -u-> prodA
-loc -u-> uiA
-loc -u-> uiB
+locA -u-> uiA
+locB -u-> uiB
+' Used to align graphics
+locA -[hidden]r- locB
 svcA -u-> prodA
 uiB -u-> prodB
 svcB -u-> prodB

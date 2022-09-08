@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="271px" preserveAspectRatio="none" style="width:504px;height:271px;background:#FFFFFF;" version="1.1" viewBox="0 0 504 271" width="504px" zoomAndPan="magnify"><defs/><g><!--MD5=[80b291e715206a0000324c6aa0f6abdd]
+cluster container A--><g id="cluster_container A"><path d="M133,78 L228,78 A3.75,3.75 0 0 1 230.5,80.5 L237.5,100.2969 L238,100.2969 A2.5,2.5 0 0 1 240.5,102.7969 L240.5,172.5 A2.5,2.5 0 0 1 238,175 L133,175 A2.5,2.5 0 0 1 130.5,172.5 L130.5,80.5 A2.5,2.5 0 0 1 133,78 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="130.5" x2="237.5" y1="100.2969" y2="100.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="134.5" y="92.9951">container A</text></g><!--MD5=[78df2b64fc90541ca64bfeb1f28f439a]
+cluster container B--><g id="cluster_container B"><path d="M267,78 L362,78 A3.75,3.75 0 0 1 364.5,80.5 L371.5,100.2969 L372,100.2969 A2.5,2.5 0 0 1 374.5,102.7969 L374.5,172.5 A2.5,2.5 0 0 1 372,175 L267,175 A2.5,2.5 0 0 1 264.5,172.5 L264.5,80.5 A2.5,2.5 0 0 1 267,78 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="264.5" x2="371.5" y1="100.2969" y2="100.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="268.5" y="92.9951">container B</text></g><!--MD5=[341c86c2b0b50f89d2ba2322a36f569a]
+entity uiA--><g id="elem_uiA"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="149" y="113"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="196" y="118"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="194" y="120"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="194" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="164" y="145.9951">UI A</text></g><!--MD5=[42ded0d36ad16b0fd14eb82b086f8992]
+entity uiB--><g id="elem_uiB"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="285" y="113"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="332" y="118"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="330" y="120"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="330" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="300" y="145.9951">UI B</text></g><!--MD5=[5e2fc50b585a58bcd24f30b792918280]
+entity locA--><g id="elem_locA"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="121.5" y="219"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="213.5" y="224"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="211.5" y="226"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="211.5" y="230"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="136.5" y="251.9951">Lokalise A</text></g><!--MD5=[60f9d5ac67775faaefd28d4ea5fa280b]
+entity locB--><g id="elem_locB"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="268.5" y="219"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="360.5" y="224"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="358.5" y="226"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="358.5" y="230"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="283.5" y="251.9951">Lokalise B</text></g><!--MD5=[49e5323536de51a8eeb36e22eeb86df9]
+entity svcA--><g id="elem_svcA"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="107" x="7" y="113"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="94" y="118"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="92" y="120"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="92" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="22" y="145.9951">Service A</text></g><!--MD5=[64a3df0768c6e0a964d837c425998e0a]
+entity svcB--><g id="elem_svcB"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="107" x="391" y="113"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="478" y="118"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="476" y="120"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="476" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="406" y="145.9951">Service B</text></g><!--MD5=[d8ebd50a0b1e8e8c70d31763b84b52cd]
+entity prodA--><g id="elem_prodA"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="110" x="61.5" y="7"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="151.5" y="12"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="149.5" y="14"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="149.5" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="76.5" y="39.9951">Product A</text></g><!--MD5=[3aa6c194d305d5a1a7ef69869c56b650]
+entity prodB--><g id="elem_prodB"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="110" x="234.5" y="7"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="324.5" y="12"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="322.5" y="14"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="322.5" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="249.5" y="39.9951">Product B</text></g><!--MD5=[b3b567438397e0be1c6cc3cacf9e674c]
+reverse link prodA to uiA--><g id="link_prodA_uiA"><path d="M133.199,57.313 C144.113,74.511 158.203,96.713 168.523,112.976 " fill="none" id="prodA-backto-uiA" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="130.497,53.056,131.9399,62.7986,133.1752,57.2782,138.6955,58.5135,130.497,53.056" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[086b525946b900535ece5e5f08cec939]
+reverse link uiA to locA--><g id="link_uiA_locA"><path d="M181.193,164.192 C180.372,181.2616 179.327,202.9891 178.559,218.9761 " fill="none" id="uiA-backto-locA" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="181.44,159.056,177.0126,167.8536,181.2,164.0502,185.0034,168.2376,181.44,159.056" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[024cfec4a29f27f53d878eb496cfd4f1]
+reverse link uiB to locB--><g id="link_uiB_locB"><path d="M320.069,164.192 C321.054,181.2616 322.307,202.9891 323.229,218.9761 " fill="none" id="uiB-backto-locB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="319.772,159.056,316.2953,168.2708,320.0591,164.0478,324.2821,167.8115,319.772,159.056" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8c3579a1419c13e3ebf511a3a8eadc60]
+link locA to locB--><!--MD5=[852a3eac55861cbb12d2a5de3542ecb7]
+reverse link prodA to svcA--><g id="link_prodA_svcA"><path d="M102.0952,57.752 C92.8687,74.887 81.0416,96.851 72.359,112.976 " fill="none" id="prodA-backto-svcA" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="104.6238,53.056,96.834,59.0825,102.2526,57.458,103.8771,62.8765,104.6238,53.056" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0f83a2824676c51dd676ae5b1457786a]
+reverse link prodB to uiB--><g id="link_prodB_uiB"><path d="M297.082,58.192 C301.842,75.262 307.901,96.989 312.359,112.976 " fill="none" id="prodB-backto-uiB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="295.65,53.056,294.2144,62.7997,296.993,57.8723,301.9204,60.6509,295.65,53.056" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f7b93cb2fe550d3b6ba9fe04b8ec09b0]
+reverse link prodB to svcB--><g id="link_prodB_svcB"><path d="M343.729,55.526 C352.219,60 360.743,64.884 368.5,70 C387.631,82.618 407.24,99.505 421.746,112.904 " fill="none" id="prodB-backto-svcB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="339.02,53.083,345.1686,60.7768,343.4588,55.3845,348.8511,53.6747,339.02,53.083" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[be475ce924ce87c0e38164d407eee351]
+reverse link prodB to svcA--><g id="link_prodB_svcA"><path d="M229.251,44.485 C188.791,53.795 141.316,65.31 132.5,70 C112.132,80.836 92.9437,98.689 79.5059,112.946 " fill="none" id="prodB-backto-svcA" style="stroke:#FF0000;stroke-width:1.0;"/><polygon fill="#FF0000" points="234.147,43.361,224.4802,41.476,229.2737,44.4797,226.2701,49.2732,234.147,43.361" style="stroke:#FF0000;stroke-width:1.0;"/></g><!--MD5=[4ede5af352fccb01834640c26a6f3c9c]
+reverse link prodB to uiA--><g id="link_prodB_uiA"><path d="M262.876,56.877 C245.122,74.134 222.033,96.576 205.159,112.976 " fill="none" id="prodB-backto-uiA" style="stroke:#FF0000;stroke-width:1.0;"/><polygon fill="#FF0000" points="266.808,53.056,257.5658,56.4593,263.2221,56.5405,263.141,62.1967,266.808,53.056" style="stroke:#FF0000;stroke-width:1.0;"/></g><!--MD5=[f4ab02a70a942f2d9eec037932a88f5f]
+@startuml
+component "Lokalise A" as locA
+component "Lokalise B" as locB
+package "container A" {
+    component "UI A" as uiA
+}
+package "container B" {
+    component "UI B" as uiB
+}
+component "Service A" as svcA
+component "Service B" as svcB
+component "Product A" as prodA
+component "Product B" as prodB
+
+uiA -u-> prodA
+locA -u-> uiA
+locB -u-> uiB
+' Used to align graphics
+locA -[hidden]r- locB
+svcA -u-> prodA
+uiB -u-> prodB
+svcB -u-> prodB
+
+svcA -[#red]u-> prodB
+uiA -[#red]u-> prodB
+@enduml
+
+@startuml
+component "Lokalise A" as locA
+component "Lokalise B" as locB
+package "container A" {
+    component "UI A" as uiA
+}
+package "container B" {
+    component "UI B" as uiB
+}
+component "Service A" as svcA
+component "Service B" as svcB
+component "Product A" as prodA
+component "Product B" as prodB
+
+uiA -u-> prodA
+locA -u-> uiA
+locB -u-> uiB
+locA -[hidden]r- locB
+svcA -u-> prodA
+uiB -u-> prodB
+svcB -u-> prodB
+
+svcA -[#red]u-> prodB
+uiA -[#red]u-> prodB
+@enduml
+
+PlantUML version 1.2022.8beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
