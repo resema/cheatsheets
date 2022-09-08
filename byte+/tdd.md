@@ -8,6 +8,7 @@
   - [General](#general)
   - [Data Models](#data-models)
   - [Messaging](#messaging)
+  - [Hybrid Model?](#hybrid-model)
 
 
 # 1. High-Level Architecture
@@ -79,3 +80,8 @@
 - [ ] Message types & their descriptions - is there a specification, or links to code?
 - [x] Is there something special about how GraphQL and Event Grid is connected?
   - [ ] Is here Apollo Client used?
+
+---
+
+## Hybrid Model?
+![Hybrid Model](../diags/byte+/cv-byte%2B.drawio.svg)
