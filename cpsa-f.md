@@ -24,7 +24,6 @@
   - [2.9. Design and define interfaces (R1-R3)](#29-design-and-define-interfaces-r1-r3)
 - [3. Specification and communication of software architectures](#3-specification-and-communication-of-software-architectures)
   - [3.1. Quality requirements for technical documentation (R1)](#31-quality-requirements-for-technical-documentation-r1)
-  - [>](#)
   - [3.2. Describe and communicate software architectures (R1, R3)](#32-describe-and-communicate-software-architectures-r1-r3)
   - [3.3. Models and notations to describe (R2-R3)](#33-models-and-notations-to-describe-r2-r3)
   - [3.4. Architectural views (R1)](#34-architectural-views-r1)
@@ -571,7 +570,7 @@ SW architects are able to gather and consider constraints and influencing factor
 > - **form**, **content** and **level of detail** tailored to the stakeholders
 
 > Software architects know that only the target audiences can assess the understandability of technical documentation.
-> 
+
 ---
 ## 3.2. Describe and communicate software architectures (R1, R3)
 

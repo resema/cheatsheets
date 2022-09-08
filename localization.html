@@ -367,45 +367,37 @@ code {
   </script>
 <h1 id="localization----omit-in-toc">Localization <!-- omit in toc --></h1>
 <ul>
-<li><a href="#1-overview">1. Overview</a>
+<li><a href="#1-situation">1. Situation</a>
 <ul>
-<li><a href="#11-figma">1.1. Figma</a></li>
-<li><a href="#12-lokalise">1.2. Lokalise</a></li>
-<li><a href="#13-bitbucket">1.3. Bitbucket</a></li>
-<li><a href="#14-current-situation">1.4. Current Situation</a></li>
-<li><a href="#15-vision-of-future">1.5. Vision of Future</a></li>
+<li><a href="#11-current-situation">1.1. Current Situation</a></li>
+<li><a href="#12-vision-of-future">1.2. Vision of Future</a></li>
 </ul>
 </li>
-<li><a href="#2-versioning">2. Versioning</a>
+<li><a href="#2-questions">2. Questions</a>
 <ul>
-<li><a href="#21-versioning-schemes">2.1. Versioning Schemes</a></li>
-<li><a href="#22-build-artifact-versioning">2.2. Build Artifact Versioning</a></li>
-<li><a href="#23-multi-vs-single-domain-repo">2.3. Multi vs Single-Domain Repo</a></li>
+<li><a href="#q1-how-to-align-with-domains-monorepo-structure">Q1: How to align with domain's monorepo structure?</a></li>
+<li><a href="#q2-how-are-multiple-products-from-a-single-domain-handled">Q2: How are multiple products from a single domain handled?</a></li>
+<li><a href="#q3-how-to-align-with-versioning-schemes">Q3: How to align with versioning schemes?</a></li>
+<li><a href="#q4-whats-the-migration-overhead-for-existing-products">Q4: What's the migration overhead for existing products?</a></li>
 </ul>
 </li>
-<li><a href="#3-discussions">3. Discussions</a>
-- <a href="#variante-1">Variante 1:</a>
-- <a href="#variante-2">Variante 2:</a></li>
-</ul>
-<h1 id="1-overview">1. Overview</h1>
-<p>Mentioned topics are <strong>Figma</strong>, <strong>Lokalise</strong> and <strong>Bitbucket</strong>.
-Also the ISO 17100:2015(s) has been mentioned here.</p>
-<h2 id="11-figma">1.1. Figma</h2>
+<li><a href="#3-answers">3. Answers</a>
 <ul>
-<li><input type="checkbox" id="checkbox0"><label for="checkbox0">is a design tool?</label></li>
+<li><a href="#a1-per-product-a-dedicated-flutter-app">A1: Per product a dedicated Flutter app</a></li>
+<li><a href="#a2-every-product-has-dedicated-localization-folder-and-library">A2: Every product has dedicated localization folder and library</a></li>
+<li><a href="#a3-no-special-handling-needed">A3: No special handling needed</a></li>
+<li><a href="#a4-splitting-and-renaming-in-some-areas-needed">A4: Splitting and renaming in some areas needed</a></li>
 </ul>
-<hr>
-<h2 id="12-lokalise">1.2. Lokalise</h2>
-<ul>
-<li><input type="checkbox" id="checkbox1"><label for="checkbox1">helps to coordinate translations?</label></li>
+</li>
+<li><a href="#4-conclusion">4. Conclusion</a></li>
+<li><a href="#5-discussions">5. Discussions</a>
+- <a href="#5001-variante-1">5.0.0.1. Variante 1:</a>
+- <a href="#5002-variante-2">5.0.0.2. Variante 2:</a></li>
+<li><a href="#6-folder-structure">6. Folder structure</a></li>
+<li><a href="#7-example-keys">7. Example keys</a></li>
 </ul>
-<hr>
-<h2 id="13-bitbucket">1.3. Bitbucket</h2>
-<ul>
-<li><input type="checkbox" id="checkbox2"><label for="checkbox2">lists all missing translations?</label></li>
-</ul>
-<hr>
-<h2 id="14-current-situation">1.4. Current Situation</h2>
+<h1 id="1-situation">1. Situation</h1>
+<h2 id="11-current-situation">1.1. Current Situation</h2>
 <ul>
 <li>Dev enters key and english text to the <code>app_de.arb</code></li>
 <li>Trigger make target to build all necessary files</li>
@@ -414,107 +406,39 @@ Also the ISO 17100:2015(s) has been mentioned here.</p>
 <li>Generator <code>DSAppLocalizations</code> uses per default 'en'</li>
 </ul>
 <hr>
-<h2 id="15-vision-of-future">1.5. Vision of Future</h2>
+<h2 id="12-vision-of-future">1.2. Vision of Future</h2>
 <ul>
+<li>1x Figma Project per product</li>
 <li>Dev/Figma enters key in Localize</li>
-<li>Lokalize generates <code>arb</code> and other files</li>
+<li>Lokalize generates <code>arb</code> and/or new entries in existing <code>arb</code> file</li>
 <li>Dev has to rebase with PR from Tool</li>
+<li>The workflow is defined here: <a href="https://wiki.dentsplysirona.com/display/DPSDPH/WI+-+Translation+Management">WI-Translation Mangement</a></li>
 </ul>
 <hr>
 <hr>
-<h1 id="2-versioning">2. Versioning</h1>
-<h2 id="21-versioning-schemes">2.1. Versioning Schemes</h2>
-<p>Our versioning approach differentiates between three schemes for versioning:</p>
-<ul>
-<li>Build artifact versioning, including
-<ul>
-<li>Microservices</li>
-<li>Frontends</li>
-<li>Shared libraries and other distribution packages</li>
-</ul>
-</li>
-<li>Microservice API versioning</li>
-<li>Software product versioning</li>
-</ul>
-<h2 id="22-build-artifact-versioning">2.2. Build Artifact Versioning</h2>
-<p>Any build artifact is versioned using a <code>MAJOR.MINOR.PATCH</code> semantic scheme.</p>
-<h2 id="23-multi-vs-single-domain-repo">2.3. Multi vs Single-Domain Repo</h2>
+<h1 id="2-questions">2. Questions</h1>
+<h2 id="q1-how-to-align-with-domains-monorepo-structure">Q1: How to align with domain's monorepo structure?</h2>
+<h2 id="q2-how-are-multiple-products-from-a-single-domain-handled">Q2: How are multiple products from a single domain handled?</h2>
+<h2 id="q3-how-to-align-with-versioning-schemes">Q3: How to align with versioning schemes?</h2>
+<h2 id="q4-whats-the-migration-overhead-for-existing-products">Q4: What's the migration overhead for existing products?</h2>
+<hr>
+<hr>
+<h1 id="3-answers">3. Answers</h1>
+<h3 id="a1-per-product-a-dedicated-flutter-app">A1: Per product a dedicated Flutter app</h3>
 <ol>
 <li>Single domain flutter apps are developed within the monorepo of the respective domain</li>
 <li>Flutter apps with contributions from multiple domains are developed within the repository of the domain which is responsible for the main part of the app. Packages for the app from other domains are developed in that same repo. (I.e. we are choosing the Single-app monorepo approach from above)</li>
 <li>We will have repositories with shared libraries which are used by several separate flutter apps. A current example for this is the Core UI widget library. These libraries are each maintained in a separate repository.</li>
+<li>Every product has a dedicated Flutter application with a dedicated folder of localization files and a referencing library to use in code.</li>
 </ol>
-<hr>
-<hr>
-<h1 id="3-discussions">3. Discussions</h1>
-<h3 id="florian-sobirey-sept-05----omit-in-toc">Florian Sobirey, Sept. 05 <!-- omit in toc --></h3>
-<ul>
-<li>pro product -&gt; 1x Figma/Localize project
-<ul>
-<li>f.ex. UI for assistents and UI for service technician</li>
-</ul>
-</li>
-<li>Redesign could lead to reuse of existing keys</li>
-<li>Version push to Bitbucket
-<ul>
-<li><input type="checkbox" id="checkbox3"><label for="checkbox3">keep same version possible with figma, localize and bitbucket?</label></li>
-</ul>
-</li>
-<li><input type="checkbox" id="checkbox4"><label for="checkbox4">Naming convention for keys</label>
-<ul>
-<li><input type="checkbox" id="checkbox5"><label for="checkbox5">prod_topic_frame_key</label></li>
-</ul>
-</li>
-</ul>
-<h3 id="simon-egg-sept-05----omit-in-toc">Simon Egg, Sept. 05 <!-- omit in toc --></h3>
-<h4 id="variante-1-only-one-localization-file-pro-language----omit-in-toc">Variante 1: Only One Localization File pro Language <!-- omit in toc --></h4>
+<h3 id="a2-every-product-has-dedicated-localization-folder-and-library">A2: Every product has dedicated localization folder and library</h3>
+<p>There are two variants discussed:</p>
+<ol>
+<li>having per monorepo one localization folder and library and tag the keys with a product prefix</li>
+<li>Each product has a dedicated localization folder and library</li>
+</ol>
+<h4 id="variante-1----omit-in-toc">Variante 1: <!-- omit in toc --></h4>
 <p><img src="/out/diags/l10n/simplification/simplification.svg" alt="simplified graphic"> <!-- omit in toc --></p>
-<ul>
-<li><strong>not usable for → every app == product</strong></li>
-</ul>
-<h4 id="variante-2-multiple-localization-file-pro-language----omit-in-toc">Variante 2: Multiple Localization File pro Language <!-- omit in toc --></h4>
-<h1 id="simplified-graphic-alternative----omit-in-toc"><img src="/out/diags/l10n/simplification-alt/simplification-alt.svg" alt="simplified graphic alternative"> <!-- omit in toc --></h1>
-<h3 id="analysis-alexander-treptow-sept-07----omit-in-toc">Analysis Alexander Treptow, Sept. 07 <!-- omit in toc --></h3>
-<ul>
-<li>configuration supports only, that every language is only one time available</li>
-<li>possible to use multiple packages
-<ul>
-<li>overhead for BuildContext
-<ul>
-<li>multiple sources needs a mechanism</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[] lightning repo contains currently 3 flutter aps
-<ul>
-<li>dscore, backoffice and sidexis
-<ul>
-<li><input type="checkbox" id="checkbox6"><label for="checkbox6">currently only one </label><code>l10n</code> folder</li>
-<li><input type="checkbox" id="checkbox7"><label for="checkbox7">must be splitted in that case</label></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="ruwen-schnabel-sept-07----omit-in-toc">Ruwen Schnabel, Sept. 07 <!-- omit in toc --></h3>
-<ul>
-<li><input type="checkbox" id="checkbox8"><label for="checkbox8">1x l10n folder per app</label></li>
-<li><input type="checkbox" id="checkbox9" checked="true"><label for="checkbox9">every app in one single product</label></li>
-<li><input type="checkbox" id="checkbox10"><label for="checkbox10">structuring</label>
-<ul>
-<li><input type="checkbox" id="checkbox11"><label for="checkbox11">split arb files in folder into specific domains </label><em>or</em></li>
-<li><input type="checkbox" id="checkbox12"><label for="checkbox12">add prefixes to keys</label></li>
-</ul>
-</li>
-<li><input type="checkbox" id="checkbox13" checked="true"><label for="checkbox13">Branching not wanted so far</label></li>
-</ul>
-<h4 id="variante-1">Variante 1:</h4>
-<ul>
-<li>having 1x <code>l10n</code> folder per app and therefor per product</li>
-<li>having 1x <code>arb</code> file per language</li>
-<li>prefixing <code>keys</code> with domain, product or likewise</li>
-</ul>
 <pre class="hljs"><code><div><span class="hljs-comment"># Folder structure</span>
 apps
 └───l10n
@@ -533,26 +457,20 @@ apps
 │   │   │   │   │   app_localization_fr.dart
 │   │   │   │   │   ...
 
-<span class="hljs-comment"># Example keys without prefixing</span>
-app_en.dart
-{
-  <span class="hljs-string">"backofficeDealerGetPopulatedDemoAccountHint"</span>: <span class="hljs-string">"Name for demo user account"</span>,
-  <span class="hljs-string">"dashboardPageSharesPlaceholderTitle"</span>: <span class="hljs-string">"Share media with others"</span>,
-}
 
 <span class="hljs-comment"># Example keys with prefixing</span>
 app_en.dart
 {
-  <span class="hljs-string">"DSCoreBackofficeDealerGetPopulatedDemoAccountHint"</span>: <span class="hljs-string">"Name for demo user account"</span>,
-  <span class="hljs-string">"OutsimDashboardPageSharesPlaceholderTitle"</span>: <span class="hljs-string">"Share media with others"</span>,
+  <span class="hljs-string">"DSCoreDealerGetPopulatedDemoAccountHint"</span>: <span class="hljs-string">"Name for demo user account"</span>,
+  <span class="hljs-comment"># ...</span>
+
+  <span class="hljs-string">"BackofficeDashboardPageSharesPlaceholderTitle"</span>: <span class="hljs-string">"Share media with others"</span>,
+  <span class="hljs-comment"># ...</span>
 }
 </div></code></pre>
-<h4 id="variante-2">Variante 2:</h4>
-<ul>
-<li>having 1x <code>l10n</code> folder per app and therefore per product</li>
-<li>having nx <code>lib</code> per domain, product or likewise</li>
-</ul>
-<pre class="hljs"><code><div><span class="hljs-comment"># Folder structure</span>
+<h4 id="variante-2----omit-in-toc">Variante 2: <!-- omit in toc --></h4>
+<p><img src="/out/diags/l10n/simplification-alt/simplification-alt.svg" alt="simplified graphic alternative"> <!-- omit in toc --></p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Folder structure for localization files and libraries</span>
 apps
 └───l10n-dscore
 │   └───lib
@@ -591,6 +509,236 @@ dscore_en.dart
   <span class="hljs-string">"backofficeDealerGetPopulatedDemoAccountHint"</span>: <span class="hljs-string">"Name for demo user account"</span>,
   <span class="hljs-string">"dashboardPageSharesPlaceholderTitle"</span>: <span class="hljs-string">"Share media with others"</span>,
 }
+</div></code></pre>
+<h3 id="a3-no-special-handling-needed">A3: No special handling needed</h3>
+<p>Our versioning approach differentiates between three schemes for versioning:</p>
+<ul>
+<li>Build artifact versioning, including
+<ul>
+<li>Microservices</li>
+<li>Frontends</li>
+<li>Shared libraries and other distribution packages</li>
+</ul>
+</li>
+<li>Microservice API versioning</li>
+<li>Software product versioning</li>
+<li>Any build artifact is versioned using a <code>MAJOR.MINOR.PATCH</code> semantic scheme.</li>
+</ul>
+<p>There is no special handling needed for the localization files in regards of versioning.</p>
+<h3 id="a4-splitting-and-renaming-in-some-areas-needed">A4: Splitting and renaming in some areas needed</h3>
+<ol>
+<li>The monorepo of transaction platform contains 3 flutter applications (dscore, sidexis and backoffice) which have all the same l10n folder and library
+<ol>
+<li>Split into three l10n's</li>
+<li>current <code>DSAppLocalizations</code> class has to be split and renamed to the dedicated localization files and libraries, such as:
+<ul>
+<li><code>DSCoreLocalizations</code></li>
+<li><code>BackofficeLocalizations</code></li>
+<li>and more</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Other products have already a single flutter application.</li>
+</ol>
+<hr>
+<hr>
+<h1 id="4-conclusion">4. Conclusion</h1>
+<p>To facilitate the workflow from &quot;UX → Translation → Development → Product&quot; the approach that for every product a dedicated flutter app and a dedicated localization folder and library is to be used.</p>
+<p>Domains which develop multiple Flutter application (each for a dedicated product) should have different localization folders and library for each product/Flutter app.</p>
+<h4 id="example----omit-in-toc">Example: <!-- omit in toc --></h4>
+<p><img src="/out/diags/l10n/simplification-alt/simplification-alt.svg" alt="simplified graphic alternative"></p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Folder structure for localization files and libraries</span>
+apps
+└───l10n-dscore
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+└───l10n-backoffice
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-comment">/// <span class="markdown">Localizations for the DSCore app</span></span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DSCoreLocalizations</span> </span>{
+  <span class="hljs-comment">/// <span class="markdown">...</span></span>
+}
+
+<span class="hljs-comment">/// <span class="markdown">Localizations for the Backoffice app</span></span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BackofficeLocalizations</span> </span>{
+  <span class="hljs-comment">/// <span class="markdown">...</span></span>
+}
+</div></code></pre>
+<hr>
+<hr>
+<h1 id="5-discussions">5. Discussions</h1>
+<h3 id="florian-sobirey-sept-05----omit-in-toc">Florian Sobirey, Sept. 05 <!-- omit in toc --></h3>
+<ul>
+<li>pro product -&gt; 1x Figma/Localize project
+<ul>
+<li>f.ex. UI for assistents and UI for service technician</li>
+</ul>
+</li>
+<li>Redesign could lead to reuse of existing keys</li>
+<li>Version push to Bitbucket
+<ul>
+<li><input type="checkbox" id="checkbox0"><label for="checkbox0">keep same version possible with figma, localize and bitbucket?</label></li>
+</ul>
+</li>
+<li><input type="checkbox" id="checkbox1"><label for="checkbox1">Naming convention for keys</label>
+<ul>
+<li><input type="checkbox" id="checkbox2"><label for="checkbox2">prod_topic_frame_key</label></li>
+</ul>
+</li>
+</ul>
+<h3 id="simon-egg-sept-05----omit-in-toc">Simon Egg, Sept. 05 <!-- omit in toc --></h3>
+<h4 id="variante-1-only-one-localization-file-pro-language----omit-in-toc">Variante 1: Only One Localization File pro Language <!-- omit in toc --></h4>
+<p><img src="/out/diags/l10n/simplification/simplification.svg" alt="simplified graphic"> <!-- omit in toc --></p>
+<ul>
+<li><strong>not usable for → every app == product</strong></li>
+</ul>
+<h4 id="variante-2-multiple-localization-file-pro-language----omit-in-toc">Variante 2: Multiple Localization File pro Language <!-- omit in toc --></h4>
+<h1 id="simplified-graphic-alternative----omit-in-toc"><img src="/out/diags/l10n/simplification-alt/simplification-alt.svg" alt="simplified graphic alternative"> <!-- omit in toc --></h1>
+<h3 id="analysis-alexander-treptow-sept-07----omit-in-toc">Analysis Alexander Treptow, Sept. 07 <!-- omit in toc --></h3>
+<ul>
+<li>configuration supports only, that every language is only one time available</li>
+<li>possible to use multiple packages
+<ul>
+<li>overhead for BuildContext
+<ul>
+<li>multiple sources needs a mechanism</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[] lightning repo contains currently 3 flutter aps
+<ul>
+<li>dscore, backoffice and sidexis
+<ul>
+<li><input type="checkbox" id="checkbox3"><label for="checkbox3">currently only one </label><code>l10n</code> folder</li>
+<li><input type="checkbox" id="checkbox4"><label for="checkbox4">must be splitted in that case</label></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ruwen-schnabel-sept-07----omit-in-toc">Ruwen Schnabel, Sept. 07 <!-- omit in toc --></h3>
+<ul>
+<li><input type="checkbox" id="checkbox5"><label for="checkbox5">1x l10n folder per app</label></li>
+<li><input type="checkbox" id="checkbox6" checked="true"><label for="checkbox6">every app in one single product</label></li>
+<li><input type="checkbox" id="checkbox7"><label for="checkbox7">structuring</label>
+<ul>
+<li><input type="checkbox" id="checkbox8"><label for="checkbox8">split arb files in folder into specific domains </label><em>or</em></li>
+<li><input type="checkbox" id="checkbox9"><label for="checkbox9">add prefixes to keys</label></li>
+</ul>
+</li>
+<li><input type="checkbox" id="checkbox10" checked="true"><label for="checkbox10">Branching not wanted so far</label></li>
+</ul>
+<h4 id="5001-variante-1">5.0.0.1. Variante 1:</h4>
+<ul>
+<li>having 1x <code>l10n</code> folder per app and therefor per product</li>
+<li>having 1x <code>arb</code> file per language</li>
+<li>prefixing <code>keys</code> with domain, product or likewise</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-comment"># Folder structure</span>
+apps
+└───l10n
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+
+<span class="hljs-comment"># Example keys without prefixing</span>
+app_en.dart
+{
+  <span class="hljs-string">"backofficeDealerGetPopulatedDemoAccountHint"</span>: <span class="hljs-string">"Name for demo user account"</span>,
+  <span class="hljs-string">"dashboardPageSharesPlaceholderTitle"</span>: <span class="hljs-string">"Share media with others"</span>,
+}
+
+<span class="hljs-comment"># Example keys with prefixing</span>
+app_en.dart
+{
+  <span class="hljs-string">"DSCoreBackofficeDealerGetPopulatedDemoAccountHint"</span>: <span class="hljs-string">"Name for demo user account"</span>,
+  <span class="hljs-string">"OutsimDashboardPageSharesPlaceholderTitle"</span>: <span class="hljs-string">"Share media with others"</span>,
+}
+</div></code></pre>
+<h4 id="5002-variante-2">5.0.0.2. Variante 2:</h4>
+<ul>
+<li>having 1x <code>l10n</code> folder per app and therefore per product</li>
+<li>having nx <code>lib</code> per domain, product or likewise</li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-comment"># 6. Folder structure</span>
+apps
+└───l10n-dscore
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+└───l10n-outsim
+│   └───lib
+│   │   │   l10n.dart
+│   │   └───l10n
+│   │   │   │   app_en.arb    
+│   │   │   │   app_de.arb
+│   │   │   │   app_es.arb
+│   │   │   │   app_fr.arb
+│   │   │   │   ...
+│   │   │   └───generated
+│   │   │   │   │   app_localization_en.dart
+│   │   │   │   │   app_localization_de.dart
+│   │   │   │   │   app_localization_es.dart
+│   │   │   │   │   app_localization_fr.dart
+│   │   │   │   │   ...
+
+<span class="hljs-comment"># 7. Example keys</span>
+dscore_en.dart
+{
+  <span class="hljs-string">"backofficeDealerGetPopulatedDemoAccountHint"</span>: <span class="hljs-string">"Name for demo user account"</span>,
+  <span class="hljs-string">"dashboardPageSharesPlaceholderTitle"</span>: <span class="hljs-string">"Share media with others"</span>,
+}
+``` --&gt;
 </div></code></pre>
 
 </body>

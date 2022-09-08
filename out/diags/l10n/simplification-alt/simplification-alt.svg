@@ -16,8 +16,8 @@ link locA to locB--><!--MD5=[852a3eac55861cbb12d2a5de3542ecb7]
 reverse link prodA to svcA--><g id="link_prodA_svcA"><path d="M102.0952,57.752 C92.8687,74.887 81.0416,96.851 72.359,112.976 " fill="none" id="prodA-backto-svcA" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="104.6238,53.056,96.834,59.0825,102.2526,57.458,103.8771,62.8765,104.6238,53.056" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0f83a2824676c51dd676ae5b1457786a]
 reverse link prodB to uiB--><g id="link_prodB_uiB"><path d="M297.082,58.192 C301.842,75.262 307.901,96.989 312.359,112.976 " fill="none" id="prodB-backto-uiB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="295.65,53.056,294.2144,62.7997,296.993,57.8723,301.9204,60.6509,295.65,53.056" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f7b93cb2fe550d3b6ba9fe04b8ec09b0]
 reverse link prodB to svcB--><g id="link_prodB_svcB"><path d="M343.729,55.526 C352.219,60 360.743,64.884 368.5,70 C387.631,82.618 407.24,99.505 421.746,112.904 " fill="none" id="prodB-backto-svcB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="339.02,53.083,345.1686,60.7768,343.4588,55.3845,348.8511,53.6747,339.02,53.083" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[be475ce924ce87c0e38164d407eee351]
-reverse link prodB to svcA--><g id="link_prodB_svcA"><path d="M229.251,44.485 C188.791,53.795 141.316,65.31 132.5,70 C112.132,80.836 92.9437,98.689 79.5059,112.946 " fill="none" id="prodB-backto-svcA" style="stroke:#FF0000;stroke-width:1.0;"/><polygon fill="#FF0000" points="234.147,43.361,224.4802,41.476,229.2737,44.4797,226.2701,49.2732,234.147,43.361" style="stroke:#FF0000;stroke-width:1.0;"/></g><!--MD5=[4ede5af352fccb01834640c26a6f3c9c]
-reverse link prodB to uiA--><g id="link_prodB_uiA"><path d="M262.876,56.877 C245.122,74.134 222.033,96.576 205.159,112.976 " fill="none" id="prodB-backto-uiA" style="stroke:#FF0000;stroke-width:1.0;"/><polygon fill="#FF0000" points="266.808,53.056,257.5658,56.4593,263.2221,56.5405,263.141,62.1967,266.808,53.056" style="stroke:#FF0000;stroke-width:1.0;"/></g><!--MD5=[f4ab02a70a942f2d9eec037932a88f5f]
+reverse link prodB to svcA--><!--MD5=[4ede5af352fccb01834640c26a6f3c9c]
+reverse link prodB to uiA--><!--MD5=[ebfbdb3c50e762e0bd03676d00220803]
 @startuml
 component "Lokalise A" as locA
 component "Lokalise B" as locB
@@ -41,8 +41,8 @@ svcA -u-> prodA
 uiB -u-> prodB
 svcB -u-> prodB
 
-svcA -[#red]u-> prodB
-uiA -[#red]u-> prodB
+svcA -[hidden]u-> prodB
+uiA -[hidden]u-> prodB
 @enduml
 
 @startuml
@@ -67,8 +67,8 @@ svcA -u-> prodA
 uiB -u-> prodB
 svcB -u-> prodB
 
-svcA -[#red]u-> prodB
-uiA -[#red]u-> prodB
+svcA -[hidden]u-> prodB
+uiA -[hidden]u-> prodB
 @enduml
 
 PlantUML version 1.2022.8beta2(Unknown compile time)

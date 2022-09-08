@@ -24,11 +24,14 @@ My second brain, to help me remember stuff
 ## DP&S <!-- omit in toc -->
 ### Architecture <!-- omit in toc -->
 - [Notes](/architectural-notes.md)
-- [Education](cpsa-f.md)
-- [Q3 - Orchestrator](orchestrator.md)
+- [iSAQB](cpsa-f.md)
+- [Q4 - Orchestrator](orchestrator.md)
+- [Q3 - Product Configurator](orderform.md)
+- [Localization](localization.md)
 
 ### Byte+ <!-- omit in toc -->
 - [notes](/byte%2B.md)
+  - [TDD](byte+/tdd.md)
 
 ### Lightning Procedure Enablement <!-- omit in toc -->
 - [Technical Reviews](/procedure-enablement.md)
@@ -38,6 +41,7 @@ My second brain, to help me remember stuff
 - [Cloud infrastructure](/cloud-infrastructure.md)
 - [GCP, k8s, Istio](/gcp-k8s-istio.md)
 - [Git](git.md)
+- [Flutter](flutter.md)
 
 ---
 ---

@@ -18,7 +18,7 @@ svcA -u-> prodA
 uiB -u-> prodB
 svcB -u-> prodB
 
-svcA -[#red]u-> prodB
-uiA -[#red]u-> prodB
+svcA -[hidden]u-> prodB
+uiA -[hidden]u-> prodB
 
 @enduml
