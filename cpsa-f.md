@@ -490,9 +490,6 @@ SW architects are able to gather and consider constraints and influencing factor
   - this principal may be applied in various ways:
     - **interfaces** omitting private details about internal structures
     - **data abstractions** consider the abstract properties of data types while omitting details of implementation
-- DRY:
-  - try to introduce **abstractions** for **components that provide similar functionality**
-  - applies for architects as well
 
 > - Modularizations
 >   - **information hiding** and **encapsulation** (R1)
@@ -508,6 +505,9 @@ SW architects are able to gather and consider constraints and influencing factor
 >       - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
 >     - **D**: dependency inversion principle (R1)
 
+- DRY:
+  - try to introduce **abstractions** for **components that provide similar functionality**
+  - applies for architects as well
 - Information hiding principle:
   - **hiding design decisions within a module implementation**, users don't need to be aware of inner workings
 - Separation of concers *aka. SOC*:
