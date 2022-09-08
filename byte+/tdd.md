@@ -19,29 +19,33 @@
 ![context view](../diags/byte+/building-block-view.drawio.svg)
 
 ### Questions
-- [ ] What stored in the `Storage Queue`?
+- [ ] What is stored in the `Storage Queue`?
   - `*.daproj`, `zip`'s, others?
-- [ ] How is the **customer** different from the **patient**?
-  - is a dentist a customer?
 
 ---
 ---
-
 # 2. Technology Stack
-- [ ] React (Smartphone app)
-- [ ] GraphQL (DB Protocol)
-- [ ] Apollo client (state management library: client side and server side)
-- [ ] Azure Event Grid (Messaging)
-- [ ] Salesforce
+- [x] React (Smartphone app)
+- [x] GraphQL (DB Protocol)
+  - [x] Apollo client (state management library: client side and server side)
+- [x] Azure Event Grid (Messaging)
+  - `Patient DB` stores all messages
+  - [ ] `Storage Queue` is part of this pattern?
+- [ ] NoSQL COSMOS
+  - DBs behind the scene
+- [x] Salesforce
   - states (treatment states)
   - customer journey managed by it
   - lightning component framework
     - JavaScript based App building framework
     - No-code App builder included
-- [ ] NexHealth (connection to PMS)
-- [ ] Shopify
-- [ ] NoSQL COSMOS
-  - DB behind the scene
+- [x] NexHealth (connection to PMS)
+  - Only US
+  - [ ] Partnership in discussion
+- [x] Shopify
+  - no billing, but payment
+- [x] Contentful (compose) in future
+  - Shall replace the Salesforce Lightning App
 
 
 <!-- # 3. Architecture Components -->
@@ -52,8 +56,14 @@
 # Questions
 ## General
 - [ ] Can you provide me access to BitBucket
+  - Difficult, since they don't have access to our monorepos
+  - And don't really want to give it to me...
 - [ ] Is there the `Azure API Management` system used?
-- [ ] Must the `customers` and `patient` be keep synchronised in any way?
+- [x] Must the `customers` and `patient` be keep synchronised in any way?
+  - Future concept
+  - Today it exists `customer` and `lead`
+    - somebody who has ordered an impression kit (IK) is a `lead`
+    - somebody with a treatment plan is a `customer`
 
 ---
 
@@ -67,4 +77,5 @@
   
 ## Messaging
 - [ ] Message types & their descriptions - is there a specification, or links to code?
-- [ ] Is there something special about how GraphQL and Event Grid is connected?
+- [x] Is there something special about how GraphQL and Event Grid is connected?
+  - [ ] Is here Apollo Client used?
