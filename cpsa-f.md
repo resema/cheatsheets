@@ -491,25 +491,62 @@ SW architects are able to gather and consider constraints and influencing factor
     - **interfaces** omitting private details about internal structures
     - **data abstractions** consider the abstract properties of data types while omitting details of implementation
 - DRY:
-  - try to introduce abstractions for components that provide similar functionality
+  - try to introduce **abstractions** for **components that provide similar functionality**
   - applies for architects as well
-- Information hiding principle:
-  - hiding design decisions within a module implementation, users don't need to be aware of inner workings
-- Separation of concers:
 
 > - Modularizations
 >   - **information hiding** and **encapsulation** (R1)
 >   - **separation of concerns** aka. SOC (R1)
 >   - **loose, but functionally sufficient, coupling** of building blocks (R1)
 >   - **SOLID** principles
->     - S: single responsibility principle (R1)
->     - O: open/closed principle (R1)
+>     - **S**: single responsibility principle (R1)
+>     - **O**: open/closed principle (R1)
 >       - open for extension / closed for modification
->     - L: Liskov substituation principle (R3)
+>     - **L**: Liskov substituation principle (R3)
 >       - promote consistency and conceptual integry aka. avoid unexpected behavior
->     - I: interface segregation principle (R2)
+>     - **I**: interface segregation principle (R2)
 >       - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
->     - D: dependency inversion principle (R1)
+>     - **D**: dependency inversion principle (R1)
+
+- Information hiding principle:
+  - **hiding design decisions within a module implementation**, users don't need to be aware of inner workings
+- Separation of concers *aka. SOC*:
+  - **deconstructing** a problem **into separated sub-problems**
+  - closely related to the **single responsibility principle**
+  - *for example*: always separate **business/domain-related** from **technical **concerns**
+  - SoC might end up with increased coupling between componets, but at a fair price
+  - increases **changeability** and **analyzability**
+- Modularity *aka building block principle*
+  - **division** of a whole system into distinct building blocks
+  - modularity combines advantages of information hiding with SoC
+  - number of desirable properties:
+    - encapsulate responsibilities
+    - well defined interfaces
+    - developed and maintained independently
+    - can be replaced by other modules
+- Loose coupling
+  - coupling adds complexity
+  - coupling two components will make both components harder to understand and change
+- high cohesion
+  - describes how **closely the inner elements are related to each other**
+  - loose coupling and well-done SoC correlate with high cohesion
+- SOLID
+  - Single responsibility principle
+    - pursues the same objectives as SoC from a different perspective
+    - single responsibility (SRP) *vs* minimal overlapping concerns (SoC)
+    - only **one reason to change**
+  - Open-closed principles
+    - components should be **open for extension**, but **closed for modification**
+    - able to extend functionality without modifying component itself
+    - options to achieve this:
+      - **inheritance** in OO systems
+      - **plug-in** architectures
+      - **dependency inversion** principle
+  - Liskov substitution principle
+    - way to promote **consistency** and **conceptual integrity**
+    - applies to architectural desing in general
+    - strive for **implementations that can be used as replacements for their abstractions**
+
 > - Conceptual integrity
 >   - **uniformity of solutions for similar problems** (R2)
 >   - achieve the **principle of least surprise** (R3)
