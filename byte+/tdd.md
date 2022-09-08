@@ -8,7 +8,6 @@
   - [General](#general)
   - [Data Models](#data-models)
   - [Messaging](#messaging)
-  - [Hybrid Model?](#hybrid-model)
 
 
 # 1. High-Level Architecture
@@ -82,6 +81,4 @@
   - [ ] Is here Apollo Client used?
 
 ---
-
-## Hybrid Model?
-![Hybrid Model](../diags/byte+/cv-byte%2B.drawio.svg)
+---

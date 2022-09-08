@@ -36,7 +36,7 @@ And there is also concepts or integrations, which are an extension of what Byte 
 
 ---
 ## Answers
-### Q1: 2 different Options are possible
+### Q1: Two different options are possible
 
 ### Option 1:
 - [ ] keeping the backend and transition to Flutter frontend
