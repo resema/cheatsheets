@@ -1,8 +1,11 @@
 # Architectural Notes <!-- omit in toc -->
 ## Table of Contents <!-- omit in toc -->
-- [1. Daily Business](#1-daily-business)
+- [1. Architectural Decisions](#1-architectural-decisions)
+- [2. Daily Business](#2-daily-business)
 
-# 1. Daily Business
+# 1. Architectural Decisions
+
+# 2. Daily Business
 - [ ] ForgeRock is decided, IOT is left out
   - [x] 1x GCP, 1x AliCloud
     - [x] introduced in phases 
