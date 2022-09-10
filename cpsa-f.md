@@ -77,7 +77,7 @@ Essential goals and benefits:
 - support the **design, implementation, maintenance, and operation** of systems
 - achieve **quality requirements** (reliability, maintainability, changeability, security, etc.)
 - achieve **functional requirements** or ensure that they can be met
-  - taking global decision decisions, spanning the context of several components
+  - taking global design decisions, spanning the context of several components
 - ensure that the **system's structure and concepts are understood** by all relevant stakeholders
     - *conceptual integrity* means the design/architecture follows a consistent set of rules or decisions
       - necessary prerequiste for understandability and maintainability
@@ -161,7 +161,7 @@ Software architects need to fulfill 6 important tasks:
    - identify parts that violate or endanger consistency or deviate from chosen architecture
    - identify potential design or implementation decisions which could improve overall architecture
 6. evaluate architecture
-   - find out if the system can fulfill or satisfy its quality requirments
+   - find out if the system can fulfill or satisfy its quality requirements
    - in this context we mean *product quality*
      1. how well it complies with or conforms to a given design
         - how it compares to competitors
@@ -183,7 +183,7 @@ Software Architects will have at least the following four different categories o
      - help identify conflicting requirements
      - support finding trade-offs between conflicting goals and requirements
      - explain the impact of requirements and constraints
-     - support in prioritiying requirements and their development
+     - support in prioritizing requirements and their development
 2. **management stakeholders**, like PM or SM
    - communicate over organizational constraints, resources, schedules, etc.
      - technical consultancy
