@@ -297,7 +297,7 @@ Software architects are able to **name, explain, and use the fundamental approac
 - **view-based** architecture development (R1)
   - views focus on specific concerns, parts or aspects of a system
     - building-block, runtime, deployment and context view
-      - facilitate structural, runtime or hardware decisions
+      - fascilitate structural, runtime or hardware decisions
       - fascilitate communication and documentation
       - gain flexibility in the degree of detail
       - address specific stakeholder concerns
@@ -309,7 +309,7 @@ Software architects are able to **name, explain, and use the fundamental approac
     - make appropriate design modifications **parallel** to development
     - learning and improvement is based on feedback
   - incremental:
-    - done in pieces, building open each other
+    - done in pieces, building opun each other
     - each increment delivers a slice of functionality through cross-discipline work (requirements, architecture/design, implementation and deployment)
   - **major advantage of combined approach**:
     - problems are detected early, allowing more time to resolve them
