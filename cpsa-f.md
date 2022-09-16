@@ -281,66 +281,80 @@ Ensure explicitness in your work by:
 # 2. Design and Development
 ## 2.1. Approaches and heuristics for architecture development (R1, R3)
 
-Software architects are able to **name, explain, and use the fundamental approaches** of architecture development, f.ex.:
-- **top-down** and **bottom-up** approaches for design (R1)
-  - top-down, used for:
-    - keep overview
-    - abstract away details
-    - keep things consistent over various components
-    - work from abstract/large elements to specific/smaller ones
-  - bottom-up, used for:
-    - reduce risks
-    - build proof-of-concept implementations
-    - validate decisions or proposals, proving that they work in practice
-    - build-up knowledge and experience
-    - work from detailed, specific or concrete elements up to larger more abstract ones
-- **view-based** architecture development (R1)
-  - views focus on specific concerns, parts or aspects of a system
-    - building-block, runtime, deployment and context view
-      - fascilitate structural, runtime or hardware decisions
-      - fascilitate communication and documentation
-      - gain flexibility in the degree of detail
-      - address specific stakeholder concerns
-- **iterative** and **incremental** design (R1)
-  - necessity of iterations is affected by uncertainties (R1)
-  - necessity of feedback on design decisions (R1)
-  - iterative:
-    - in repeated cycles
-    - make appropriate design modifications **parallel** to development
-    - learning and improvement is based on feedback
-  - incremental:
-    - done in pieces, building upon each other
-    - each increment delivers a slice of functionality through cross-discipline work (requirements, architecture/design, implementation and deployment)
-  - **major advantage of combined approach**:
-    - problems are detected early, allowing more time to resolve them
-    - typical development and rollout performed in every iteration
-    - changes in requirements and technologies can be taken into account
-    - development risks and uncertainties are minimized
-- domain-driven design (R3)
-  - integrates quite well with the microservice architecture pattern
-- evolutionary architecture (R3)
-  - combines the concept of global analysis with executable specifications
-- global analysis (R3)
-  - starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
-- model-driven architecture (R3)
+> Software architects are able to **name, explain, and use the fundamental approaches** of architecture > development, f.ex.:
+> - **top-down** and **bottom-up** approaches for design (R1)
+> - **view-based** architecture development (R1)
+
+- **top-down**, used for:
+  - keep overview
+  - abstract away details
+  - keep things consistent over various components
+  - work from abstract/large elements to specific/smaller ones
+- **bottom-up**, used for:
+  - reduce risks
+  - build proof-of-concept implementations
+  - validate decisions or proposals, proving that they work in practice
+  - build-up knowledge and experience
+  - work from detailed, specific or concrete elements up to larger more abstract ones
+
+- **views** focus on specific concerns, parts or aspects of a system
+  - building-block, runtime, deployment and context view
+    - fascilitate structural, runtime or hardware decisions
+    - fascilitate communication and documentation
+    - gain flexibility in the degree of detail
+    - address specific stakeholder concerns
+
+> - **iterative** and **incremental** design (R1)
+>  - necessity of iterations is affected by uncertainties (R1)
+>  - necessity of feedback on design decisions (R1)
+
+- iterative:
+  - in repeated cycles
+  - make appropriate design modifications **parallel** to development
+  - learning and improvement is based on feedback
+- incremental:
+  - done in pieces, building upon each other
+  - each increment delivers a slice of functionality through cross-discipline work (requirements, architecture/design, implementation and deployment)
+- **major advantage of combined approach**:
+  - problems are detected early, allowing more time to resolve them
+  - typical development and rollout performed in every iteration
+  - changes in requirements and technologies can be taken into account
+  - development risks and uncertainties are minimized
+
+> - domain-driven design (R3)
+
+- integrates quite well with the microservice architecture pattern
+
+> - evolutionary architecture (R3)
+
+- combines the concept of global analysis with executable specifications
+
+> - global analysis (R3)
+  
+- starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
+
+> - model-driven architecture (R3)
 
 ---
 ## 2.2. Design software architectures (R1)
 
-SW architects are able to:
-- **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor business-critical
-  - designing belongs to the core task of the architectural role
-    - take ino account at least:
-      - requirements and constraints
-      - available components, technologies or other elements
-      - available skills in dev team
-      - potential conflicts between goals, requirements or constraints
-    - communicate such decisions and options might involve:
-      - conquering resistance
-      - identifying proper arguments for pros and cons
-      - finding right language / communiation media
-      - balancing written and verbal communication
-- make **structurally-relevant decisions** regarding **system decomposition** and **building block structure** and **deliberate dependencies** between building blocks
+> SW architects are able to:
+> - **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor bu  siness-critical
+
+- designing belongs to the core task of the architectural role
+  - take ino account at least:
+    - requirements and constraints
+    - available components, technologies or other elements
+    - available skills in dev team
+    - potential conflicts between goals, requirements or constraints
+  - communicate such decisions and options might involve:
+    - conquering resistance
+    - identifying proper arguments for pros and cons
+    - finding right language / communiation media
+    - balancing written and verbal communication
+
+> - make **structurally-relevant decisions** regarding **system decomposition** and **building block structure** and **deliberate dependencies** between building blocks
+
   - structure contains of structural elements and their dependencies
     - structural elements (building blocks) are:
       - source code
@@ -354,35 +368,39 @@ SW architects are able to:
       - packages
       - namespaces
       - or smaller elements
-- **recognize** and **justify** the **interdependencies and tradeoffs** of design decisions
-- explain the terms **black box** and **white box** and apply them purposefully
-  - building block is the **most general term** for all kinds of artifacts
-  - **black box** hides the interior structure --> information hidding principle
-    - exposes by appropriate name and description:
-      - its responsibilities
-      - provided interface(s)
-      - required interface(s)
-      - additional attributes like qualities, restrictions, risks or problems
-  - **gray box** shows additionally mostly technical interfaces, f.ex. configuration interfaces or interfaces to the runtime environment
-  - **white box** shows the interios structure --> design rationale
-    - explains the reason why it is structured exactly in this specifc way
-      - name
-      - reference or link to its black box
-      - overview of its internal structure
-      - design rational (reason for this structure)
-      - list of contained black boxes
-  - **decomposition by changing from black to white box**
-    - hierarchical decomposition
+> - **recognize** and **justify** the **interdependencies and tradeoffs** of design decisions
+> - explain the terms **black box** and **white box** and apply them purposefully
+
+- building block is the **most general term** for all kinds of artifacts
+- **black box** hides the interior structure --> information hidding principle
+  - exposes by appropriate name and description:
+    - its responsibilities
+    - provided interface(s)
+    - required interface(s)
+    - additional attributes like qualities, restrictions, risks or problems
+- **gray box** shows additionally mostly technical interfaces, f.ex. configuration interfaces or interfaces to the runtime environment
+- **white box** shows the interios structure --> design rationale
+  - explains the reason why it is structured exactly in this specifc way
+    - name
+    - reference or link to its black box
+    - overview of its internal structure
+    - design rational (reason for this structure)
+    - list of contained black boxes
+- **decomposition by changing from black to white box**
+  - hierarchical decomposition
+
 - **interfaces** are used to connect building blocks
   - **standard interface** defined by an external third party
   - **provided interface** defined by the building block that **provided** it
   - **required interface** defined by the building block that **requires** it
   - **independent interface** defined by both building blocks that **requires** and **provides** it
-- apply **stepwise refinement** and **specify building blocks**
-- **architectural views**, especially building blocks view, runtime view and deployment view
-- **explain the consequences** of decisions to corresponding src code
-- **separate technical and domain-related elements** of architecture and justify these decision
-- **identify risks** related to architecture decisions
+
+> - apply **stepwise refinement** and **specify building blocks**
+> - **architectural views**, especially building blocks view, runtime view and deployment view
+> - **explain the consequences** of decisions to corresponding src code
+> - **separate technical and domain-related elements** of architecture and justify these decision
+> - **identify risks** related to architecture decisions
+
 - **different levels** in an **architectural description**
   ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
 
