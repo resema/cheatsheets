@@ -490,6 +490,9 @@ SW architects are able to gather and consider constraints and influencing factor
   - this principal may be applied in various ways:
     - **interfaces** omitting private details about internal structures
     - **data abstractions** consider the abstract properties of data types while omitting details of implementation
+- DRY:
+  - try to introduce **abstractions** for **components that provide similar functionality**
+  - applies for architects as well
 
 > - Modularizations
 >   - **information hiding** and **encapsulation** (R1)
@@ -505,9 +508,6 @@ SW architects are able to gather and consider constraints and influencing factor
 >       - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
 >     - **D**: dependency inversion principle (R1)
 
-- DRY:
-  - try to introduce **abstractions** for **components that provide similar functionality**
-  - applies for architects as well
 - Information hiding principle:
   - **hiding design decisions within a module implementation**, users don't need to be aware of inner workings
 - Separation of concers *aka. SOC*:
@@ -531,21 +531,31 @@ SW architects are able to gather and consider constraints and influencing factor
   - describes how **closely the inner elements are related to each other**
   - loose coupling and well-done SoC correlate with high cohesion
 - SOLID
-  - Single responsibility principle
+  - **S**ingle responsibility principle
     - pursues the same objectives as SoC from a different perspective
     - single responsibility (SRP) *vs* minimal overlapping concerns (SoC)
     - only **one reason to change**
-  - Open-closed principles
+  - **O**pen-closed principles
     - components should be **open for extension**, but **closed for modification**
     - able to extend functionality without modifying component itself
     - options to achieve this:
       - **inheritance** in OO systems
       - **plug-in** architectures
       - **dependency inversion** principle
-  - Liskov substitution principle
+  - **L**iskov substitution principle
     - way to promote **consistency** and **conceptual integrity**
-    - applies to architectural desing in general
+    - applies to architectural design in general
     - strive for **implementations that can be used as replacements for their abstractions**
+  - **I**nterface segregation principle (ISP)
+    - just one of manu guidelines for the design of interfaces
+    - see [2.9](#29-design-and-define-interfaces-r1-r3)
+    - **smaller** and **client-specific** interfaces might lead to **lower coupling**
+  - **D**ependency inversion principle (DIP)
+    - **designing and structuring dependencies** belongs to one of the most important aspects
+    - advice **not to depend on low-level details**, but rather **to depend on abstractions**
+    - high-level modules should not depend on low-level modules
+      - both should **depend on abstractions**, e.g. not depend on details
+    - aka. **API facade**
 
 > - Conceptual integrity
 >   - **uniformity of solutions for similar problems** (R2)
@@ -556,6 +566,35 @@ SW architects are able to gather and consider constraints and influencing factor
 > - Expect Errors
 >   - design for **robust and resilient systems** (R1)
 >   - **generalisation of robustness principle** aka. Postel's Law (R2)
+
+- Conceptional integrity
+  - **entire system** should **follow a consistent style**
+    - similar tasks handled in similar manner
+  - *principle of least astonishment* ka. avoit behaving in widly unexpected ways
+  - develop a consistent *design philosophy*
+- KISS and YAGNI
+  - helpful guidelines for **discussing design alternatives**
+  - prevents *over-engineering*, f.ex.
+    - abstractions onto components with a single implementation
+    - functionality that eventually might become useful in future
+    - complicated or high-sophisticated technology, where simple approach would suffice
+  - KISS proposes to:
+    - design the simplest thing for the foreseeable future
+    - provide abstraction in a sensible way, aka. those components that acutally require flexibility and extensibility or used by a significant number of components
+    - trust future architects to be able to derive more sophisticated solution
+  - **Simplicity** helps to keep **system understandable and therefore changeable** over time
+- Expect errors
+  - **lookout** for **things that can go wrong**
+  - ask yourself **what might be misunderstood, forgot or neglect**
+  - **which parts** of software system **can fail** and **what are the implications**
+  - robustess principle
+    - *"be conservative (establish values) in what you do, be liberal (not strict/exact) in what you accept from others"*
+      - aka. **design a component** that will **still work even if not used correct**
+      - and **use other components as correctly as possible** to their specifications
+    - comes at a price:
+      - additional complexity to compensate for errors
+      - data exchanged via interfacess may no longer be correct
+      - others might take advantage of very tolerant components
 
 ---
 ## 2.7. Managing dependencies (R1)
