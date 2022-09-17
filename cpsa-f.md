@@ -284,6 +284,13 @@ Ensure explicitness in your work by:
 > Software architects are able to **name, explain, and use the fundamental approaches** of architecture > development, f.ex.:
 > - **top-down** and **bottom-up** approaches for design (R1)
 > - **view-based** architecture development (R1)
+> - **iterative** and **incremental** design (R1)
+>  - necessity of iterations is affected by uncertainties (R1)
+>  - necessity of feedback on design decisions (R1)
+> - domain-driven design (R3)
+> - evolutionary architecture (R3)
+> - global analysis (R3)
+> - model-driven architecture (R3)
 
 - **top-down**, used for:
   - keep overview
@@ -303,11 +310,6 @@ Ensure explicitness in your work by:
     - fascilitate communication and documentation
     - gain flexibility in the degree of detail
     - address specific stakeholder concerns
-
-> - **iterative** and **incremental** design (R1)
->  - necessity of iterations is affected by uncertainties (R1)
->  - necessity of feedback on design decisions (R1)
-
 - iterative:
   - in repeated cycles
   - make appropriate design modifications **parallel** to development
@@ -320,26 +322,25 @@ Ensure explicitness in your work by:
   - typical development and rollout performed in every iteration
   - changes in requirements and technologies can be taken into account
   - development risks and uncertainties are minimized
-
-> - domain-driven design (R3)
-
 - integrates quite well with the microservice architecture pattern
-
-> - evolutionary architecture (R3)
-
 - combines the concept of global analysis with executable specifications
-
-> - global analysis (R3)
-  
 - starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
 
-> - model-driven architecture (R3)
 
 ---
 ## 2.2. Design software architectures (R1)
 
 > SW architects are able to:
 > - **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor bu  siness-critical
+> - make **structurally-relevant decisions** regarding **system decomposition** and **building block structure** and **deliberate dependencies** between building blocks
+> - **recognize** and **justify** the **interdependencies and tradeoffs** of design decisions
+> - explain the terms **black box** and **white box** and apply them purposefully
+> - apply **stepwise refinement** and **specify building blocks**
+> - **architectural views**, especially building blocks view, runtime view and deployment view
+> - **explain the consequences** of decisions to corresponding src code
+> - **separate technical and domain-related elements** of architecture and justify these decision
+> - **identify risks** related to architecture decisions
+
 
 - designing belongs to the core task of the architectural role
   - take ino account at least:
@@ -352,8 +353,6 @@ Ensure explicitness in your work by:
     - identifying proper arguments for pros and cons
     - finding right language / communiation media
     - balancing written and verbal communication
-
-> - make **structurally-relevant decisions** regarding **system decomposition** and **building block structure** and **deliberate dependencies** between building blocks
 
   - structure contains of structural elements and their dependencies
     - structural elements (building blocks) are:
@@ -368,8 +367,6 @@ Ensure explicitness in your work by:
       - packages
       - namespaces
       - or smaller elements
-> - **recognize** and **justify** the **interdependencies and tradeoffs** of design decisions
-> - explain the terms **black box** and **white box** and apply them purposefully
 
 - building block is the **most general term** for all kinds of artifacts
 - **black box** hides the interior structure --> information hidding principle
@@ -394,47 +391,41 @@ Ensure explicitness in your work by:
   - **provided interface** defined by the building block that **provided** it
   - **required interface** defined by the building block that **requires** it
   - **independent interface** defined by both building blocks that **requires** and **provides** it
-
-> - apply **stepwise refinement** and **specify building blocks**
-> - **architectural views**, especially building blocks view, runtime view and deployment view
-> - **explain the consequences** of decisions to corresponding src code
-> - **separate technical and domain-related elements** of architecture and justify these decision
-> - **identify risks** related to architecture decisions
-
+  - 
 - **different levels** in an **architectural description**
   ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
 
 ---
 ## 2.3. Influencing factors and constraints (R1-R3)
 
-SW architects are able to gather and consider constraints and influencing factors:
-- **Product-related** factors:
-  - functional requirements (R1)
-  - quality requirements and quality goals (R1)
-  - additional factors such as product cost, intended licensing model or business model (R1)
-- **Technological** factors:
-  - externally mandated technical decisions and concepts (R1)
-  - existing or planned hardware and software infrastructure (R1)
-  - technological constraints on data structures and interfaces (R2)
-  - reference architectures, libraries, components, and frameworkds (R1)
-  - programming languages (R3)
-- **Organizational** factors:
-  - organizational structure of dev team and customers (R1)
-  - company and team cultures (R3)
-  - partnerships and cooperation agreements (R2)
-  - standards, guidelines, and process models (R2)
-  - available resources like budget, time, and staff (R1)
-  - availability, skill set, and commitment of staff (R1)
-- **Regulatory** factors:
-  - legal constraints (R2)
-  - contract and liability issues (R2)
-  - data protection and privacy laws (R2)
-  - compliance issues or obligations to provide burden of proof (R2)
-- **Trends**:
-  - market trends (R3)
-  - technology trends (R3)
-  - methodology trends (R3)
-  - impact of further stakeholder concerns and mandated design decisions (R3)
+> SW architects are able to gather and consider constraints and influencing factors:
+> - **Product-related** factors:
+>   - functional requirements (R1)
+>   - quality requirements and quality goals (R1)
+>   - additional factors such as product cost, intended licensing model or business model (R1)
+> - **Technological** factors:
+>   - externally mandated technical decisions and concepts (R1)
+>   - existing or planned hardware and software infrastructure (R1)
+>   - technological constraints on data structures and interfaces (R2)
+>   - reference architectures, libraries, components, and frameworkds (R1)
+>   - programming languages (R3)
+> - **Organizational** factors:
+>   - organizational structure of dev team and customers (R1)
+>   - company and team cultures (R3)
+>   - partnerships and cooperation agreements (R2)
+>   - standards, guidelines, and process models (R2)
+>   - available resources like budget, time, and staff (R1)
+>   - availability, skill set, and commitment of staff (R1)
+> - **Regulatory** factors:
+>   - legal constraints (R2)
+>   - contract and liability issues (R2)
+>   - data protection and privacy laws (R2)
+>   - compliance issues or obligations to provide burden of proof (R2)
+> - **Trends**:
+>   - market trends (R3)
+>   - technology trends (R3)
+>   - methodology trends (R3)
+>   - impact of further stakeholder concerns and mandated design decisions (R3)
 
 ---
 ## 2.4. Cross-cutting concepts (R1)
@@ -443,6 +434,18 @@ SW architects are able to gather and consider constraints and influencing factor
 > - **explain the significance** of such cross-cutting concepts
 > - **decide on and design** cross-cutting concepts, f.ex. persistence, communication, GUI, error handling, concurrency
 > - **identify and assess potential interdependencies** between these decisions
+
+- Explanation:
+  - concepts which **affect serveral building blocks of the system**
+  - often **represent central technical decisions**
+  - used to **solve recurring problems** aka. *cross-cutting concerns*
+- Examples:
+  - fundamental technology decisions
+  - selection of frameworks, tools or libraries
+  - usage of technology
+  - conventions for interfaces
+
+
 
 ---
 ## 2.5. Patterns (R1, R3)
@@ -492,26 +495,11 @@ SW architects are able to gather and consider constraints and influencing factor
 > - explain **how quality requirements determine which principle should be applied**
 > - explain **impact of design principles on the implementation**
 > - **analyze src code and architecture designs** to evaluate wheter these design principles have been applied or should be applied
-
-- Patterns 
-  - resemble "cooking recipes"
-  - offer a proposal for the structured application
-
 > Design Principles:
 > - Abstraction (R1)
 >   - in the sense of a means for **deriving useful generalizations**
 >   - as a design construct, where **building blocks are dependent** on the **abstraction** rather then depending on implementations
 >   - **interfaces as abstractions**
-
-- Abstraction:
-  - crucial concept for handling complexity *aka. not to deal with all the details at once*
-  - this principal may be applied in various ways:
-    - **interfaces** omitting private details about internal structures
-    - **data abstractions** consider the abstract properties of data types while omitting details of implementation
-- DRY:
-  - try to introduce **abstractions** for **components that provide similar functionality**
-  - applies for architects as well
-
 > - Modularizations
 >   - **information hiding** and **encapsulation** (R1)
 >   - **separation of concerns** aka. SOC (R1)
@@ -525,6 +513,28 @@ SW architects are able to gather and consider constraints and influencing factor
 >     - **I**: interface segregation principle (R2)
 >       - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
 >     - **D**: dependency inversion principle (R1)
+> - Conceptual integrity
+>   - **uniformity of solutions for similar problems** (R2)
+>   - achieve the **principle of least surprise** (R3)
+> - Simplicity
+>   - **reduce complexity** (R1)
+>   - **KISS** and **YAGNI** (R2)
+> - Expect Errors
+>   - design for **robust and resilient systems** (R1)
+>   - **generalisation of robustness principle** aka. Postel's Law (R2)
+
+- Patterns 
+  - resemble "cooking recipes"
+  - offer a proposal for the structured application
+
+- Abstraction:
+  - crucial concept for handling complexity *aka. not to deal with all the details at once*
+  - this principal may be applied in various ways:
+    - **interfaces** omitting private details about internal structures
+    - **data abstractions** consider the abstract properties of data types while omitting details of implementation
+- DRY:
+  - try to introduce **abstractions** for **components that provide similar functionality**
+  - applies for architects as well
 
 - Information hiding principle:
   - **hiding design decisions within a module implementation**, users don't need to be aware of inner workings
@@ -575,16 +585,6 @@ SW architects are able to gather and consider constraints and influencing factor
       - both should **depend on abstractions**, e.g. not depend on details
     - aka. **API facade**
 
-> - Conceptual integrity
->   - **uniformity of solutions for similar problems** (R2)
->   - achieve the **principle of least surprise** (R3)
-> - Simplicity
->   - **reduce complexity** (R1)
->   - **KISS** and **YAGNI** (R2)
-> - Expect Errors
->   - design for **robust and resilient systems** (R1)
->   - **generalisation of robustness principle** aka. Postel's Law (R2)
-
 - Conceptional integrity
   - **entire system** should **follow a consistent style**
     - similar tasks handled in similar manner
@@ -601,6 +601,7 @@ SW architects are able to gather and consider constraints and influencing factor
     - provide abstraction in a sensible way, aka. those components that acutally require flexibility and extensibility or used by a significant number of components
     - trust future architects to be able to derive more sophisticated solution
   - **Simplicity** helps to keep **system understandable and therefore changeable** over time
+
 - Expect errors
   - **lookout** for **things that can go wrong**
   - ask yourself **what might be misunderstood, forgot or neglect**
