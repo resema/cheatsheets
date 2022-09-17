@@ -706,6 +706,66 @@ Ensure explicitness in your work by:
 >   - basic design principles
 >   - externalization of dependencies, f.ex. dependency injection
 
+- Dependency
+  - a component depends on another, if it requires or needs to
+    - compile
+    - be installed
+    - be tested
+    - start
+    - run or function properly
+
+- Coupling
+  - **degree of dependence** between arbitrary elements
+  - **measusre of how closely** elements depend on each other
+  - some coupling is necessary for creating software
+  - might be directional
+
+- Risks and problems
+  - **changing** may require **changes in other components** aka. *ripple effect*
+  - compiling, building and testing might **require additional effort**
+  - **reuse** might be **harder**
+  - **understanding** becomes **more difficult**
+
+- Types of coupling
+  - via **use/delegation**
+    - use other components via **public interfaces**
+  - via **composition**
+    - one component contains another
+  - via **creation**
+    - the **factory** pattern provides a uniform way of handling coupling via creation
+      - therefore improve &rarr; consistency
+  - via **inheritance**
+    - subclass inherits properties and methods from parent (superclass, interface or object)
+    - coupling via inheritance **is very tight**
+    - coupling via interface-inheritance **is lower**
+  - via **messages** or **events**
+    - **loosly** coupling due to 
+      - components don't need to know each other
+      - no know about consequences
+      - do not expect synchronous reply
+  - **temporal coupling**
+    - is an (implicit) **relationship between components** in the **temporal dimension**
+    - doesn't have to be written smae language or even know about each other
+    - often occur together witch *shared state* or *global state*
+  - via **data types**
+    - a component uses a **specific data type defined in or by another component**
+      - this creates coupling betwween the two
+    - modifications ripples down to all components using the data type
+  - via **data**
+    - two components depend on the same data within a DB or bucket
+    - coupled over shared data (synchronization issues)
+    - debugging can become very difficult
+  - via **hardware**
+    - two **processes** in the same **physical hardware**
+    - might occure when doing **low-level programming**, f.ex. CUDA
+
+- Options to **reduce coupling**
+  - use- or call-dependencies could be removed by **relocating the call into the caller**
+  - apply the **dependency-inversion principle**
+  - use patterns like **broker**
+  - replace synchronous communication by **asynchronous communication** via events or messages
+  - introduce **redundancy**, f.ex. replace shared DB with component-specific DBs
+
 ---
 ## 2.8. Achieve quality requirements (R1)
 > Software architects understand and consider the considerable influence of quality requirements:
