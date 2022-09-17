@@ -497,6 +497,75 @@ Ensure explicitness in your work by:
 > - strategy
 > - visitor
 
+- Layers
+  - covers **two different approaches**:
+    - **Abstraction layers**
+      - lower layers **hide certain details** from the layers above
+      - upper layers **access** lower layers **only via clearly defined interfaces**
+    - Layers to **serparate functionality** or **responsibility**
+      - known also as **tiers**
+      - f.ex. separation into presentation-, business- and data-access layers
+  - **dependencies go down** from upper to lower layers **only**
+  - distinguish between **strict** and **loose** layering
+    - strict: 
+      - only to layer immediately below it
+      - crossing layers is prohibited
+    - loose:
+      - layer may access all layers below it
+      - dependencies or calls may bridge one or more intermediate layers
+  - **advantages**
+    - helps to **avoid circular dependencies**
+    - simple structure, easy to understand
+  - **disadvantages**
+    - lower efficiency
+    - potential cascade of changes
+
+- Pipes and filters
+  - an example of **data flow architecture**
+  - filter: 
+    - **transforms**, **aggregates** or **manipulates** data
+    - **receives input data** from a pipe
+  - pipe:
+    - **transports** data or messages
+  - **advantages**
+    - **simple** (linear) **dependencies**
+    - **flexible** to **processing steps**
+    - (relatively) **simple scaling** by executing in parallel
+    - might **remove the need for intermediate files**
+    - **filters** can be **developed independently**
+  - **disadvantages**
+    - pipes can **overflow**
+    - **errors** might be **difficult to track**
+    - potentially **difficult to share global or common data**
+
+- Microservices
+  - highly flexible systems that can be **adapted to changing user/business requirements as quickly as possible**
+  - **advantages**
+    - improve **changeability** and **flexibility** of software
+    - improve **time-to-market**
+    - **faster development** by having smaller units
+    - more flexibilty in terms of **technology selection**
+    - **own runtime environment**
+    - **technology diversity**
+  - **disadvantages**
+    - possible **latency** caused by network
+    - **outages** of certain microservices or nodes
+    - **bandwith limitations**
+    - deal with **eventual consistency**
+    - **complexity shift**
+    - **testing** requires **appropriate infrastructure**
+
+- Dependency injection
+  - **defer dependency-resolution** from compile-time to run-time
+  - **advantages**
+    - improved **flexibility**
+    - tests with mocks for expensive services
+  - **disadvantages**
+    - code gets **more complicated** due to inderections and additional builder/injector/configurator component
+    - builder/injector/configurator is an **additional source of errors**
+    - some **problems** can **only be detected at runtime**
+    - possible **missconfiguration**
+
 ---
 ## 2.6. Design principles (R1-R3)
 > SW architects are able to explain what design principles are. They can outline their general objectives and applications (R2).
