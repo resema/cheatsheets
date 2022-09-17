@@ -653,7 +653,7 @@ Ensure explicitness in your work by:
     - applies to architectural design in general
     - strive for **implementations that can be used as replacements for their abstractions**
   - **I**nterface segregation principle (ISP)
-    - just one of manu guidelines for the design of interfaces
+    - just one of many guidelines for the design of interfaces
     - see [2.9](#29-design-and-define-interfaces-r1-r3)
     - **smaller** and **client-specific** interfaces might lead to **lower coupling**
   - **D**ependency inversion principle (DIP)
