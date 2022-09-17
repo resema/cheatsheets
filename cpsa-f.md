@@ -445,7 +445,16 @@ Ensure explicitness in your work by:
   - usage of technology
   - conventions for interfaces
 
-
+- **Significance** of cross-cutting concepts
+  - help to **ensure consistency**
+    - based upon 
+      - same technology,
+      - same pattern or
+      - same conventions
+  - concepts are used for **knowledge transfer** between people and/or systems
+- Risks involved in cross-cutting concepts
+  - similar to every standardization effort
+    - if **standard is bad**, **system** using the standard **will also be bad**
 
 ---
 ## 2.5. Patterns (R1, R3)
