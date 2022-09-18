@@ -342,8 +342,9 @@ Ensure explicitness in your work by:
 > - **identify risks** related to architecture decisions
 
 
-- designing belongs to the core task of the architectural role
-  - take ino account at least:
+- **Design and communicate**
+  - designing belongs to the core task of the architectural role
+  - take into account at least:
     - requirements and constraints
     - available components, technologies or other elements
     - available skills in dev team
@@ -354,37 +355,44 @@ Ensure explicitness in your work by:
     - finding right language / communiation media
     - balancing written and verbal communication
 
-  - structure contains of structural elements and their dependencies
-    - structural elements (building blocks) are:
-      - source code
-      - pre-compiled libs
-      - frameworks
-      - files or similar things
-    - building blocks themself have more specific categories:
-      - subsystems
-      - parts
-      - components
-      - packages
-      - namespaces
-      - or smaller elements
+- **Structural decisions**
+  - structure consists of structural elements and their dependencies
+  - structural elements (building blocks) are:
+    - source code
+    - pre-compiled libs
+    - frameworks
+    - files or similar things
+  - building blocks themself have more specific categories:
+    - subsystems
+    - parts
+    - components
+    - packages
+    - namespaces
+    - or smaller elements
 
-- building block is the **most general term** for all kinds of artifacts
-- **black box** hides the interior structure --> information hidding principle
-  - exposes by appropriate name and description:
-    - its responsibilities
-    - provided interface(s)
-    - required interface(s)
-    - additional attributes like qualities, restrictions, risks or problems
-- **gray box** shows additionally mostly technical interfaces, f.ex. configuration interfaces or interfaces to the runtime environment
-- **white box** shows the interios structure --> design rationale
-  - explains the reason why it is structured exactly in this specifc way
-    - name
-    - reference or link to its black box
-    - overview of its internal structure
-    - design rational (reason for this structure)
-    - list of contained black boxes
+- **Building blocks**
+  - building block is the **most general term** for all kinds of artifacts
+  
+- **Properties of [black/gray/white] box representations**
+  - **black box** hides the interior structure --> information hidding principle
+    - exposes by appropriate name and description:
+      - its responsibilities
+      - provided interface(s)
+      - required interface(s)
+      - additional attributes like qualities, restrictions, risks or problems
+  - **gray box** shows additionally mostly technical interfaces, f.ex. configuration interfaces or interfaces to the runtime environment
+  - **white box** shows the interios structure --> design rationale
+    - explains the reason why it is structured exactly in this specifc way
+      - name
+      - reference or link to its black box
+      - overview of its internal structure
+      - design rational (reason for this structure)
+      - list of contained black boxes
+      
 - **decomposition by changing from black to white box**
   - hierarchical decomposition
+  - **fundamental concept of building-block view** is the **systematic on-demand refinement** to increase level of detail
+  - [see LG 3-4](#34-architectural-views-r1)
 
 - **interfaces** are used to connect building blocks
   - **standard interface** defined by an external third party
