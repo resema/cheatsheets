@@ -330,7 +330,7 @@ Software architects are able to **name, explain, and use the fundamental approac
 SW architects are able to:
 - **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor business-critical
   - designing belongs to the core task of the architectural role
-    - take ino account at least:
+    - take into account at least:
       - requirements and constraints
       - available components, technologies or other elements
       - available skills in dev team
