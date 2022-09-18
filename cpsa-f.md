@@ -820,6 +820,62 @@ Ensure explicitness in your work by:
 > - explain and apply **solution options**, **architectural tactics**, **suitable practices**
 > - identify and communicate **possible trade-offs between such solutions** and their **associated risks**
 
+- Explanation
+  - most important goal
+  - know the **quality requirements** of most important stakeholders
+  - be **very on-point**, **specific** and **expressive** about these qualities
+  - **quality scenarios** are a simple and established method **to make quality requirements explicit**
+
+- **Architectural tactics to achieve quality requirements**
+  - any action, approach, tactic, strategy, plan, procedure or similar with the **intention to achieve a certain quality requirement**
+
+- **Performance tactics**
+  - manage **resource demands**, e.g. 
+    - reduce computational overhead
+    - exert bounds on execution times
+    - increase efficiency of algorithms
+  - manage **resources**, e.g.
+    - balance resource allocation
+    - increase resources
+    - maintain multiple copies of data or computation nodes
+  - **arbitrate between conflicting demands**, e.g.
+    - appropriate scheduling policies
+    - use synchronization protocols
+    - increase level of concurrency
+
+- **Availability tactics**
+  - **detect faults**, e.g.
+    - ping, heartbeat
+    - sanity checking
+    - monitoring
+    - detecting exceptions
+  - **recover** from faults, e.g.
+    - using redundancy
+    - exception handling
+    - rollbacks, retries
+    - ignoring faulty behavior
+  - **prevent** faults, e.g.
+    - removing parts from active service
+    - using transactions
+    - preventing exceptions
+
+- **Maintainability or modifiability tactics**
+  - **localize expected changes**, e.g.
+    - reducing size of modules
+    - splitting modules
+    - encapsulating
+    - reducing dependencies and coupling
+    - using intermediaries
+    - isolating expected changes
+  - **restrict visibilities** of responsibilities, e.g.
+    - hiding informations
+    - keep interfaces constant
+    - separating interfaces from implementation
+  - **avoid ripple effects**, e.g.
+    - breaking dependency chains
+    - making data self-identifying
+    - limiting communication paths
+
 ---
 ## 2.9. Design and define interfaces (R1-R3)
 
