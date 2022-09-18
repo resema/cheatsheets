@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="287px" preserveAspectRatio="none" style="width:196px;height:287px;background:#FFFFFF;" version="1.1" viewBox="0 0 196 287" width="196px" zoomAndPan="magnify"><defs/><g><!--MD5=[9cda142ceffc07a371652fc8727f7e19]
+entity qr--><g id="elem_qr"><rect fill="#F1F1F1" height="46.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="182" x="8" y="7"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="170" y="12"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="168" y="14"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="168" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="23" y="40.5352">quality requirements</text></g><!--MD5=[97bded9ea8416bc4240d1ecd7eca0282]
+entity r1--><g id="elem_r1"><rect fill="#F1F1F1" height="46.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="10" y="113"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="62" y="118"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="60" y="120"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="60" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="25" y="146.5352">req1</text></g><!--MD5=[2d034b0875f5e28a2e66ba2265252e77]
+entity r2--><g id="elem_r2"><rect fill="#F1F1F1" height="46.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="117" y="113"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="169" y="118"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="167" y="120"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="167" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="132" y="146.5352">req2</text></g><!--MD5=[dc3dcf69659c94983ed7931d3e6edf32]
+entity d1--><g id="elem_d1"><rect fill="#F1F1F1" height="62.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="78" x="7" y="219"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="65" y="224"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="63" y="226"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="63" y="230"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="22" y="252.5352">detail</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="22" y="269.0234">detail</text></g><!--MD5=[ce775897d8414bcbc491cb144e5964a1]
+reverse link qr to r1--><g id="link_qr_r1"><path d="M85.37,57.75 C76.63,74.89 65.44,96.85 57.22,112.98 " fill="none" id="qr-backto-r1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="87.76,53.06,80.1096,59.2626,85.4897,57.5149,87.2374,62.895,87.76,53.06" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[25178ec18b70dea580a9d52a0534253f]
+reverse link qr to r2--><g id="link_qr_r2"><path d="M112.89,57.75 C121.79,74.89 133.19,96.85 141.56,112.98 " fill="none" id="qr-backto-r2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="110.45,53.06,111.0354,62.8914,112.7487,57.5003,118.1398,59.2136,110.45,53.06" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[88874997890a436f70bba25bb0a5efc2]
+reverse link r1 to d1--><g id="link_r1_d1"><path d="M46,164.61 C46,181.02 46,201.87 46,218.8 " fill="none" id="r1-backto-d1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="46,159.23,42,168.23,46,164.23,50,168.23,46,159.23" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7a0693beedb1a93521a410f2b2a2ce19]
+@startuml
+component "quality requirements" as qr
+component "req1" as r1
+component "req2" as r2
+
+component d1 [
+    detail
+    detail
+]
+
+qr <-d- r1
+qr <-d- r2
+
+r1 <-d- d1
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CH
+--></g></svg>

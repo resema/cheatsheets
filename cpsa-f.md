@@ -38,7 +38,7 @@
   - [4.2. Clarify quality requirements (R1)](#42-clarify-quality-requirements-r1)
   - [4.3. Qualitative analysis (R2-R3)](#43-qualitative-analysis-r2-r3)
   - [4.4. Quantitative evaluation (R2)](#44-quantitative-evaluation-r2)
-- [5. Examples of software architectur](#5-examples-of-software-architectur)
+- [5. Examples of software architecture](#5-examples-of-software-architecture)
   - [5.1. From requirements to solution (R3)](#51-from-requirements-to-solution-r3)
   - [5.2. Rationale of a technical implementation (R3)](#52-rationale-of-a-technical-implementation-r3)
 ---
@@ -1037,6 +1037,17 @@ Software architects use documentation to support the **design**, **implementatio
 >   - **security** versus **usability**
 >   - **runtime flexibility** versus **maintainability**
 
+- **Quality**
+  - more than a single property or attribute
+  - **needs to be specified or described**
+  - set of desired, required or given properties of a system
+  - quality attributes == quality properties == quality characteristics
+
+- **Quality model**
+  - a **collection of attributes** a system might have or need to have
+  - **hierarchical** quality models **break down their top-level properties into finer grained properties** 
+  
+    ![ISO-25010](out/diags/cpsa-f/iso-25010/iso-25010.svg)
 
 ---
 ## 4.2. Clarify quality requirements (R1)
@@ -1073,7 +1084,7 @@ Software architects use documentation to support the **design**, **implementatio
 ---
 ---
 
-# 5. Examples of software architectur
+# 5. Examples of software architecture
 ## 5.1. From requirements to solution (R3)
 
 > Software architects are expected to recognize and comprehend the correlation between requirements and constraints, and the chosen solutions using at least one example

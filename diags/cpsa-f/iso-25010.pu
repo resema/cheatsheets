@@ -1,0 +1,15 @@
+@startuml
+component "quality requirements" as qr
+component "req1" as r1
+component "req2" as r2
+
+component d1 [
+    detail
+    detail
+]
+
+qr <-d- r1
+qr <-d- r2
+
+r1 <-d- d1
+@enduml
