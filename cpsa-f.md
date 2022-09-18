@@ -378,6 +378,11 @@ Ensure explicitness in your work by:
 
 - **Building blocks**
   - building block is the **most general term** for all kinds of artifacts
+  - **interfaces** are used to connect building blocks
+    - **standard interface** defined by an external third party
+    - **provided interface** defined by the building block that **provided** it
+    - **required interface** defined by the building block that **requires** it
+    - **independent interface** defined by both building blocks that **requires** and **provides** it
   
 - **Properties of [black/gray/white] box representations**
   - **black box** hides the interior structure --> information hidding principle
@@ -395,16 +400,40 @@ Ensure explicitness in your work by:
       - design rational (reason for this structure)
       - list of contained black boxes
       
-- **decomposition by changing from black to white box**
+- **Decomposition by changing from black to white box**
   - hierarchical decomposition
   - **fundamental concept of building-block view** is the **systematic on-demand refinement** to increase level of detail
   - [see LG 3-4](#34-architectural-views-r1)
 
-- **interfaces** are used to connect building blocks
-  - **standard interface** defined by an external third party
-  - **provided interface** defined by the building block that **provided** it
-  - **required interface** defined by the building block that **requires** it
-  - **independent interface** defined by both building blocks that **requires** and **provides** it
+- **Recognize interdependencies** and **trade-offs** between design decisions
+  - any advantages are for free
+    - often consequences are hidden or indirect
+
+- **Stepwise refinement**
+  - approach to identify or design the building blocks of a system
+  - synonym for top-down approach ([see LG 2-1](#21-approaches-and-heuristics-for-architecture-development-r1-r3))
+
+- **Design architecture views**
+  - taking different views on the same system is an **effective means of reasoning about the consequences** of decisions
+  - support both **designing** and **communicating** architecture
+
+- **Relation of building blocks to source code**
+  - **white box** consists of **all source code**
+  - **black box** consists of few files (f.ex. interface)
+
+- **Separate technical aspects from domain-related elements**
+  - [SoC](#26-design-principles-r1-r3) principle proposes to separate responsibilities
+  - aspects that belong together should be brought together (see *cohesion* [LG 2-6](#26-design-principles-r1-r3))
+
+- **Identify risks related to architectural decisions**
+  - architectural decisions involve **tradeoffs**
+  - **consider** and **communicate** such **risks**
+  - risks dure to a variety of reasons, e.g.
+    - proposed approach is **highly innovative** and has **not been thoroughly evaluated or tested**
+    - developers **lack the required experience**
+    - **technologies** have **not been used** in that **specific combination** before
+    - **suboptimal solution**, but resources not available
+    - **forced into a specific solution**
 
 - **different levels** in an **architectural description**
   ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
