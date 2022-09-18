@@ -824,6 +824,7 @@ Ensure explicitness in your work by:
   - most important goal
   - know the **quality requirements** of most important stakeholders
   - be **very on-point**, **specific** and **expressive** about these qualities
+  - **avoid buzzwords**
   - **quality scenarios** are a simple and established method **to make quality requirements explicit**
 
 - **Architectural tactics to achieve quality requirements**
@@ -890,6 +891,35 @@ Ensure explicitness in your work by:
 > - different approaches for implementing interface (R3)
 >   - **resource-oriented** approach (REST)
 >   - **service-oriented** approach (WS*/SOAP-based web services)
+
+- Explanation
+  - define and describe collaboration between different elements
+  - **provided interfaces (API)**
+  - **service provider interface (SPI)** &rarr; used to enable extensions to a given component/system
+  - **required interface** &rarr; what a component needs to fulfill its responsibilities
+
+- **What belongs to an interface**
+  - **syntax**
+  - **semantic** aka. *meaning or responsibilities of interface elements*
+  - **protocol** aka. *detailed interactions between consumer and provider*
+  - physical or technical **media** used for interaction
+  - required **quality characteristic** *like performance efficiency, load, throughput, reliability*
+  - **versioning**
+
+- **Requirements on interfaces and best practices**
+  - fit the needs of the components that use them
+  - convey an adequate access to the functionality
+  - easy to learn and easy to use
+  - try out the interface yourself &rarr; find out how the interface feels
+  - provide atomic information units
+  - if consumer gets complicated, there is a high probability that something is wrong with the interface design
+  - design with extensibility in mind
+  - API versioning right from the start
+  - make hard to misuse
+  - hide implementation details
+  - be consistent
+  - use meaningful, self-descriptive names
+  - minimize surprises and side effects
 
 ---
 ---
