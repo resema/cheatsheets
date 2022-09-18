@@ -46,6 +46,10 @@ My second brain, to help me remember stuff
 ---
 ---
 # A
+- **Abstraction**: Design principle for handling complexity, see <!-- omit in toc -->
+  - [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3) <!-- omit in toc -->
+
+---
 - **Authenthication**: Authenticate your user, see <!-- omit in toc -->
   - [gcloud [1]](/gcp-k8s-istio.md#11-cheats)
   - [Overview [2]](/security.md#2-terminology)
@@ -69,6 +73,9 @@ My second brain, to help me remember stuff
 ---
 ---
 # C
+- **Conceptional integrity**: Design principle for similar tasks are handle in similar manner, including KISS and YAGNI, see <!-- omit in toc -->
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats) <!-- omit in toc -->
+---
 - **Cross-cutting concepts**: Concepts which span over multiple areas, see
   - [cross-cutting concepts [1]](/cpsa-f.md#24-cross-cutting-concepts-r1)
   - [document cross-cutting concepts [2]](/cpsa-f.md#36-document-cross-cutting-concepts-r2)
@@ -85,7 +92,10 @@ My second brain, to help me remember stuff
   - [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3) <!-- omit in toc -->
 ---
 - **Docker**: Container platform, see
-  - [Cheats [1]](/cloud-infrastructure.md#31-cheats)
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats) <!-- omit in toc -->
+---
+- **DRY**: Design principle for introducing abstractions, see
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats) <!-- omit in toc -->
 
 ---
 ---
@@ -106,13 +116,16 @@ My second brain, to help me remember stuff
 ---
 # L
 - **Long Running Operations**: defines a standard interface to work with Long Running Operations so the client can use it to track the progress and receive the result
-  - [Description](/gcp-k8s-istio.md#129-long-running-operations)
+  - [Description [1]](/gcp-k8s-istio.md#129-long-running-operations)  <!-- omit in toc -->
 
 ---
 ---
 # K
 - **k9s**: Tool to interact with Istio, Kubernetes, Configmaps, Secrets, Services, Pods and much more, see
   - [Tools [1]](/gcp-k8s-istio.md#431-cheats) <!-- omit in toc -->
+---
+- **KISS**: *Keep it simple, stupid* - Design principle for similar tasks are handle in similar manner (part of conceptional integrity), see <!-- omit in toc -->
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats)  <!-- omit in toc -->
 ---
 - **kustomize**: Tool to handle manifests, see
   - [Tools [1]](/cloud-infrastructure.md#2-kustomize)
@@ -121,9 +134,10 @@ My second brain, to help me remember stuff
 ---
 # M
 - **Managed Instance Group**: a collection of Virtual Machine (VM) instances that can be managed as a single entity
-  - [Definition](/gcp-k8s-istio.md#127-managed-instance-group-mig)
-
+  - [Definition [1]](/gcp-k8s-istio.md#127-managed-instance-group-mig)  <!-- omit in toc -->
 ---
+- **Modularization**: Design principle for information hiding and encapsulation; contains SOC, SOLID, see <!-- omit in toc -->
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats)  <!-- omit in toc -->
 ---
 # O
 - **OAuth**: not an API or a service: it’s an open standard for authorization and anyone can implement it
@@ -147,13 +161,13 @@ My second brain, to help me remember stuff
 ---
 # R
 - **Cloud Run**: basically a managed GKE
-  - [Description](/gcp-k8s-istio.md#126-cloud-run)
+  - [Description [1] ](/gcp-k8s-istio.md#126-cloud-run)  <!-- omit in toc -->
 
 ---
 ---
 # S
 - **Service Account**: special types of accounts used by applications and services
-  - [description [1]](/security.md) <!-- omit in toc -->
+  - [Description [1]](/security.md) <!-- omit in toc -->
 ---
 - **SLA**: service level agreement; the agreement made with clients or users <!-- omit in toc -->
 ---
@@ -161,10 +175,16 @@ My second brain, to help me remember stuff
 ---
 - **SLO**: service level objective; the objectives the team must hit to meet the agreement. <!-- omit in toc -->
 ---
+- **Separation of concerns (SoC)**: Design principle for destructing a problem into sub-problems, see <!-- omit in toc -->
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats)  <!-- omit in toc -->
+---
+- **SOLID**: Design principle for single reponsibility principle, open-closed principle, Liskov substitution principle, interface segregation principle and dependency inversion principle, see <!-- omit in toc -->
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats)  <!-- omit in toc -->
+---
 - **Submodule**: child repository in parent repository, see 
-  - [cheats [1]](/git.md#112-submodule)
-  - [cheats [2]](/git.md#113-update-with-originmain)
-  - [cheats [3]](/git.md#114-update-submodule-in-another-repo)
+  - [Cheats [1]](/git.md#112-submodule)
+  - [Cheats [2]](/git.md#113-update-with-originmain)
+  - [Cheats [3]](/git.md#114-update-submodule-in-another-repo)
 
 ---
 ---
@@ -185,10 +205,13 @@ My second brain, to help me remember stuff
 ---
 # W
 - **Workflow**: is Google Cloud’s managed orchestration platform that executes services in an order that is defined as a workflow
-  - [Description](/gcp-k8s-istio.md#128-workflow)
+  - [Description [1]](/gcp-k8s-istio.md#128-workflow) <!-- omit in toc -->
 
 ---
 ---
 # Y
+- **YAGNI**: *You Ain't Gonna Need It* - Design principle for similar tasks are handle in similar manner (part of conceptional integrity), see <!-- omit in toc -->
+  - [Cheats [1]](/cloud-infrastructure.md#31-cheats) <!-- omit in toc -->
+---
 - **YAML**: Yet another markdown language; used for manifest, Google Workflow and others, see
   - [Example Kubernetes [1]](/gcp-k8s-istio.md#124-resource-management-for-pods-and-containers)

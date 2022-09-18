@@ -281,82 +281,99 @@ Ensure explicitness in your work by:
 # 2. Design and Development
 ## 2.1. Approaches and heuristics for architecture development (R1, R3)
 
-Software architects are able to **name, explain, and use the fundamental approaches** of architecture development, f.ex.:
-- **top-down** and **bottom-up** approaches for design (R1)
-  - top-down, used for:
-    - keep overview
-    - abstract away details
-    - keep things consistent over various components
-    - work from abstract/large elements to specific/smaller ones
-  - bottom-up, used for:
-    - reduce risks
-    - build proof-of-concept implementations
-    - validate decisions or proposals, proving that they work in practice
-    - build-up knowledge and experience
-    - work from detailed, specific or concrete elements up to larger more abstract ones
-- **view-based** architecture development (R1)
-  - views focus on specific concerns, parts or aspects of a system
-    - building-block, runtime, deployment and context view
-      - fascilitate structural, runtime or hardware decisions
-      - fascilitate communication and documentation
-      - gain flexibility in the degree of detail
-      - address specific stakeholder concerns
-- **iterative** and **incremental** design (R1)
-  - necessity of iterations is affected by uncertainties (R1)
-  - necessity of feedback on design decisions (R1)
-  - iterative:
-    - in repeated cycles
-    - make appropriate design modifications **parallel** to development
-    - learning and improvement is based on feedback
-  - incremental:
-    - done in pieces, building upon each other
-    - each increment delivers a slice of functionality through cross-discipline work (requirements, architecture/design, implementation and deployment)
-  - **major advantage of combined approach**:
-    - problems are detected early, allowing more time to resolve them
-    - typical development and rollout performed in every iteration
-    - changes in requirements and technologies can be taken into account
-    - development risks and uncertainties are minimized
-- domain-driven design (R3)
-  - integrates quite well with the microservice architecture pattern
-- evolutionary architecture (R3)
-  - combines the concept of global analysis with executable specifications
-- global analysis (R3)
-  - starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
-- model-driven architecture (R3)
+> Software architects are able to **name, explain, and use the fundamental approaches** of architecture > development, f.ex.:
+> - **top-down** and **bottom-up** approaches for design (R1)
+> - **view-based** architecture development (R1)
+> - **iterative** and **incremental** design (R1)
+>  - necessity of iterations is affected by uncertainties (R1)
+>  - necessity of feedback on design decisions (R1)
+> - domain-driven design (R3)
+> - evolutionary architecture (R3)
+> - global analysis (R3)
+> - model-driven architecture (R3)
+
+- **top-down**, used for:
+  - keep overview
+  - abstract away details
+  - keep things consistent over various components
+  - work from abstract/large elements to specific/smaller ones
+- **bottom-up**, used for:
+  - reduce risks
+  - build proof-of-concept implementations
+  - validate decisions or proposals, proving that they work in practice
+  - build-up knowledge and experience
+  - work from detailed, specific or concrete elements up to larger more abstract ones
+
+- **views** focus on specific concerns, parts or aspects of a system
+  - building-block, runtime, deployment and context view
+    - fascilitate structural, runtime or hardware decisions
+    - fascilitate communication and documentation
+    - gain flexibility in the degree of detail
+    - address specific stakeholder concerns
+- iterative:
+  - in repeated cycles
+  - make appropriate design modifications **parallel** to development
+  - learning and improvement is based on feedback
+- incremental:
+  - done in pieces, building upon each other
+  - each increment delivers a slice of functionality through cross-discipline work (requirements, architecture/design, implementation and deployment)
+- **major advantage of combined approach**:
+  - problems are detected early, allowing more time to resolve them
+  - typical development and rollout performed in every iteration
+  - changes in requirements and technologies can be taken into account
+  - development risks and uncertainties are minimized
+- integrates quite well with the microservice architecture pattern
+- combines the concept of global analysis with executable specifications
+- starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
+
 
 ---
 ## 2.2. Design software architectures (R1)
 
-SW architects are able to:
-- **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor business-critical
+> SW architects are able to:
+> - **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor bu  siness-critical
+> - make **structurally-relevant decisions** regarding **system decomposition** and **building block structure** and **deliberate dependencies** between building blocks
+> - **recognize** and **justify** the **interdependencies and tradeoffs** of design decisions
+> - explain the terms **black box** and **white box** and apply them purposefully
+> - apply **stepwise refinement** and **specify building blocks**
+> - **architectural views**, especially building blocks view, runtime view and deployment view
+> - **explain the consequences** of decisions to corresponding src code
+> - **separate technical and domain-related elements** of architecture and justify these decision
+> - **identify risks** related to architecture decisions
+
+
+- **Design and communicate**
   - designing belongs to the core task of the architectural role
-    - take into account at least:
-      - requirements and constraints
-      - available components, technologies or other elements
-      - available skills in dev team
-      - potential conflicts between goals, requirements or constraints
-    - communicate such decisions and options might involve:
-      - conquering resistance
-      - identifying proper arguments for pros and cons
-      - finding right language / communiation media
-      - balancing written and verbal communication
-- make **structurally-relevant decisions** regarding **system decomposition** and **building block structure** and **deliberate dependencies** between building blocks
-  - structure contains of structural elements and their dependencies
-    - structural elements (building blocks) are:
-      - source code
-      - pre-compiled libs
-      - frameworks
-      - files or similar things
-    - building blocks themself have more specific categories:
-      - subsystems
-      - parts
-      - components
-      - packages
-      - namespaces
-      - or smaller elements
-- **recognize** and **justify** the **interdependencies and tradeoffs** of design decisions
-- explain the terms **black box** and **white box** and apply them purposefully
+  - take into account at least:
+    - requirements and constraints
+    - available components, technologies or other elements
+    - available skills in dev team
+    - potential conflicts between goals, requirements or constraints
+  - communicate such decisions and options might involve:
+    - conquering resistance
+    - identifying proper arguments for pros and cons
+    - finding right language / communiation media
+    - balancing written and verbal communication
+
+- **Structural decisions**
+  - structure consists of structural elements and their dependencies
+  - structural elements (building blocks) are:
+    - source code
+    - pre-compiled libs
+    - frameworks
+    - files or similar things
+  - building blocks themself have more specific categories:
+    - subsystems
+    - parts
+    - components
+    - packages
+    - namespaces
+    - or smaller elements
+
+- **Building blocks**
   - building block is the **most general term** for all kinds of artifacts
+  
+- **Properties of [black/gray/white] box representations**
   - **black box** hides the interior structure --> information hidding principle
     - exposes by appropriate name and description:
       - its responsibilities
@@ -371,52 +388,52 @@ SW architects are able to:
       - overview of its internal structure
       - design rational (reason for this structure)
       - list of contained black boxes
-  - **decomposition by changing from black to white box**
-    - hierarchical decomposition
+      
+- **decomposition by changing from black to white box**
+  - hierarchical decomposition
+  - **fundamental concept of building-block view** is the **systematic on-demand refinement** to increase level of detail
+  - [see LG 3-4](#34-architectural-views-r1)
+
 - **interfaces** are used to connect building blocks
   - **standard interface** defined by an external third party
   - **provided interface** defined by the building block that **provided** it
   - **required interface** defined by the building block that **requires** it
   - **independent interface** defined by both building blocks that **requires** and **provides** it
-- apply **stepwise refinement** and **specify building blocks**
-- **architectural views**, especially building blocks view, runtime view and deployment view
-- **explain the consequences** of decisions to corresponding src code
-- **separate technical and domain-related elements** of architecture and justify these decision
-- **identify risks** related to architecture decisions
+  - 
 - **different levels** in an **architectural description**
   ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
 
 ---
 ## 2.3. Influencing factors and constraints (R1-R3)
 
-SW architects are able to gather and consider constraints and influencing factors:
-- **Product-related** factors:
-  - functional requirements (R1)
-  - quality requirements and quality goals (R1)
-  - additional factors such as product cost, intended licensing model or business model (R1)
-- **Technological** factors:
-  - externally mandated technical decisions and concepts (R1)
-  - existing or planned hardware and software infrastructure (R1)
-  - technological constraints on data structures and interfaces (R2)
-  - reference architectures, libraries, components, and frameworkds (R1)
-  - programming languages (R3)
-- **Organizational** factors:
-  - organizational structure of dev team and customers (R1)
-  - company and team cultures (R3)
-  - partnerships and cooperation agreements (R2)
-  - standards, guidelines, and process models (R2)
-  - available resources like budget, time, and staff (R1)
-  - availability, skill set, and commitment of staff (R1)
-- **Regulatory** factors:
-  - legal constraints (R2)
-  - contract and liability issues (R2)
-  - data protection and privacy laws (R2)
-  - compliance issues or obligations to provide burden of proof (R2)
-- **Trends**:
-  - market trends (R3)
-  - technology trends (R3)
-  - methodology trends (R3)
-  - impact of further stakeholder concerns and mandated design decisions (R3)
+> SW architects are able to gather and consider constraints and influencing factors:
+> - **Product-related** factors:
+>   - functional requirements (R1)
+>   - quality requirements and quality goals (R1)
+>   - additional factors such as product cost, intended licensing model or business model (R1)
+> - **Technological** factors:
+>   - externally mandated technical decisions and concepts (R1)
+>   - existing or planned hardware and software infrastructure (R1)
+>   - technological constraints on data structures and interfaces (R2)
+>   - reference architectures, libraries, components, and frameworkds (R1)
+>   - programming languages (R3)
+> - **Organizational** factors:
+>   - organizational structure of dev team and customers (R1)
+>   - company and team cultures (R3)
+>   - partnerships and cooperation agreements (R2)
+>   - standards, guidelines, and process models (R2)
+>   - available resources like budget, time, and staff (R1)
+>   - availability, skill set, and commitment of staff (R1)
+> - **Regulatory** factors:
+>   - legal constraints (R2)
+>   - contract and liability issues (R2)
+>   - data protection and privacy laws (R2)
+>   - compliance issues or obligations to provide burden of proof (R2)
+> - **Trends**:
+>   - market trends (R3)
+>   - technology trends (R3)
+>   - methodology trends (R3)
+>   - impact of further stakeholder concerns and mandated design decisions (R3)
 
 ---
 ## 2.4. Cross-cutting concepts (R1)
@@ -425,6 +442,27 @@ SW architects are able to gather and consider constraints and influencing factor
 > - **explain the significance** of such cross-cutting concepts
 > - **decide on and design** cross-cutting concepts, f.ex. persistence, communication, GUI, error handling, concurrency
 > - **identify and assess potential interdependencies** between these decisions
+
+- Explanation:
+  - concepts which **affect serveral building blocks of the system**
+  - often **represent central technical decisions**
+  - used to **solve recurring problems** aka. *cross-cutting concerns*
+- Examples:
+  - fundamental technology decisions
+  - selection of frameworks, tools or libraries
+  - usage of technology
+  - conventions for interfaces
+
+- **Significance** of cross-cutting concepts
+  - help to **ensure consistency**
+    - based upon 
+      - same technology,
+      - same pattern or
+      - same conventions
+  - concepts are used for **knowledge transfer** between people and/or systems
+- Risks involved in cross-cutting concepts
+  - similar to every standardization effort
+    - if **standard is bad**, **system** using the standard **will also be bad**
 
 ---
 ## 2.5. Patterns (R1, R3)
@@ -467,6 +505,75 @@ SW architects are able to gather and consider constraints and influencing factor
 > - strategy
 > - visitor
 
+- Layers
+  - covers **two different approaches**:
+    - **Abstraction layers**
+      - lower layers **hide certain details** from the layers above
+      - upper layers **access** lower layers **only via clearly defined interfaces**
+    - Layers to **serparate functionality** or **responsibility**
+      - known also as **tiers**
+      - f.ex. separation into presentation-, business- and data-access layers
+  - **dependencies go down** from upper to lower layers **only**
+  - distinguish between **strict** and **loose** layering
+    - strict: 
+      - only to layer immediately below it
+      - crossing layers is prohibited
+    - loose:
+      - layer may access all layers below it
+      - dependencies or calls may bridge one or more intermediate layers
+  - **advantages**
+    - helps to **avoid circular dependencies**
+    - simple structure, easy to understand
+  - **disadvantages**
+    - lower efficiency
+    - potential cascade of changes
+
+- Pipes and filters
+  - an example of **data flow architecture**
+  - filter: 
+    - **transforms**, **aggregates** or **manipulates** data
+    - **receives input data** from a pipe
+  - pipe:
+    - **transports** data or messages
+  - **advantages**
+    - **simple** (linear) **dependencies**
+    - **flexible** to **processing steps**
+    - (relatively) **simple scaling** by executing in parallel
+    - might **remove the need for intermediate files**
+    - **filters** can be **developed independently**
+  - **disadvantages**
+    - pipes can **overflow**
+    - **errors** might be **difficult to track**
+    - potentially **difficult to share global or common data**
+
+- Microservices
+  - highly flexible systems that can be **adapted to changing user/business requirements as quickly as possible**
+  - **advantages**
+    - improve **changeability** and **flexibility** of software
+    - improve **time-to-market**
+    - **faster development** by having smaller units
+    - more flexibilty in terms of **technology selection**
+    - **own runtime environment**
+    - **technology diversity**
+  - **disadvantages**
+    - possible **latency** caused by network
+    - **outages** of certain microservices or nodes
+    - **bandwith limitations**
+    - deal with **eventual consistency**
+    - **complexity shift**
+    - **testing** requires **appropriate infrastructure**
+
+- Dependency injection
+  - **defer dependency-resolution** from compile-time to run-time
+  - **advantages**
+    - improved **flexibility**
+    - tests with mocks for expensive services
+  - **disadvantages**
+    - code gets **more complicated** due to inderections and additional builder/injector/configurator component
+    - builder/injector/configurator is an **additional source of errors**
+    - some **problems** can **only be detected at runtime**
+    - possible **missconfiguration**
+
 ---
 ## 2.6. Design principles (R1-R3)
 > SW architects are able to explain what design principles are. They can outline their general objectives and applications (R2).
@@ -474,23 +581,11 @@ SW architects are able to gather and consider constraints and influencing factor
 > - explain **how quality requirements determine which principle should be applied**
 > - explain **impact of design principles on the implementation**
 > - **analyze src code and architecture designs** to evaluate wheter these design principles have been applied or should be applied
-
-- Patterns 
-  - resemble "cooking recipes"
-  - offer a proposal for the structured application
-
 > Design Principles:
 > - Abstraction (R1)
 >   - in the sense of a means for **deriving useful generalizations**
 >   - as a design construct, where **building blocks are dependent** on the **abstraction** rather then depending on implementations
 >   - **interfaces as abstractions**
-
-- Abstraction:
-  - crucial concept for handling complexity *aka. not to deal with all the details at once*
-  - this principal may be applied in various ways:
-    - **interfaces** omitting private details about internal structures
-    - **data abstractions** consider the abstract properties of data types while omitting details of implementation
-
 > - Modularizations
 >   - **information hiding** and **encapsulation** (R1)
 >   - **separation of concerns** aka. SOC (R1)
@@ -504,10 +599,29 @@ SW architects are able to gather and consider constraints and influencing factor
 >     - **I**: interface segregation principle (R2)
 >       - smaller and client-specific interfaces lead to lower coupling and fewer dependencies
 >     - **D**: dependency inversion principle (R1)
+> - Conceptual integrity
+>   - **uniformity of solutions for similar problems** (R2)
+>   - achieve the **principle of least surprise** (R3)
+> - Simplicity
+>   - **reduce complexity** (R1)
+>   - **KISS** and **YAGNI** (R2)
+> - Expect Errors
+>   - design for **robust and resilient systems** (R1)
+>   - **generalisation of robustness principle** aka. Postel's Law (R2)
 
+- Patterns 
+  - resemble "cooking recipes"
+  - offer a proposal for the structured application
+
+- Abstraction:
+  - crucial concept for handling complexity *aka. not to deal with all the details at once*
+  - this principal may be applied in various ways:
+    - **interfaces** omitting private details about internal structures
+    - **data abstractions** consider the abstract properties of data types while omitting details of implementation
 - DRY:
   - try to introduce **abstractions** for **components that provide similar functionality**
   - applies for architects as well
+
 - Information hiding principle:
   - **hiding design decisions within a module implementation**, users don't need to be aware of inner workings
 - Separation of concers *aka. SOC*:
@@ -531,31 +645,61 @@ SW architects are able to gather and consider constraints and influencing factor
   - describes how **closely the inner elements are related to each other**
   - loose coupling and well-done SoC correlate with high cohesion
 - SOLID
-  - Single responsibility principle
+  - **S**ingle responsibility principle
     - pursues the same objectives as SoC from a different perspective
     - single responsibility (SRP) *vs* minimal overlapping concerns (SoC)
     - only **one reason to change**
-  - Open-closed principles
+  - **O**pen-closed principles
     - components should be **open for extension**, but **closed for modification**
     - able to extend functionality without modifying component itself
     - options to achieve this:
       - **inheritance** in OO systems
       - **plug-in** architectures
       - **dependency inversion** principle
-  - Liskov substitution principle
+  - **L**iskov substitution principle
     - way to promote **consistency** and **conceptual integrity**
-    - applies to architectural desing in general
+    - applies to architectural design in general
     - strive for **implementations that can be used as replacements for their abstractions**
+  - **I**nterface segregation principle (ISP)
+    - just one of many guidelines for the design of interfaces
+    - see [2.9](#29-design-and-define-interfaces-r1-r3)
+    - **smaller** and **client-specific** interfaces might lead to **lower coupling**
+  - **D**ependency inversion principle (DIP)
+    - **designing and structuring dependencies** belongs to one of the most important aspects
+    - advice **not to depend on low-level details**, but rather **to depend on abstractions**
+    - high-level modules should not depend on low-level modules
+      - both should **depend on abstractions**, e.g. not depend on details
+    - aka. **API facade**
 
-> - Conceptual integrity
->   - **uniformity of solutions for similar problems** (R2)
->   - achieve the **principle of least surprise** (R3)
-> - Simplicity
->   - **reduce complexity** (R1)
->   - **KISS** and **YAGNI** (R2)
-> - Expect Errors
->   - design for **robust and resilient systems** (R1)
->   - **generalisation of robustness principle** aka. Postel's Law (R2)
+- Conceptional integrity
+  - **entire system** should **follow a consistent style**
+    - similar tasks handled in similar manner
+  - *principle of least astonishment* ka. avoit behaving in widly unexpected ways
+  - develop a consistent *design philosophy*
+- KISS and YAGNI
+  - helpful guidelines for **discussing design alternatives**
+  - prevents *over-engineering*, f.ex.
+    - abstractions onto components with a single implementation
+    - functionality that eventually might become useful in future
+    - complicated or high-sophisticated technology, where simple approach would suffice
+  - KISS proposes to:
+    - design the simplest thing for the foreseeable future
+    - provide abstraction in a sensible way, aka. those components that acutally require flexibility and extensibility or used by a significant number of components
+    - trust future architects to be able to derive more sophisticated solution
+  - **Simplicity** helps to keep **system understandable and therefore changeable** over time
+
+- Expect errors
+  - **lookout** for **things that can go wrong**
+  - ask yourself **what might be misunderstood, forgot or neglect**
+  - **which parts** of software system **can fail** and **what are the implications**
+  - robustess principle
+    - *"be conservative (establish values) in what you do, be liberal (not strict/exact) in what you accept from others"*
+      - aka. **design a component** that will **still work even if not used correct**
+      - and **use other components as correctly as possible** to their specifications
+    - comes at a price:
+      - additional complexity to compensate for errors
+      - data exchanged via interfacess may no longer be correct
+      - others might take advantage of very tolerant components
 
 ---
 ## 2.7. Managing dependencies (R1)
@@ -569,6 +713,66 @@ SW architects are able to gather and consider constraints and influencing factor
 >   - patterns
 >   - basic design principles
 >   - externalization of dependencies, f.ex. dependency injection
+
+- Dependency
+  - a component depends on another, if it requires or needs to
+    - compile
+    - be installed
+    - be tested
+    - start
+    - run or function properly
+
+- Coupling
+  - **degree of dependence** between arbitrary elements
+  - **measusre of how closely** elements depend on each other
+  - some coupling is necessary for creating software
+  - might be directional
+
+- Risks and problems
+  - **changing** may require **changes in other components** aka. *ripple effect*
+  - compiling, building and testing might **require additional effort**
+  - **reuse** might be **harder**
+  - **understanding** becomes **more difficult**
+
+- Types of coupling
+  - via **use/delegation**
+    - use other components via **public interfaces**
+  - via **composition**
+    - one component contains another
+  - via **creation**
+    - the **factory** pattern provides a uniform way of handling coupling via creation
+      - therefore improve &rarr; consistency
+  - via **inheritance**
+    - subclass inherits properties and methods from parent (superclass, interface or object)
+    - coupling via inheritance **is very tight**
+    - coupling via interface-inheritance **is lower**
+  - via **messages** or **events**
+    - **loosly** coupling due to 
+      - components don't need to know each other
+      - no know about consequences
+      - do not expect synchronous reply
+  - **temporal coupling**
+    - is an (implicit) **relationship between components** in the **temporal dimension**
+    - doesn't have to be written smae language or even know about each other
+    - often occur together witch *shared state* or *global state*
+  - via **data types**
+    - a component uses a **specific data type defined in or by another component**
+      - this creates coupling betwween the two
+    - modifications ripples down to all components using the data type
+  - via **data**
+    - two components depend on the same data within a DB or bucket
+    - coupled over shared data (synchronization issues)
+    - debugging can become very difficult
+  - via **hardware**
+    - two **processes** in the same **physical hardware**
+    - might occure when doing **low-level programming**, f.ex. CUDA
+
+- Options to **reduce coupling**
+  - use- or call-dependencies could be removed by **relocating the call into the caller**
+  - apply the **dependency-inversion principle**
+  - use patterns like **broker**
+  - replace synchronous communication by **asynchronous communication** via events or messages
+  - introduce **redundancy**, f.ex. replace shared DB with component-specific DBs
 
 ---
 ## 2.8. Achieve quality requirements (R1)
