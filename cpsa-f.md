@@ -399,7 +399,7 @@ Ensure explicitness in your work by:
   - **provided interface** defined by the building block that **provided** it
   - **required interface** defined by the building block that **requires** it
   - **independent interface** defined by both building blocks that **requires** and **provides** it
-  - 
+
 - **different levels** in an **architectural description**
   ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
 
