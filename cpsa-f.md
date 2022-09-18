@@ -8,7 +8,7 @@
   - [1.5. Software architects and other stakeholders (R1)](#15-software-architects-and-other-stakeholders-r1)
   - [1.6. Development approach and software architecture (R1)](#16-development-approach-and-software-architecture-r1)
   - [1.7. Short- and long-term goals (R1)](#17-short--and-long-term-goals-r1)
-  - [1.8. Explicit statement versus implicit assumptions](#18-explicit-statement-versus-implicit-assumptions)
+  - [1.8. Explicit statement versus implicit assumptions (R1)](#18-explicit-statement-versus-implicit-assumptions-r1)
   - [1.9. Responsibilities of SW architects in the greater architectural context (R3)](#19-responsibilities-of-sw-architects-in-the-greater-architectural-context-r3)
   - [1.10. Types of IT systems (R3)](#110-types-of-it-systems-r3)
   - [1.11. Challenges of distributed systems (R3)](#111-challenges-of-distributed-systems-r3)
@@ -226,7 +226,13 @@ Short-term and long-term:
 - systems often remains in use for several years.
 
 ---
-## 1.8. Explicit statement versus implicit assumptions
+## 1.8. Explicit statement versus implicit assumptions (R1)
+
+> Software architects:
+> - excplicitly present assumptions or prerequisites
+> - avoid implicit assumptions
+> - know that implicit assumptions can lead to potential misunderstandings
+> - formulate without doubting
 
 *Very often things go wrong due to different people having different implicit assumptions about something. Software architects should be explicit in their decisions.*
 
