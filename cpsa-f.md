@@ -928,7 +928,7 @@ Ensure explicitness in your work by:
 ## 3.1. Quality requirements for technical documentation (R1)
 
 > Software architects know the quality requirements of technical documentation and can consider and fulfil those when documenting systems:
-> - **understandability**, **correctnes**, **efficiency**, **appropriateness** and **maintainability**
+> - **understandability**, **correctness**, **efficiency**, **appropriateness** and **maintainability**
 > - **form**, **content** and **level of detail** tailored to the stakeholders
 
 > Software architects know that only the target audiences can assess the understandability of technical documentation.
