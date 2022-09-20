@@ -1,15 +1,77 @@
 @startuml
-component "quality requirements" as qr
-component "req1" as r1
-component "req2" as r2
-
-component d1 [
-    detail
-    detail
+component "SW Product Quality" as pq
+component "functional suitability" as fs
+component fsd [
+    - correctness
+    - appropriateness
+    - completeness
+]
+component "reliability" as rb
+component rbd [
+    - availability
+    - fault tolerance
+    - recoverability
+    - maturity
+]
+component "performance efficiency" as pe
+component ped [
+    - time behavior
+    - resource utilization
+    - capacity
+]
+component "usability" as ub
+component ubd [
+    - appropriateness
+    - recognizability
+    - learnability
+    - operability
+    - user error protection
+    - UI asthetics
+    - accessibility
+]
+component "security" as sc
+component scd [
+    - confidentality
+    - integrity
+    - non-reputation
+    - accountability
+    - authenticity
+]
+component "compatibility" as cp
+component cpd [
+    - co-existence
+    - interoperability
+]
+component "maintainability" as ma
+component mad [
+    - modularity
+    - reusability
+    - analyzability
+    - modifiability
+    - testability
+]
+component "portability" as pt
+component ptd [
+    - adaptability
+    - installatbility
+    - replaceability
 ]
 
-qr <-d- r1
-qr <-d- r2
 
-r1 <-d- d1
+pq <-d- fs
+fs <-d- fsd
+pq <-d- rb
+rb <--d-- rbd
+pq <-d- pe
+pe <-d- ped
+pq <-d- ub
+ub <--d-- ubd
+pq <-d- sc
+sc <-d- scd
+pq <-d- cp
+cp <--d-- cpd
+pq <-d- ma
+ma <-d- mad
+pq <-d- pt
+pt <--d-- ptd
 @enduml

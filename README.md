@@ -149,8 +149,10 @@ My second brain, to help me remember stuff
 ---
 # Q
 - **Quality models and characteristics**: such as configurability, reliability, memory requirements, performance efficiency, securit, usability, runtime flexibility or maintainability, see
-  - [Examples [1]](/cpsa-f.md#41-quality-models-and-quality-characteristics-r1)
-
+  - [Examples [1]](/cpsa-f.md#41-quality-models-and-quality-characteristics-r1) <!-- omit in toc -->
+---
+- **Quality characteristics/requirements**: non-functional requirements in regards of ISO 25010, see
+  - [Description [1]](/cpsa-f.md#41-quality-models-and-quality-characteristics-r1) <!-- omit in toc -->
 ---
 ---
 # R
