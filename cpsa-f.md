@@ -965,7 +965,7 @@ focus on specific concerns, parts or aspects of a system
 ---
 ## 3.2. Describe and communicate software architectures (R1, R3)
 
-> Software architect are able to: (R1)
+> Software architect are able to:
 > - **documented and communicate architectures for corresponding stakeholders**, thereby addressing different target groups, e.g. management, development teams, QA, other architects, and additional stakeholders
 > - **consolidate and harmonize the style and content of contributions** from differnet groups of authors
 > - know the **benefits of template-based documentation**
@@ -980,7 +980,43 @@ focus on specific concerns, parts or aspects of a system
 > - **formal reviews and sign-off process** for documentation
 
 > They are aware of these factors and can adjust the documentation characteristics according to the situation.
- 
+
+### Value of architecture documentation <!-- omit in toc -->
+aspects that are not contained or not well-covered in source code:
+  - **overall structure**
+  - **architecture decisions**
+  - **reasons** for decisions
+  - technology **choices**
+  - **cross-cutting** concepts
+
+### Stakeholder-specific documentation <!-- omit in toc -->
+- different stakeholders or target groups can have different documentation requirements
+- fulfill the needs of stakeholders:
+  - format (wiki, single document, multiple documents)
+  - style (text, diagram or a mixture)
+  - structure
+  - notation (e.g. UML)
+  - depth
+  - representation (paper or online)
+
+### Benefits of templates <!-- omit in toc -->
+- template provides a fixed **structure**
+- provide following advantages:
+  - **understandability** is improved
+  - **retrievability** enables to find easily desired information
+  - feasible to **re-use**
+  - **lower effort to maintain**
+
+### Documentation depends on many factors <!-- omit in toc -->
+- documentation is a great example of **appropriateness**
+- various aspects of documentation depend on specifics of a system, its requirement, risks, development, organization and other factors
+- aspects include at least:
+  - written or verbal communication
+  - amount of documentation
+  - formats and accessibility
+  - formality of documentation
+  - formal reviews and sign-offs
+
 ---
 ## 3.3. Models and notations to describe (R2-R3)
 
