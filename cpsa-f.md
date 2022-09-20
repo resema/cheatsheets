@@ -35,7 +35,6 @@
   - [3.10. Resources and tools for documentation (R3)](#310-resources-and-tools-for-documentation-r3)
 - [4. Software architecture and quality](#4-software-architecture-and-quality)
   - [4.1. Quality models and quality characteristics (R1)](#41-quality-models-and-quality-characteristics-r1)
-    - [ISO 25010](#iso-25010)
   - [4.2. Clarify quality requirements (R1)](#42-clarify-quality-requirements-r1)
   - [4.3. Qualitative analysis (R2-R3)](#43-qualitative-analysis-r2-r3)
   - [4.4. Quantitative evaluation (R2)](#44-quantitative-evaluation-r2)
@@ -316,8 +315,8 @@ used for:
 ### **views** <!-- omit in toc -->
 focus on specific concerns, parts or aspects of a system
   - building-block, runtime, deployment and context view
-    - fascilitate structural, runtime or hardware decisions
-    - fascilitate communication and documentation
+    - facilitate structural, runtime or hardware decisions
+    - facilitate communication and documentation
     - gain flexibility in the degree of detail
     - address specific stakeholder concerns
 ### iterative <!-- omit in toc -->
@@ -937,6 +936,32 @@ focus on specific concerns, parts or aspects of a system
 
 > Software architects know that only the target audiences can assess the understandability of technical documentation.
 
+### Documentation requirement 1: Correct <!-- omit in toc -->
+- incorrect information in technical documentation can be as bad as bugs
+- correctness is the highest goal
+
+### Documentation requirement 2: Current <!-- omit in toc -->
+- documentation must be current
+
+### Documentation requirement 3: Helpful <!-- omit in toc -->
+- has to help all readers to perform their concrete task
+- should ease of facilitate their work
+
+### Documentation requirement 4: Easy to change <!-- omit in toc -->
+- documentation must be easy to change, as implementation changes
+- if costly or difficult to change, it will not be updated
+
+### Documentation requirement 5: Easy to understand <!-- omit in toc -->
+- fulfill their expectations: language, notation, form and tooling
+- invest adequate effort to ensure understandability e.g. through reviews and incorporating reader feedback
+
+### Documentation requirement 6: Ease to find <!-- omit in toc -->
+- be able to find information easily and quickly
+- fixed structures or template and convention help with that
+
+### Documentation requirement 7: Adequate <!-- omit in toc -->
+- stakeholders of system may have special requirements and wishes
+
 ---
 ## 3.2. Describe and communicate software architectures (R1, R3)
 
@@ -1094,7 +1119,7 @@ Software architects use documentation to support the **design**, **implementatio
 - a **collection of attributes** a system might have or need to have
 - **hierarchical** quality models **break down their top-level properties into finer grained properties** 
 
-### ISO 25010  
+### ISO 25010 <!-- omit in toc -->
 ![ISO-25010](out/diags/cpsa-f/iso-25010/iso-25010.svg)
 
 ### Typical conflicts between quality requirements <!-- omit in toc -->
