@@ -35,6 +35,7 @@
   - [3.10. Resources and tools for documentation (R3)](#310-resources-and-tools-for-documentation-r3)
 - [4. Software architecture and quality](#4-software-architecture-and-quality)
   - [4.1. Quality models and quality characteristics (R1)](#41-quality-models-and-quality-characteristics-r1)
+    - [ISO 25010](#iso-25010)
   - [4.2. Clarify quality requirements (R1)](#42-clarify-quality-requirements-r1)
   - [4.3. Qualitative analysis (R2-R3)](#43-qualitative-analysis-r2-r3)
   - [4.4. Quantitative evaluation (R2)](#44-quantitative-evaluation-r2)
@@ -1044,55 +1045,57 @@ Software architects use documentation to support the **design**, **implementatio
 - more than a single property or attribute
 - **needs to be specified or described**
 - set of desired, required or given properties of a system
+
+### Quality attributes <!-- omit in toc -->
 - quality attributes == quality properties == quality characteristics
+- software product quality
+  - functional suitability
+    - correctness
+    - appropriateness
+    - completeness
+  - reliability
+    - availability
+    - fault tolerance
+    - recoverability
+    - maturity
+  - performance efficiency
+    - time behavior
+    - resource utilization
+    - capacity
+  - usability
+    - appropriateness
+    - recognizability
+    - learnability
+    - operability
+    - user error protection
+    - UI asthetics
+    - accessibility
+  - security
+    - confidentality
+    - integrity
+    - non-reputation
+    - accountability
+    - authenticity
+  - compatibility
+    - co-existence
+    - interoperability
+  - maintainability
+    - modularity
+    - reusability
+    - analyzability
+    - modifiability
+    - testability
+  - portability
+    - adaptability
+    - installatbility
+    - replaceability
 
 ### **Quality model** <!-- omit in toc -->
 - a **collection of attributes** a system might have or need to have
 - **hierarchical** quality models **break down their top-level properties into finer grained properties** 
-  
-![ISO-25010](out/diags/cpsa-f/iso-25010/iso-25010.svg)
 
-#### SW Product Quality (from diagram) <!-- omit in toc -->
-- functional suitability
-  - correctness
-  - appropriateness
-  - completeness
-- reliability"
-  - availability
-  - fault tolerance
-  - recoverability
-  - maturity
-- performance efficiency
-  - time behavior
-  - resource utilization
-  - capacity
-- usability
-  - appropriateness
-  - recognizability
-  - learnability
-  - operability
-  - user error protection
-  - UI asthetics
-  - accessibility
-- security
-  - confidentality
-  - integrity
-  - non-reputation
-  - accountability
-  - authenticity
-- compatibility
-  - co-existence
-  - interoperability
-- maintainability
-  - modularity
-  - reusability
-  - analyzability
-  - modifiability
-  - testability
-- portability
-  - adaptability
-  - installatbility
-  - replaceability
+### ISO 25010  
+![ISO-25010](out/diags/cpsa-f/iso-25010/iso-25010.svg)
 
 ### Typical conflicts between quality requirements <!-- omit in toc -->
 - robustness versus runtime flexibility
@@ -1104,13 +1107,25 @@ Software architects use documentation to support the **design**, **implementatio
 - several quality attributes influence each other
 - nealy every quality property requires more time and/or money to implement
 
-
 ---
 ## 4.2. Clarify quality requirements (R1)
 
 > Software architects can
 > - clarify and formulate **specific quality requirements**, f.ex. in the form of scenarios and quality trees
 > - explain and apply **scenarios** and **quality trees**
+
+### Quality scenarios <!-- omit in toc -->
+- document and clarify the required quality attributes
+- describe in pragmatic and informal manner aka. making the abstract term "quality" more concrete, specific and tangible
+- three different types of scenarios
+  1. **usage scenarios** describe how the system behaves in different cases in terms of runtime performance, memory consumption, throughput or similar
+  2. **change scenarios** describe the situation that any component, its environment or its operational infrastructure changes or is being changed
+  3. **failure scenarios** describe the situation that some part of the system, its infrastructure or neighbors fail
+
+### Quality tree <!-- omit in toc -->
+- On the root of this tree usually quality is kept.
+- The top branches break quality down into several quality attributes and the attributes into sub-attributes.
+- At the leaves you find scenarios.
 
 ---
 ## 4.3. Qualitative analysis (R2-R3)
