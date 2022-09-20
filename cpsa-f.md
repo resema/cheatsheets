@@ -73,7 +73,7 @@
 ---
 ## 1.2. Goals and benefits of software architecture (R1)
 
-Essential goals and benefits:
+### Essential goals and benefits <!-- omit in toc -->
 - support the **design, implementation, maintenance, and operation** of systems
 - achieve **quality requirements** (reliability, maintainability, changeability, security, etc.)
 - achieve **functional requirements** or ensure that they can be met
@@ -126,7 +126,7 @@ Essential goals and benefits:
 - no algorithmic approach; iteration to the rescue
   - architecture needs feedback, therefore architecture work is inherently iterative
 
-Software architects design and construct:
+### Software architects design and construct <!-- omit in toc -->
 - building bloks
 - interfaces between building blocks
 - cooperation of building blocks
@@ -134,7 +134,7 @@ Software architects design and construct:
 - selection of appropriate technologies
 - adoption of suitable development and operation processes
   
-Software architects need to fulfill 6 important tasks:
+### Software architects need to fulfill 6 important tasks <!-- omit in toc -->
 1. clarify requirements
    - who are the stakeholders?
    - context and external interfaces
@@ -176,7 +176,7 @@ Software architects need to fulfill 6 important tasks:
 
 *Many problems in software development cannot be solved by good programming alone, but need communication between stakeholders.*
 
-Software Architects will have at least the following four different categories of stakeholder:
+### Software Architects will have at least the following four different categories of stakeholder <!-- omit in toc -->
 1. **stakeholders with a business-, product- or domain focus**, e.g.PO, RE, business analyst.
    - communicate on requirements and/or their feasibility
      - clarify requirements
@@ -203,7 +203,7 @@ Software Architects will have at least the following four different categories o
 
 > Architecture work needs feedback, which is an inherent feature of iterative development approaches. Architects have to systematically optain feedback from other stakeholders.
 
-Benefits of iterative approach:
+### Benefits of iterative approach <!-- omit in toc -->
 - early feedback
 - early risk identification
 - more time to fix problems
@@ -221,7 +221,7 @@ Benefits of iterative approach:
 
 *Usually project goals tend to be more short-term, whereas architecture goals tend to be long-term.*
 
-Short-term and long-term:
+### Short-term and long-term <!-- omit in toc -->
 - projects (sprints) typically last for a couple of weeks up to one or two years
 - systems often remains in use for several years.
 
@@ -298,39 +298,42 @@ Ensure explicitness in your work by:
 > - global analysis (R3)
 > - model-driven architecture (R3)
 
-- **top-down**, used for:
+### **top-down** <!-- omit in toc -->
+used for:
   - keep overview
   - abstract away details
   - keep things consistent over various components
   - work from abstract/large elements to specific/smaller ones
-- **bottom-up**, used for:
+### **bottom-up** <!-- omit in toc -->
+used for:
   - reduce risks
   - build proof-of-concept implementations
   - validate decisions or proposals, proving that they work in practice
   - build-up knowledge and experience
   - work from detailed, specific or concrete elements up to larger more abstract ones
 
-- **views** focus on specific concerns, parts or aspects of a system
+### **views** <!-- omit in toc -->
+focus on specific concerns, parts or aspects of a system
   - building-block, runtime, deployment and context view
     - fascilitate structural, runtime or hardware decisions
     - fascilitate communication and documentation
     - gain flexibility in the degree of detail
     - address specific stakeholder concerns
-- iterative:
+### iterative <!-- omit in toc -->
   - in repeated cycles
   - make appropriate design modifications **parallel** to development
   - learning and improvement is based on feedback
-- incremental:
+### incremental <!-- omit in toc -->
   - done in pieces, building upon each other
   - each increment delivers a slice of functionality through cross-discipline work (requirements, architecture/design, implementation and deployment)
-- **major advantage of combined approach**:
+### **major advantage of combined approach** <!-- omit in toc -->
   - problems are detected early, allowing more time to resolve them
   - typical development and rollout performed in every iteration
   - changes in requirements and technologies can be taken into account
   - development risks and uncertainties are minimized
-- integrates quite well with the microservice architecture pattern
-- combines the concept of global analysis with executable specifications
-- starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors
+### integrates quite well with the microservice architecture pattern <!-- omit in toc -->
+### combines the concept of global analysis with executable specifications <!-- omit in toc -->
+### starts by identifying and describing the factors which could affect the architecture and then builds strategies which foresee and acknowledge the consequences of these factors <!-- omit in toc -->
 
 
 ---
@@ -348,7 +351,7 @@ Ensure explicitness in your work by:
 > - **identify risks** related to architecture decisions
 
 
-- **Design and communicate**
+### **Design and communicate** <!-- omit in toc -->
   - designing belongs to the core task of the architectural role
   - take into account at least:
     - requirements and constraints
@@ -361,7 +364,7 @@ Ensure explicitness in your work by:
     - finding right language / communiation media
     - balancing written and verbal communication
 
-- **Structural decisions**
+### **Structural decisions** <!-- omit in toc -->
   - structure consists of structural elements and their dependencies
   - structural elements (building blocks) are:
     - source code
@@ -376,7 +379,7 @@ Ensure explicitness in your work by:
     - namespaces
     - or smaller elements
 
-- **Building blocks**
+### **Building blocks** <!-- omit in toc -->
   - building block is the **most general term** for all kinds of artifacts
   - **interfaces** are used to connect building blocks
     - **standard interface** defined by an external third party
@@ -384,7 +387,7 @@ Ensure explicitness in your work by:
     - **required interface** defined by the building block that **requires** it
     - **independent interface** defined by both building blocks that **requires** and **provides** it
   
-- **Properties of [black/gray/white] box representations**
+### **Properties of [black/gray/white] box representations** <!-- omit in toc -->
   - **black box** hides the interior structure --> information hidding principle
     - exposes by appropriate name and description:
       - its responsibilities
@@ -400,32 +403,32 @@ Ensure explicitness in your work by:
       - design rational (reason for this structure)
       - list of contained black boxes
       
-- **Decomposition by changing from black to white box**
+### **Decomposition by changing from black to white box** <!-- omit in toc -->
   - hierarchical decomposition
   - **fundamental concept of building-block view** is the **systematic on-demand refinement** to increase level of detail
   - [see LG 3-4](#34-architectural-views-r1)
 
-- **Recognize interdependencies** and **trade-offs** between design decisions
+### **Recognize interdependencies** and **trade-offs** between design decisions <!-- omit in toc -->
   - any advantages are for free
     - often consequences are hidden or indirect
 
-- **Stepwise refinement**
+### **Stepwise refinement** <!-- omit in toc -->
   - approach to identify or design the building blocks of a system
   - synonym for top-down approach ([see LG 2-1](#21-approaches-and-heuristics-for-architecture-development-r1-r3))
 
-- **Design architecture views**
+### **Design architecture views** <!-- omit in toc -->
   - taking different views on the same system is an **effective means of reasoning about the consequences** of decisions
   - support both **designing** and **communicating** architecture
 
-- **Relation of building blocks to source code**
+### **Relation of building blocks to source code** <!-- omit in toc -->
   - **white box** consists of **all source code**
   - **black box** consists of few files (f.ex. interface)
 
-- **Separate technical aspects from domain-related elements**
+### **Separate technical aspects from domain-related elements** <!-- omit in toc -->
   - [SoC](#26-design-principles-r1-r3) principle proposes to separate responsibilities
   - aspects that belong together should be brought together (see *cohesion* [LG 2-6](#26-design-principles-r1-r3))
 
-- **Identify risks related to architectural decisions**
+### **Identify risks related to architectural decisions** <!-- omit in toc -->
   - architectural decisions involve **tradeoffs**
   - **consider** and **communicate** such **risks**
   - risks dure to a variety of reasons, e.g.
@@ -435,7 +438,7 @@ Ensure explicitness in your work by:
     - **suboptimal solution**, but resources not available
     - **forced into a specific solution**
 
-- **different levels** in an **architectural description**
+### **different levels** in an **architectural description** <!-- omit in toc -->
   ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
 
 ---
@@ -478,24 +481,24 @@ Ensure explicitness in your work by:
 > - **decide on and design** cross-cutting concepts, f.ex. persistence, communication, GUI, error handling, concurrency
 > - **identify and assess potential interdependencies** between these decisions
 
-- Explanation:
+### Explanation <!-- omit in toc -->
   - concepts which **affect serveral building blocks of the system**
   - often **represent central technical decisions**
   - used to **solve recurring problems** aka. *cross-cutting concerns*
-- Examples:
+### Examples <!-- omit in toc -->
   - fundamental technology decisions
   - selection of frameworks, tools or libraries
   - usage of technology
   - conventions for interfaces
 
-- **Significance** of cross-cutting concepts
+### **Significance** of cross-cutting concepts <!-- omit in toc -->
   - help to **ensure consistency**
     - based upon 
       - same technology,
       - same pattern or
       - same conventions
   - concepts are used for **knowledge transfer** between people and/or systems
-- Risks involved in cross-cutting concepts
+### Risks involved in cross-cutting concepts <!-- omit in toc -->
   - similar to every standardization effort
     - if **standard is bad**, **system** using the standard **will also be bad**
 
@@ -540,7 +543,7 @@ Ensure explicitness in your work by:
 > - strategy
 > - visitor
 
-- Layers
+### Layers <!-- omit in toc -->
   - covers **two different approaches**:
     - **Abstraction layers**
       - lower layers **hide certain details** from the layers above
@@ -563,7 +566,7 @@ Ensure explicitness in your work by:
     - lower efficiency
     - potential cascade of changes
 
-- Pipes and filters
+### Pipes and filters <!-- omit in toc -->
   - an example of **data flow architecture**
   - filter: 
     - **transforms**, **aggregates** or **manipulates** data
@@ -581,7 +584,7 @@ Ensure explicitness in your work by:
     - **errors** might be **difficult to track**
     - potentially **difficult to share global or common data**
 
-- Microservices
+### Microservices <!-- omit in toc -->
   - highly flexible systems that can be **adapted to changing user/business requirements as quickly as possible**
   - **advantages**
     - improve **changeability** and **flexibility** of software
@@ -644,28 +647,28 @@ Ensure explicitness in your work by:
 >   - design for **robust and resilient systems** (R1)
 >   - **generalisation of robustness principle** aka. Postel's Law (R2)
 
-- Patterns 
+### Patterns  <!-- omit in toc -->
   - resemble "cooking recipes"
   - offer a proposal for the structured application
 
-- Abstraction:
+### Abstraction <!-- omit in toc -->
   - crucial concept for handling complexity *aka. not to deal with all the details at once*
   - this principal may be applied in various ways:
     - **interfaces** omitting private details about internal structures
     - **data abstractions** consider the abstract properties of data types while omitting details of implementation
-- DRY:
+### DRY <!-- omit in toc -->
   - try to introduce **abstractions** for **components that provide similar functionality**
   - applies for architects as well
 
-- Information hiding principle:
+### Information hiding principle <!-- omit in toc -->
   - **hiding design decisions within a module implementation**, users don't need to be aware of inner workings
-- Separation of concers *aka. SOC*:
+### Separation of concers *aka. SOC* <!-- omit in toc -->
   - **deconstructing** a problem **into separated sub-problems**
   - closely related to the **single responsibility principle**
   - *for example*: always separate **business/domain-related** from **technical **concerns**
   - SoC might end up with increased coupling between componets, but at a fair price
   - increases **changeability** and **analyzability**
-- Modularity *aka building block principle*
+### Modularity *aka building block principle* <!-- omit in toc -->
   - **division** of a whole system into distinct building blocks
   - modularity combines advantages of information hiding with SoC
   - number of desirable properties:
@@ -673,13 +676,13 @@ Ensure explicitness in your work by:
     - well defined interfaces
     - developed and maintained independently
     - can be replaced by other modules
-- Loose coupling
+### Loose coupling <!-- omit in toc -->
   - coupling adds complexity
   - coupling two components will make both components harder to understand and change
-- high cohesion
+### high cohesion <!-- omit in toc -->
   - describes how **closely the inner elements are related to each other**
   - loose coupling and well-done SoC correlate with high cohesion
-- SOLID
+### SOLID <!-- omit in toc -->
   - **S**ingle responsibility principle
     - pursues the same objectives as SoC from a different perspective
     - single responsibility (SRP) *vs* minimal overlapping concerns (SoC)
@@ -706,12 +709,12 @@ Ensure explicitness in your work by:
       - both should **depend on abstractions**, e.g. not depend on details
     - aka. **API facade**
 
-- Conceptional integrity
+### Conceptional integrity <!-- omit in toc -->
   - **entire system** should **follow a consistent style**
     - similar tasks handled in similar manner
   - *principle of least astonishment* ka. avoit behaving in widly unexpected ways
   - develop a consistent *design philosophy*
-- KISS and YAGNI
+### KISS and YAGNI <!-- omit in toc -->
   - helpful guidelines for **discussing design alternatives**
   - prevents *over-engineering*, f.ex.
     - abstractions onto components with a single implementation
@@ -723,7 +726,7 @@ Ensure explicitness in your work by:
     - trust future architects to be able to derive more sophisticated solution
   - **Simplicity** helps to keep **system understandable and therefore changeable** over time
 
-- Expect errors
+### Expect errors <!-- omit in toc -->
   - **lookout** for **things that can go wrong**
   - ask yourself **what might be misunderstood, forgot or neglect**
   - **which parts** of software system **can fail** and **what are the implications**
@@ -749,7 +752,7 @@ Ensure explicitness in your work by:
 >   - basic design principles
 >   - externalization of dependencies, f.ex. dependency injection
 
-- Dependency
+### Dependency <!-- omit in toc -->
   - a component depends on another, if it requires or needs to
     - compile
     - be installed
@@ -757,19 +760,19 @@ Ensure explicitness in your work by:
     - start
     - run or function properly
 
-- Coupling
+### Coupling <!-- omit in toc -->
   - **degree of dependence** between arbitrary elements
   - **measusre of how closely** elements depend on each other
   - some coupling is necessary for creating software
   - might be directional
 
-- Risks and problems
+### Risks and problems <!-- omit in toc -->
   - **changing** may require **changes in other components** aka. *ripple effect*
   - compiling, building and testing might **require additional effort**
   - **reuse** might be **harder**
   - **understanding** becomes **more difficult**
 
-- Types of coupling
+### Types of coupling <!-- omit in toc -->
   - via **use/delegation**
     - use other components via **public interfaces**
   - via **composition**
@@ -802,7 +805,7 @@ Ensure explicitness in your work by:
     - two **processes** in the same **physical hardware**
     - might occure when doing **low-level programming**, f.ex. CUDA
 
-- Options to **reduce coupling**
+### Options to **reduce coupling** <!-- omit in toc -->
   - use- or call-dependencies could be removed by **relocating the call into the caller**
   - apply the **dependency-inversion principle**
   - use patterns like **broker**
@@ -820,17 +823,17 @@ Ensure explicitness in your work by:
 > - explain and apply **solution options**, **architectural tactics**, **suitable practices**
 > - identify and communicate **possible trade-offs between such solutions** and their **associated risks**
 
-- Explanation
+### Explanation <!-- omit in toc -->
   - most important goal
   - know the **quality requirements** of most important stakeholders
   - be **very on-point**, **specific** and **expressive** about these qualities
   - **avoid buzzwords**
   - **quality scenarios** are a simple and established method **to make quality requirements explicit**
 
-- **Architectural tactics to achieve quality requirements**
+### **Architectural tactics to achieve quality requirements** <!-- omit in toc -->
   - any action, approach, tactic, strategy, plan, procedure or similar with the **intention to achieve a certain quality requirement**
 
-- **Performance tactics**
+### **Performance tactics** <!-- omit in toc -->
   - manage **resource demands**, e.g. 
     - reduce computational overhead
     - exert bounds on execution times
@@ -844,7 +847,7 @@ Ensure explicitness in your work by:
     - use synchronization protocols
     - increase level of concurrency
 
-- **Availability tactics**
+### **Availability tactics** <!-- omit in toc -->
   - **detect faults**, e.g.
     - ping, heartbeat
     - sanity checking
@@ -860,7 +863,7 @@ Ensure explicitness in your work by:
     - using transactions
     - preventing exceptions
 
-- **Maintainability or modifiability tactics**
+### **Maintainability or modifiability tactics** <!-- omit in toc -->
   - **localize expected changes**, e.g.
     - reducing size of modules
     - splitting modules
@@ -892,13 +895,13 @@ Ensure explicitness in your work by:
 >   - **resource-oriented** approach (REST)
 >   - **service-oriented** approach (WS*/SOAP-based web services)
 
-- Explanation
+### Explanation <!-- omit in toc -->
   - define and describe collaboration between different elements
   - **provided interfaces (API)**
   - **service provider interface (SPI)** &rarr; used to enable extensions to a given component/system
   - **required interface** &rarr; what a component needs to fulfill its responsibilities
 
-- **What belongs to an interface**
+### **What belongs to an interface** <!-- omit in toc -->
   - **syntax**
   - **semantic** aka. *meaning or responsibilities of interface elements*
   - **protocol** aka. *detailed interactions between consumer and provider*
@@ -906,7 +909,7 @@ Ensure explicitness in your work by:
   - required **quality characteristic** *like performance efficiency, load, throughput, reliability*
   - **versioning**
 
-- **Requirements on interfaces and best practices**
+### **Requirements on interfaces and best practices** <!-- omit in toc -->
   - fit the needs of the components that use them
   - convey an adequate access to the functionality
   - easy to learn and easy to use
@@ -1037,17 +1040,70 @@ Software architects use documentation to support the **design**, **implementatio
 >   - **security** versus **usability**
 >   - **runtime flexibility** versus **maintainability**
 
-- **Quality**
-  - more than a single property or attribute
-  - **needs to be specified or described**
-  - set of desired, required or given properties of a system
-  - quality attributes == quality properties == quality characteristics
+### **Quality** <!-- omit in toc -->
+- more than a single property or attribute
+- **needs to be specified or described**
+- set of desired, required or given properties of a system
+- quality attributes == quality properties == quality characteristics
 
-- **Quality model**
-  - a **collection of attributes** a system might have or need to have
-  - **hierarchical** quality models **break down their top-level properties into finer grained properties** 
+### **Quality model** <!-- omit in toc -->
+- a **collection of attributes** a system might have or need to have
+- **hierarchical** quality models **break down their top-level properties into finer grained properties** 
   
-    ![ISO-25010](out/diags/cpsa-f/iso-25010/iso-25010.svg)
+![ISO-25010](out/diags/cpsa-f/iso-25010/iso-25010.svg)
+
+#### SW Product Quality (from diagram) <!-- omit in toc -->
+- functional suitability
+  - correctness
+  - appropriateness
+  - completeness
+- reliability"
+  - availability
+  - fault tolerance
+  - recoverability
+  - maturity
+- performance efficiency
+  - time behavior
+  - resource utilization
+  - capacity
+- usability
+  - appropriateness
+  - recognizability
+  - learnability
+  - operability
+  - user error protection
+  - UI asthetics
+  - accessibility
+- security
+  - confidentality
+  - integrity
+  - non-reputation
+  - accountability
+  - authenticity
+- compatibility
+  - co-existence
+  - interoperability
+- maintainability
+  - modularity
+  - reusability
+  - analyzability
+  - modifiability
+  - testability
+- portability
+  - adaptability
+  - installatbility
+  - replaceability
+
+### Typical conflicts between quality requirements <!-- omit in toc -->
+- robustness versus runtime flexibility
+- memory requirements versus performance efficiency
+- IT-security versus usability
+- runtime performance versus understandability or simplicity
+
+### Trade-offs or compromises between quality attributes <!-- omit in toc -->
+- several quality attributes influence each other
+- nealy every quality property requires more time and/or money to implement
+
 
 ---
 ## 4.2. Clarify quality requirements (R1)
