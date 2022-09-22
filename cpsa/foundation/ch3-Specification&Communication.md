@@ -11,6 +11,10 @@
     - [Deployment view](#deployment-view)
       - [Form and how-to](#form-and-how-to-1)
   - [3.5. Context view (R1)](#35-context-view-r1)
+    - [What is the "context"?](#what-is-the-context)
+    - [External interfaces](#external-interfaces)
+    - [Business context  and technical context](#business-context--and-technical-context)
+    - [Documenting the context view](#documenting-the-context-view)
   - [3.6. Document cross-cutting concepts (R2)](#36-document-cross-cutting-concepts-r2)
   - [3.7. Describe interfaces (R1)](#37-describe-interfaces-r1)
   - [3.8. Document architectural decisions (R1-R2)](#38-document-architectural-decisions-r1-r2)
@@ -164,9 +168,32 @@ aspects that are not contained or not well-covered in source code:
 ## 3.5. Context view (R1)
 
 > Software architects can:
-> - **depict the context systems**, e.g. in the form of context diagrams
-> - represent **external interfaces** of systems in context view
-> - **differentiate between business and technical context**
+> - **depict the context systems**, e.g. in the form of context diagrams,
+> - represent **external interfaces** of systems in context view,
+> - **differentiate between business and technical context**.
+
+### What is the "context"?
+- contains all those parts of the environment that are relevant.
+- clarify two aspects:
+  - system scope (outside and inside),
+  - external interfaces.
+
+### External interfaces
+- belong to the most critical aspects of a system for a number of reasons:
+  - no influence on these,
+  - system's functionality is triggered via external interfaces or events,
+  - negotiang the details takes longer or requires additional stakeholders,
+  - external's quality properties directly influences the qualities of system.
+
+### Business context  and technical context
+- differentiate between **business** (logical or essential input/output) and **technical** (channels, technical protocols, hardware) context:
+  - business context shows the external relationships from a business- or non-technical perspective,
+  - technical context shows technical details.
+
+### Documenting the context view
+- use a diagram plus a table to explain the context view:
+  - provide a diagram for the overview (UML component, package or class diagrams),
+  - use a table to explain the elements.
 
 ---
 ## 3.6. Document cross-cutting concepts (R2)
@@ -187,23 +214,23 @@ aspects that are not contained or not well-covered in source code:
 ## 3.8. Document architectural decisions (R1-R2)
 
 > Software architects are able to:
-> - **systematically** take, justify, communicate, and document **architectural decisions**
-> - identify, communicate and document the **interdependencies between design decisions**
+> - **systematically** take, justify, communicate, and document **architectural decisions**,
+> - identify, communicate and document the **interdependencies between design decisions**.
 
-> Software architects know about Architecture Decision Records (ADR) and can apply these to document decisions
+> Software architects know about Architecture Decision Records (ADR) and can apply these to document decisions.
 
 ---
 ## 3.9. Documentation as written communication (R2)
-Software architects use documentation to support the **design**, **implementation** and **further development (maintenance/evolution)** of systems
+Software architects use documentation to support the **design**, **implementation** and **further development (maintenance/evolution)** of systems.
 
 ---
 ## 3.10. Resources and tools for documentation (R3)
 
 > Software architects know:
-> - basics of several published frameworkds for the description of software architectures
->   - **ISO/IEEE-42010**
->   - **arc42**
->   - **C4**
->   - **FMC** (Wendt-FMC)
-> - ideas and examples of checklists for the creation, documentation and testing of software architectures
-> - possible tools for creating and maintaining architectural documentation
+> - basics of several published frameworkds for the description of software architectures:
+>   - **ISO/IEEE-42010**,
+>   - **arc42**,
+>   - **C4**,
+>   - **FMC** (Wendt-FMC).
+> - ideas and examples of checklists for the creation, documentation and testing of software architectures.
+> - possible tools for creating and maintaining architectural documentation.
