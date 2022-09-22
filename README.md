@@ -41,7 +41,7 @@ My second brain, to help me remember stuff
 ---
 # A
 - **Abstraction**: Design principle for handling complexity, see <!-- omit in toc -->
-  - [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3) <!-- omit in toc -->
+  - [Concepts [1]](/cpsa/foundation/ch2-Design%26Development.md#26-design-principles-r1-r3) <!-- omit in toc -->
 
 ---
 - **Authenthication**: Authenticate your user, see <!-- omit in toc -->
@@ -55,14 +55,14 @@ My second brain, to help me remember stuff
 ---
 # B
 - **Box**: Black, grey and white boxes; possible concepts to look at software components/building blocks, see
-  - [Task & Responsibilities [1]](/cpsa-f.md#14-software-architects-tasks-and-responsibilities-r1)
-  - [Design [2]](/cpsa-f.md#22-design-software-architectures-r1)
+  - [Task & Responsibilities [1]](/cpsa/foundation/ch1-BasicConcepts.md#14-software-architects-tasks-and-responsibilities-r1)
+  - [Design [2]](/cpsa/foundation/ch2-Design%26Development.md#22-design-software-architectures-r1)
 
 ---
 - **building blocks**: unit of software architecture, see
-  - [Key terms [1]](/cpsa-f.md#11-definitions-of-software-architecture-r1)
-  - [Tasks & Responsibilities [2]](/cpsa-f.md#14-software-architects-tasks-and-responsibilities-r1)
-  - [Design & Development [3]](/cpsa-f.md#21-approaches-and-heuristics-for-architecture-development-r1-r3)
+  - [Key terms [1]](/cpsa/foundation/ch1-BasicConcepts.md#11-definitions-of-software-architecture-r1)
+  - [Tasks & Responsibilities [2]](/cpsa/foundation/ch1-BasicConcepts.md#14-software-architects-tasks-and-responsibilities-r1)
+  - [Design & Development [3]](/cpsa/foundation/ch2-Design%26Development.md#21-approaches-and-heuristics-for-architecture-development-r1-r3)
 
 ---
 ---
@@ -71,8 +71,8 @@ My second brain, to help me remember stuff
   - [Cheats [1]](/cloud-infrastructure.md#31-cheats) <!-- omit in toc -->
 ---
 - **Cross-cutting concepts**: Concepts which span over multiple areas, see
-  - [cross-cutting concepts [1]](/cpsa-f.md#24-cross-cutting-concepts-r1)
-  - [document cross-cutting concepts [2]](/cpsa-f.md#36-document-cross-cutting-concepts-r2)
+  - [cross-cutting concepts [1]](/cpsa/foundation/ch2-Design%26Development.md#24-cross-cutting-concepts-r1)
+  - [document cross-cutting concepts [2]](/cpsa/foundation/ch3-Specification%26Communication.md#36-document-cross-cutting-concepts-r2)
 - **Cluster**: Collection of services within in a specific topic, zone, region, others, see
   - [gcloud container clusters list [1]](/gcp-k8s-istio.md#11-cheats)<!-- omit in toc -->
 ---
@@ -83,7 +83,7 @@ My second brain, to help me remember stuff
 ---
 # D
 - **Design Principles**: F.ex. abstraction, modularization, conceptual integrity, simplicity, expect errors
-  - [Concepts [1]](/cpsa-f.md#26-design-principles-r1-r3) <!-- omit in toc -->
+  - [Concepts [1]](/cpsa/foundation/ch2-Design%26Development.md#26-design-principles-r1-r3) <!-- omit in toc -->
 ---
 - **Docker**: Container platform, see
   - [Cheats [1]](/cloud-infrastructure.md#31-cheats) <!-- omit in toc -->
@@ -141,7 +141,7 @@ My second brain, to help me remember stuff
 ---
 # P
 - **Patterns**: F.ex. layers, pipe-and-filters, microservices, dependency injection
-  - [Concepts [1]](/cpsa-f.md#25-patterns-r1-r3) <!-- omit in toc -->
+  - [Concepts [1]](/cpsa/foundation/ch2-Design%26Development.md#25-patterns-r1-r3) <!-- omit in toc -->
 ---
 - **PEM**: Privacy Enhanced Mail is a Base64 encoded DER certificate.  PEM certificates are frequently used for web servers as they can easily be translated into readable data using a simple text editor.
 
@@ -149,10 +149,10 @@ My second brain, to help me remember stuff
 ---
 # Q
 - **Quality models and characteristics**: such as configurability, reliability, memory requirements, performance efficiency, securit, usability, runtime flexibility or maintainability, see
-  - [Examples [1]](/cpsa-f.md#41-quality-models-and-quality-characteristics-r1) <!-- omit in toc -->
+  - [Examples [1]](/cpsa/foundation/ch4-Quality.md#41-quality-models-and-quality-characteristics-r1) <!-- omit in toc -->
 ---
 - **Quality characteristics/requirements**: non-functional requirements in regards of ISO 25010, see
-  - [Description [1]](/cpsa-f.md#41-quality-models-and-quality-characteristics-r1) <!-- omit in toc -->
+  - [Description [1]](/cpsa/foundation/VH4  #41-quality-models-and-quality-characteristics-r1) <!-- omit in toc -->
 ---
 ---
 # R
@@ -191,11 +191,11 @@ My second brain, to help me remember stuff
 ---
 # V
 - **Views**: Different abstraction levels for SW architecture (arc42), see
-  - [Key terms [1]](/cpsa-f.md#11-definitions-of-software-architecture-r1)
-  - [Task & Reponsibilities [2]](/cpsa-f.md#14-software-architects-tasks-and-responsibilities-r1)
-  - [Design & Development [3]](/cpsa-f.md#21-approaches-and-heuristics-for-architecture-development-r1-r3)
-  - [Design [4]](/cpsa-f.md#22-design-software-architectures-r1)
-  - [Concepts [5]](/cpsa-f.md#34-architectural-views-r1)
+  - [Key terms [1]](/cpsa/foundation/ch1-BasicConcepts.md #11-definitions-of-software-architecture-r1)
+  - [Task & Reponsibilities [2]](/cpsa/foundation/ch1-BasicConcepts.md#14-software-architects-tasks-and-responsibilities-r1)
+  - [Design & Development [3]](/cpsa/foundation/ch2-Design%26Development.md#21-approaches-and-heuristics-for-architecture-development-r1-r3)
+  - [Design [4]](/cpsa/foundation/ch2-Design%26Development.md#22-design-software-architectures-r1)
+  - [Concepts [5]](/cpsa/foundation/ch3-Specification%26Communication.md#34-architectural-views-r1)
 
 ---
 ---
