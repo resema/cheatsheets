@@ -17,6 +17,7 @@
     - [Documenting the context view](#documenting-the-context-view)
   - [3.6. Document cross-cutting concepts (R2)](#36-document-cross-cutting-concepts-r2)
   - [3.7. Describe interfaces (R1)](#37-describe-interfaces-r1)
+    - [Explanation](#explanation)
   - [3.8. Document architectural decisions (R1-R2)](#38-document-architectural-decisions-r1-r2)
   - [3.9. Documentation as written communication (R2)](#39-documentation-as-written-communication-r2)
   - [3.10. Resources and tools for documentation (R3)](#310-resources-and-tools-for-documentation-r3)
@@ -209,6 +210,22 @@ aspects that are not contained or not well-covered in source code:
 ## 3.7. Describe interfaces (R1)
 
 > Software architects are able to describe and specify both internal and external interfaces.
+
+### Explanation
+- necessary **level of detail** and **extent** of documentation to be provided will **depend on the specific context**.
+- lighweight but highly efficient resource for documentation are **test cases** and **sample code**.
+- **interface description languages** (IDL) can also be beneficial.
+- create **self-describing interfaces**.
+- template for the documentation of interfaces:
+  - identification,
+  - provided resources,
+  - impact and side effects,
+  - errors,
+  - constraints,
+  - quality attributes,
+  - design decisions,
+  - stability/evolution,
+  - additional information.
 
 ---
 ## 3.8. Document architectural decisions (R1-R2)
