@@ -18,6 +18,8 @@
   - [3.6. Document cross-cutting concepts (R2)](#36-document-cross-cutting-concepts-r2)
   - [3.7. Describe interfaces (R1)](#37-describe-interfaces-r1)
   - [3.8. Document architectural decisions (R1-R2)](#38-document-architectural-decisions-r1-r2)
+    - [How to take architectural decisions?](#how-to-take-architectural-decisions)
+    - [Architecture decisions records](#architecture-decisions-records)
   - [3.9. Documentation as written communication (R2)](#39-documentation-as-written-communication-r2)
   - [3.10. Resources and tools for documentation (R3)](#310-resources-and-tools-for-documentation-r3)
 ---
@@ -233,6 +235,35 @@ aspects that are not contained or not well-covered in source code:
 > - identify, communicate and document the **interdependencies between design decisions**.
 
 > Software architects know about Architecture Decision Records (ADR) and can apply these to document decisions.
+
+- architectural decisionsare perceived as hard to take and/or hard to change.
+- often affect the fundamental structure, quality characteristics, external interfaces or fundamental construction techniques, principles and concepts.
+
+### How to take architectural decisions?
+- consider at least the following aspects:
+  - explicitly state **what** you want or need to decide, or even why it must be decided,
+  - explicitly formulate the appropriate and related **quality requirement**,
+  - aware of **safety requirements**,
+  - question what **functional requiremnents** are involved,
+  - question what solution **approaches are already known or implemented**,
+  - consider the **technical constraints**, what technologies are available or feasible,
+  - take the current **organizational constraints** into account, including the team, the budget and the available timeframe.
+
+- with these prerequisite covered, come up with at least two different alternatives:
+  - what **assumptions** have you made?
+  - what are the specific **advantages**?
+  - what are the specific **disadvantages**?
+  - what **compromises** or **consequences** arise from each alternative?
+  - what are the known or estimated **costs** of each alternative?
+
+### Architecture decisions records
+- architecture decisions records (aka. ADR) is a **template to document** an AD.
+- an AD should contain:
+  - title,
+  - status,
+  - context,
+  - decision,
+  - consequences.
 
 ---
 ## 3.9. Documentation as written communication (R2)
