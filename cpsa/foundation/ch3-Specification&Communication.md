@@ -236,7 +236,7 @@ aspects that are not contained or not well-covered in source code:
 
 > Software architects know about Architecture Decision Records (ADR) and can apply these to document decisions.
 
-- architectural decisionsare perceived as hard to take and/or hard to change.
+- architectural decisions are perceived as hard to take and/or hard to change.
 - often affect the fundamental structure, quality characteristics, external interfaces or fundamental construction techniques, principles and concepts.
 
 ### How to take architectural decisions?
