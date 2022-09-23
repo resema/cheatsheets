@@ -272,7 +272,20 @@ aspects that are not contained or not well-covered in source code:
 
 ---
 ## 3.9. Documentation as written communication (R2)
-Software architects use documentation to support the **design**, **implementation** and **further development (maintenance/evolution)** of systems.
+> Software architects use documentation to support the **design**, **implementation** and **further development (maintenance/evolution)** of systems.
+
+### The value of discussing and talking <!-- omit in toc -->
+- discuss with stakeholders and within the development team.
+- avoids bias or operational blindness and leads to better decisions.
+- but results are volatile.
+- software architecture **documentation complements talking about/discussion** software architecutre.
+
+### When to talk, when to write? <!-- omit in toc -->
+- depend on system and its organizational context.
+- some heuristics:
+  - in highly agile and lean development, written documentation might be sparse,
+  - volatile teams require more documentation, stable teams can cope with rudimentary documentation,
+  - safety-critical systems, please comply with the standards.
 
 ---
 ## 3.10. Resources and tools for documentation (R3)
