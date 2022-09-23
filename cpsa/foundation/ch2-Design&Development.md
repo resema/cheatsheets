@@ -203,6 +203,21 @@ focus on specific concerns, parts or aspects of a system
 >   - methodology trends (R3)
 >   - impact of further stakeholder concerns and mandated design decisions (R3)
 
+### Impact of quality requirements <!-- omit in toc -->
+- have major influence on many architectural decisions, f.ex.:
+  - sharing/storing large amount of data, handling of storage capacity and volume, transfer costs, backup performance, etc.,
+  - add security topics.
+
+### Impact of technical decisions and constraints <!-- omit in toc -->
+- can have substantial impact on architectural decisions, f.ex.:
+  - proprietary solution of third party components,
+  - GPU need in project.
+
+### Impact of organizational constraints <!-- omit in toc -->
+- can and will influence software architecture.
+- quoted as "Conway's Law" (socio-dynamic reasons):
+  > any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.
+
 ---
 ## 2.4. Cross-cutting concepts (R1)
 
