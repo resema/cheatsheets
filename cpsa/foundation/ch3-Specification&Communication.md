@@ -117,6 +117,36 @@ aspects that are not contained or not well-covered in source code:
 > - ArchiMate,
 > - **flow charts**, **numbered lists** or **business-process-modeling-notation (BPMN)**.
 
+### Static UML diagrams <!-- omit in toc -->
+- describe the static structure of a system: class-, package-, and component-diagrams plus composite-structure-diagrams.
+- they show white box views, and contain building blocks plus dependencies:
+  - examples of static elements are **components, classes, functions, stylesheets, markup-files, db-definitions, business-rules or similar**,
+  - details the **structure** of a larger element,
+  - every diagram is a white box representation of a higher-level black box,
+  - diagram contains **black boxes** plus **their dependencies**.
+
+### Composite structure diagrams <!-- omit in toc -->
+- show the internal structure of multiple classes and the interactions between them.
+- similar to a class diagram, but ican show individual parts instead of whole classes.
+- **mix black box and white box** abstraction.
+
+### Dynamic UML diagrams <!-- omit in toc -->
+- show behavior at **runtime**:
+  - **sequences or steps** of activities or processes,
+  - states the system or certain parts of it can reach during execution.
+
+### Sequence diagrams <!-- omit in toc -->
+- show **how operations are carried out**.
+- show the **order of the interaction**.
+
+### Activity diagrams <!-- omit in toc -->
+- describe dynamic aspects of the systems.
+- essentially an **advanced version** of the **simple flow charts**.
+- enhanceable by so called **swim lanes**.
+
+### State machine diagrams <!-- omit in toc -->
+- are directed graphs denoting **states** and **state transitions**.
+
 ---
 ## 3.4. Architectural views (R1)
 
