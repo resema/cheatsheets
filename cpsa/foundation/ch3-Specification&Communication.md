@@ -196,6 +196,22 @@ aspects that are not contained or not well-covered in source code:
 > - `deployment/integration`
 > - `logging`
 
+### Explanation <!-- omit in toc -->
+- describing these concepts directly in the involved modules, would lead to redundant and poorly structured documentation.
+- therefore it is advisable to present those in a **dedicated section** of the architecture documentation.
+- become **cornerstone** of the conceptual integrity and **ensure** consistent manner in other components.
+- **communicate them adequately**.
+- consists motsly of solution approach in conjunction with specific technology decisions.
+- description should support implementation by providing explanations and guidelines for affected building blocks.
+- template for cross-cutting concepts should contain the following:
+  - **purpose**: problem to be solved,
+  - **constraints**: which have to be considered,
+  - **solution strategy**: provide examples of the solution,
+  - **reference and additional resources**: refer to existing documentation is more effective,
+  - **risks**: point out risks,
+  - **rejected alternatives**: mention rejected alternatives and explain the decision.
+- [Examples of cross-cutting concepts](https://docs.arc42.org/images/08-Crosscutting-Concepts-Structure.png).
+
 ---
 ## 3.7. Describe interfaces (R1)
 
