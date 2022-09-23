@@ -165,3 +165,17 @@
 >   - source code and **related metrics** such as lines of of code, complexity, inbound and outbound dependencies,
 >   - **known errors** in source code, especially error clusters.
 > **test cases** and **test results**.
+
+### Explanation <!-- omit in toc -->
+- Quantitative analysis **maps** certain **elements or aspects** of a system **to numbers**.
+
+### Overview of (standard) software metrics <!-- omit in toc -->
+- **coupling**: degree of interdependencies.
+- **cyclomatic complexity**: number of independent paths through a program's source code.
+- **lines of code**: simple size metric.
+- **test coverage**: degree to which the source code is tested automatically.
+- **violation count (of rule <X>)**: number of violations against any given rule X. Used to count violations against coding convention or rules.
+- **bugs per component**: how many bugs/issues per component or subsystem.
+- **effort needed to fix bug in component**: how much effort in hours or days is needed.
+- **development effort per component**: fraction of overall development effort (total, per year, per sprint)
+- **dev sympathy per component**: on a nominal scale, how much do devs like the component.
