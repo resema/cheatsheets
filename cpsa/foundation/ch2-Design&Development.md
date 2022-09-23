@@ -169,7 +169,7 @@ focus on specific concerns, parts or aspects of a system
     - **forced into a specific solution**
 
 ### **different levels** in an **architectural description** <!-- omit in toc -->
-  ![AD-levels](./out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
+  ![AD-levels](../../out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
 
 ---
 ## 2.3. Influencing factors and constraints (R1-R3)

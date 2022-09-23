@@ -61,6 +61,7 @@ My second brain, to help me remember stuff
 ---
 - **building blocks**: unit of software architecture, see
   - [Key terms [1]](/cpsa/foundation/ch1-BasicConcepts.md#11-definitions-of-software-architecture-r1)
+  - [Description [1]](/cpsa/foundation/ch3-Specification%26Communication.md#34-architectural-views-r1)
   - [Tasks & Responsibilities [2]](/cpsa/foundation/ch1-BasicConcepts.md#14-software-architects-tasks-and-responsibilities-r1)
   - [Design & Development [3]](/cpsa/foundation/ch2-Design%26Development.md#21-approaches-and-heuristics-for-architecture-development-r1-r3)
 
@@ -70,6 +71,8 @@ My second brain, to help me remember stuff
 - **Conceptional integrity**: Design principle for similar tasks are handle in similar manner, including KISS and YAGNI, see <!-- omit in toc -->
   - [Cheats [1]](/cloud-infrastructure.md#31-cheats) <!-- omit in toc -->
 ---
+- **Context view**: Abstract, black box view, see <!-- omit in toc -->
+  - [Description [1]](/cpsa/foundation/ch3-Specification%26Communication.md#35-context-view-r1)
 - **Cross-cutting concepts**: Concepts which span over multiple areas, see
   - [cross-cutting concepts [1]](/cpsa/foundation/ch2-Design%26Development.md#24-cross-cutting-concepts-r1)
   - [document cross-cutting concepts [2]](/cpsa/foundation/ch3-Specification%26Communication.md#36-document-cross-cutting-concepts-r2)

@@ -5,21 +5,10 @@
   - [3.2. Describe and communicate software architectures (R1, R3)](#32-describe-and-communicate-software-architectures-r1-r3)
   - [3.3. Models and notations to describe (R2-R3)](#33-models-and-notations-to-describe-r2-r3)
   - [3.4. Architectural views (R1)](#34-architectural-views-r1)
-    - [Building Block View](#building-block-view)
-    - [Runtime View](#runtime-view)
-      - [Form and how-to](#form-and-how-to)
-    - [Deployment view](#deployment-view)
-      - [Form and how-to](#form-and-how-to-1)
   - [3.5. Context view (R1)](#35-context-view-r1)
-    - [What is the "context"?](#what-is-the-context)
-    - [External interfaces](#external-interfaces)
-    - [Business context  and technical context](#business-context--and-technical-context)
-    - [Documenting the context view](#documenting-the-context-view)
   - [3.6. Document cross-cutting concepts (R2)](#36-document-cross-cutting-concepts-r2)
   - [3.7. Describe interfaces (R1)](#37-describe-interfaces-r1)
   - [3.8. Document architectural decisions (R1-R2)](#38-document-architectural-decisions-r1-r2)
-    - [How to take architectural decisions?](#how-to-take-architectural-decisions)
-    - [Architecture decisions records](#architecture-decisions-records)
   - [3.9. Documentation as written communication (R2)](#39-documentation-as-written-communication-r2)
   - [3.10. Resources and tools for documentation (R3)](#310-resources-and-tools-for-documentation-r3)
 ---
@@ -137,18 +126,18 @@ aspects that are not contained or not well-covered in source code:
 > - **run-time view** (dynamic view, interaction between bblocks, state machine),
 > - **deployment view** (hardware and technical infrastructure, as well as the mapping of bblocks onto the infrastructure).
 
-### Building Block View
+### Building Block View <!-- omit in toc -->
 - explains the static decomposition of the system into building blocks and their relationships.
 - shows the overal structure of source code and code-related artifacts.
 - usually organized or communicated in a hierarchy of levels:
   - level 0 is the context view represented in black boxes,
   - level 1 to n is the building block view with white boxes.
 
-### Runtime View
+### Runtime View <!-- omit in toc -->
 - shows behavior, interactions, and runtime dependencies of the building blocks in the form of either generic or concrete scenarios.
 - it helps to understand how the building blocks fulfill their respective task at runtime and how they communicate and interact with each other.
 
-#### Form and how-to
+#### Form and how-to <!-- omit in toc -->
 - enumerated lists,
 - pseudo code snippet,
 - UML sequence diagrams,
@@ -157,10 +146,10 @@ aspects that are not contained or not well-covered in source code:
 - UML object diagrams,
 - flowcharts.
 
-### Deployment view
+### Deployment view <!-- omit in toc -->
 - technical infrastructure where the system and its building blocks will be executed.
   
-#### Form and how-to
+#### Form and how-to <!-- omit in toc -->
 - UML deployment diagrams:
   - nodes showing execution environment,
   - edges or channels linking nodes with each other,
@@ -174,25 +163,25 @@ aspects that are not contained or not well-covered in source code:
 > - represent **external interfaces** of systems in context view,
 > - **differentiate between business and technical context**.
 
-### What is the "context"?
+### What is the "context"? <!-- omit in toc -->
 - contains all those parts of the environment that are relevant.
 - clarify two aspects:
   - system scope (outside and inside),
   - external interfaces.
 
-### External interfaces
+### External interfaces <!-- omit in toc -->
 - belong to the most critical aspects of a system for a number of reasons:
   - no influence on these,
   - system's functionality is triggered via external interfaces or events,
   - negotiang the details takes longer or requires additional stakeholders,
   - external's quality properties directly influences the qualities of system.
 
-### Business context  and technical context
+### Business context  and technical context <!-- omit in toc -->
 - differentiate between **business** (logical or essential input/output) and **technical** (channels, technical protocols, hardware) context:
   - business context shows the external relationships from a business- or non-technical perspective,
   - technical context shows technical details.
 
-### Documenting the context view
+### Documenting the context view <!-- omit in toc -->
 - use a diagram plus a table to explain the context view:
   - provide a diagram for the overview (UML component, package or class diagrams),
   - use a table to explain the elements.
@@ -239,7 +228,7 @@ aspects that are not contained or not well-covered in source code:
 - architectural decisions are perceived as hard to take and/or hard to change.
 - often affect the fundamental structure, quality characteristics, external interfaces or fundamental construction techniques, principles and concepts.
 
-### How to take architectural decisions?
+### How to take architectural decisions? <!-- omit in toc -->
 - consider at least the following aspects:
   - explicitly state **what** you want or need to decide, or even why it must be decided,
   - explicitly formulate the appropriate and related **quality requirement**,
@@ -256,7 +245,7 @@ aspects that are not contained or not well-covered in source code:
   - what **compromises** or **consequences** arise from each alternative?
   - what are the known or estimated **costs** of each alternative?
 
-### Architecture decisions records
+### Architecture decisions records <!-- omit in toc -->
 - architecture decisions records (aka. ADR) is a **template to document** an AD.
 - an AD should contain:
   - title,

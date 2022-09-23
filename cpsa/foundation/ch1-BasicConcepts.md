@@ -38,7 +38,7 @@
    -  a collection of building blocks
    -  **interface**: represents a well-defined access point to the system or its building blocks
    -  **building block**: is the central basic element from which the static structure of a software architecture is constructed
-   ![Building Blocks Example](./out/diags/cpsa-f/buildingsblock/buildingsblock.svg)
+   ![Building Blocks Example](../../out/diags/cpsa-f/buildingsblock/buildingsblock.svg)
 
 
 ---
