@@ -73,7 +73,7 @@
 - **hierarchical** quality models **break down their top-level properties into finer grained properties**.
 
 ### ISO 25010 <!-- omit in toc -->
-![ISO-25010](../..**/out/diags/cpsa**-f/iso-25010/iso-25010.svg)
+![ISO-25010](../../**/out/diags/cpsa**-f/iso-25010/iso-25010.svg)
 
 ### Typical conflicts between quality requirements <!-- omit in toc -->
 - robustness versus runtime flexibility.
