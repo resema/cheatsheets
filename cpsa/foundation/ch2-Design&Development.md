@@ -1,21 +1,21 @@
 # Cheetsheet for CPSA-F <!-- omit in toc -->
 ### Table of Content <!-- omit in toc -->
 - [2. Design and Development](#2-design-and-development)
-  - [2.1. Approaches and heuristics for architecture development (R1, R3)](#21-approaches-and-heuristics-for-architecture-development-r1-r3)
-  - [2.2. Design software architectures (R1)](#22-design-software-architectures-r1)
-  - [2.3. Influencing factors and constraints (R1-R3)](#23-influencing-factors-and-constraints-r1-r3)
-  - [2.4. Cross-cutting concepts (R1)](#24-cross-cutting-concepts-r1)
-  - [2.5. Patterns (R1, R3)](#25-patterns-r1-r3)
-  - [2.6. Design principles (R1-R3)](#26-design-principles-r1-r3)
-  - [2.7. Managing dependencies (R1)](#27-managing-dependencies-r1)
-  - [2.8. Achieve quality requirements (R1)](#28-achieve-quality-requirements-r1)
-  - [2.9. Design and define interfaces (R1-R3)](#29-design-and-define-interfaces-r1-r3)
+  - [2.1. Approaches and heuristics for architecture development (R1, R3) :white_check_mark:](#21-approaches-and-heuristics-for-architecture-development-r1-r3-white_check_mark)
+  - [2.2. Design software architectures (R1) :white_check_mark:](#22-design-software-architectures-r1-white_check_mark)
+  - [2.3. Influencing factors and constraints (R1-R3) :white_check_mark:](#23-influencing-factors-and-constraints-r1-r3-white_check_mark)
+  - [2.4. Cross-cutting concepts (R1) :white_check_mark:](#24-cross-cutting-concepts-r1-white_check_mark)
+  - [2.5. Patterns (R1, R3) :white_check_mark:](#25-patterns-r1-r3-white_check_mark)
+  - [2.6. Design principles (R1-R3) :white_check_mark:](#26-design-principles-r1-r3-white_check_mark)
+  - [2.7. Managing dependencies (R1) :white_check_mark:](#27-managing-dependencies-r1-white_check_mark)
+  - [2.8. Achieve quality requirements (R1) :white_check_mark:](#28-achieve-quality-requirements-r1-white_check_mark)
+  - [2.9. Design and define interfaces (R1-R3) :white_check_mark:](#29-design-and-define-interfaces-r1-r3-white_check_mark)
 ---
 ---
 
 
 # 2. Design and Development
-## 2.1. Approaches and heuristics for architecture development (R1, R3)
+## 2.1. Approaches and heuristics for architecture development (R1, R3) :white_check_mark:
 
 > Software architects are able to **name, explain, and use the fundamental approaches** of architecture > development, f.ex.:
 > - **top-down** and **bottom-up** approaches for design (R1)
@@ -67,7 +67,7 @@ focus on specific concerns, parts or aspects of a system
 
 
 ---
-## 2.2. Design software architectures (R1)
+## 2.2. Design software architectures (R1) :white_check_mark:
 
 > SW architects are able to:
 > - **design** and appropriately **communicate** and **document** software architectures based upon **known functional** and **quality requirements** for software systems that are neither safety- nor bu  siness-critical
@@ -172,7 +172,7 @@ focus on specific concerns, parts or aspects of a system
   ![AD-levels](../../out/diags/cpsa-f/diff-levels-in-AD/diff-levels-in-AD.svg)
 
 ---
-## 2.3. Influencing factors and constraints (R1-R3)
+## 2.3. Influencing factors and constraints (R1-R3) :white_check_mark:
 
 > SW architects are able to gather and consider constraints and influencing factors:
 > - **Product-related** factors:
@@ -219,7 +219,7 @@ focus on specific concerns, parts or aspects of a system
   > any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.
 
 ---
-## 2.4. Cross-cutting concepts (R1)
+## 2.4. Cross-cutting concepts (R1) :white_check_mark:
 
 > SW architects are able to:
 > - **explain the significance** of such cross-cutting concepts
@@ -248,7 +248,7 @@ focus on specific concerns, parts or aspects of a system
     - if **standard is bad**, **system** using the standard **will also be bad**
 
 ---
-## 2.5. Patterns (R1, R3)
+## 2.5. Patterns (R1, R3) :white_check_mark:
 > 
 > SW architects know:
 > - **various architectural patterns** and can apply them when appropriate (R1)
@@ -358,7 +358,7 @@ focus on specific concerns, parts or aspects of a system
     - possible **missconfiguration**
 
 ---
-## 2.6. Design principles (R1-R3)
+## 2.6. Design principles (R1-R3) :white_check_mark:
 > SW architects are able to explain what design principles are. They can outline their general objectives and applications (R2).
 > - **explain and illustrate** with examples
 > - explain **how quality requirements determine which principle should be applied**
@@ -485,7 +485,7 @@ focus on specific concerns, parts or aspects of a system
       - others might take advantage of very tolerant components
 
 ---
-## 2.7. Managing dependencies (R1)
+## 2.7. Managing dependencies (R1) :white_check_mark:
 > Software architects understand dependencies and coupling between building blocks:
 > - know and understand **different types of dependencies**
 >   - coupling via **use/delegation**
@@ -558,7 +558,7 @@ focus on specific concerns, parts or aspects of a system
   - introduce **redundancy**, f.ex. replace shared DB with component-specific DBs
 
 ---
-## 2.8. Achieve quality requirements (R1)
+## 2.8. Achieve quality requirements (R1) :white_check_mark:
 > Software architects understand and consider the considerable influence of quality requirements:
 > - **efficiency / performance**
 > - **availability**
@@ -626,7 +626,7 @@ focus on specific concerns, parts or aspects of a system
     - limiting communication paths
 
 ---
-## 2.9. Design and define interfaces (R1-R3)
+## 2.9. Design and define interfaces (R1-R3) :white_check_mark:
 
 > Software architects know about the importance of interfaces. They are able to design or specify interfaces.
  

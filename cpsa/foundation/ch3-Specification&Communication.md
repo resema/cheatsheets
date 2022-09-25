@@ -1,21 +1,21 @@
 # Cheetsheet for CPSA-F <!-- omit in toc -->
 ### Table of Content <!-- omit in toc -->
 - [3. Specification and communication of software architectures](#3-specification-and-communication-of-software-architectures)
-  - [3.1. Quality requirements for technical documentation (R1)](#31-quality-requirements-for-technical-documentation-r1)
-  - [3.2. Describe and communicate software architectures (R1, R3)](#32-describe-and-communicate-software-architectures-r1-r3)
-  - [3.3. Models and notations to describe (R2-R3)](#33-models-and-notations-to-describe-r2-r3)
-  - [3.4. Architectural views (R1)](#34-architectural-views-r1)
-  - [3.5. Context view (R1)](#35-context-view-r1)
-  - [3.6. Document cross-cutting concepts (R2)](#36-document-cross-cutting-concepts-r2)
-  - [3.7. Describe interfaces (R1)](#37-describe-interfaces-r1)
-  - [3.8. Document architectural decisions (R1-R2)](#38-document-architectural-decisions-r1-r2)
-  - [3.9. Documentation as written communication (R2)](#39-documentation-as-written-communication-r2)
-  - [3.10. Resources and tools for documentation (R3)](#310-resources-and-tools-for-documentation-r3)
+  - [3.1. Quality requirements for technical documentation (R1) :white_check_mark:](#31-quality-requirements-for-technical-documentation-r1-white_check_mark)
+  - [3.2. Describe and communicate software architectures (R1, R3) :white_check_mark:](#32-describe-and-communicate-software-architectures-r1-r3-white_check_mark)
+  - [3.3. Models and notations to describe (R2-R3) :white_check_mark:](#33-models-and-notations-to-describe-r2-r3-white_check_mark)
+  - [3.4. Architectural views (R1) :white_check_mark:](#34-architectural-views-r1-white_check_mark)
+  - [3.5. Context view (R1) :white_check_mark:](#35-context-view-r1-white_check_mark)
+  - [3.6. Document cross-cutting concepts (R2) :white_check_mark:](#36-document-cross-cutting-concepts-r2-white_check_mark)
+  - [3.7. Describe interfaces (R1) :white_check_mark:](#37-describe-interfaces-r1-white_check_mark)
+  - [3.8. Document architectural decisions (R1-R2) :white_check_mark:](#38-document-architectural-decisions-r1-r2-white_check_mark)
+  - [3.9. Documentation as written communication (R2) :white_check_mark:](#39-documentation-as-written-communication-r2-white_check_mark)
+  - [3.10. Resources and tools for documentation (R3) :x:](#310-resources-and-tools-for-documentation-r3-x)
 ---
 ---
 
 # 3. Specification and communication of software architectures
-## 3.1. Quality requirements for technical documentation (R1)
+## 3.1. Quality requirements for technical documentation (R1) :white_check_mark:
 
 > Software architects know the quality requirements of technical documentation and can consider and fulfil those when documenting systems:
 > - **understandability**, **correctness**, **efficiency**, **appropriateness** and **maintainability**.
@@ -50,7 +50,7 @@
 - stakeholders of system may have special requirements and wishes.
 
 ---
-## 3.2. Describe and communicate software architectures (R1, R3)
+## 3.2. Describe and communicate software architectures (R1, R3) :white_check_mark:
 
 > Software architect are able to:
 > - **documented and communicate architectures for corresponding stakeholders**,.thereby addressing different target groups, e.g. management, development teams, QA, other architects, and additional stakeholders.
@@ -105,7 +105,7 @@ aspects that are not contained or not well-covered in source code:
   - formal reviews and sign-offs.
 
 ---
-## 3.3. Models and notations to describe (R2-R3)
+## 3.3. Models and notations to describe (R2-R3) :white_check_mark:
 
 > Software architects know at least the following UML diagrams to describe architectural views:
 > - **class**, **package**, **component** and composite-structure diagrams (R2),
@@ -148,7 +148,7 @@ aspects that are not contained or not well-covered in source code:
 - are directed graphs denoting **states** and **state transitions**.
 
 ---
-## 3.4. Architectural views (R1)
+## 3.4. Architectural views (R1) :white_check_mark:
 
 > Software architects are able to use the architectural views:
 > - **context view**,
@@ -186,7 +186,7 @@ aspects that are not contained or not well-covered in source code:
   - explain where software artifacts are executed.
 
 ---
-## 3.5. Context view (R1)
+## 3.5. Context view (R1) :white_check_mark:
 
 > Software architects can:
 > - **depict the context systems**, e.g. in the form of context diagrams,
@@ -217,7 +217,7 @@ aspects that are not contained or not well-covered in source code:
   - use a table to explain the elements.
 
 ---
-## 3.6. Document cross-cutting concepts (R2)
+## 3.6. Document cross-cutting concepts (R2) :white_check_mark:
 
 > Software architects are able to adequately document and communicate typical cross-cutting concepts, e.g.
 > - `persistence`
@@ -243,7 +243,7 @@ aspects that are not contained or not well-covered in source code:
 - [Examples of cross-cutting concepts](https://docs.arc42.org/images/08-Crosscutting-Concepts-Structure.png).
 
 ---
-## 3.7. Describe interfaces (R1)
+## 3.7. Describe interfaces (R1) :white_check_mark:
 
 > Software architects are able to describe and specify both internal and external interfaces.
 
@@ -263,7 +263,7 @@ aspects that are not contained or not well-covered in source code:
   - additional information.
 
 ---
-## 3.8. Document architectural decisions (R1-R2)
+## 3.8. Document architectural decisions (R1-R2) :white_check_mark:
 
 > Software architects are able to:
 > - **systematically** take, justify, communicate, and document **architectural decisions**,
@@ -301,7 +301,7 @@ aspects that are not contained or not well-covered in source code:
   - consequences.
 
 ---
-## 3.9. Documentation as written communication (R2)
+## 3.9. Documentation as written communication (R2) :white_check_mark:
 > Software architects use documentation to support the **design**, **implementation** and **further development (maintenance/evolution)** of systems.
 
 ### The value of discussing and talking <!-- omit in toc -->
@@ -318,7 +318,7 @@ aspects that are not contained or not well-covered in source code:
   - safety-critical systems, please comply with the standards.
 
 ---
-## 3.10. Resources and tools for documentation (R3)
+## 3.10. Resources and tools for documentation (R3) :x:
 
 > Software architects know:
 > - basics of several published frameworkds for the description of software architectures:

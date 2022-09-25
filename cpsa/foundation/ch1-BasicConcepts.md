@@ -1,17 +1,17 @@
 # Cheetsheet for CPSA-F <!-- omit in toc -->
 ### Table of Content <!-- omit in toc -->
 - [1. Basic Concepts](#1-basic-concepts)
-  - [1.1. Definitions of software architecture (R1)](#11-definitions-of-software-architecture-r1)
-  - [1.2. Goals and benefits of software architecture (R1)](#12-goals-and-benefits-of-software-architecture-r1)
-  - [1.3. Software architecture in the software lifecycle (R2)](#13-software-architecture-in-the-software-lifecycle-r2)
-  - [1.4. Software architects' tasks and responsibilities (R1)](#14-software-architects-tasks-and-responsibilities-r1)
-  - [1.5. Software architects and other stakeholders (R1)](#15-software-architects-and-other-stakeholders-r1)
-  - [1.6. Development approach and software architecture (R1)](#16-development-approach-and-software-architecture-r1)
+  - [1.1. Definitions of software architecture (R1) :white_check_mark:](#11-definitions-of-software-architecture-r1-white_check_mark)
+  - [1.2. Goals and benefits of software architecture (R1) :white_check_mark:](#12-goals-and-benefits-of-software-architecture-r1-white_check_mark)
+  - [1.3. Software architecture in the software lifecycle (R2) :white_check_mark:](#13-software-architecture-in-the-software-lifecycle-r2-white_check_mark)
+  - [1.4. Software architects' tasks and responsibilities (R1) :white_check_mark:](#14-software-architects-tasks-and-responsibilities-r1-white_check_mark)
+  - [1.5. Software architects and other stakeholders (R1) :white_check_mark:](#15-software-architects-and-other-stakeholders-r1-white_check_mark)
+  - [1.6. Development approach and software architecture (R1) :white_check_mark:](#16-development-approach-and-software-architecture-r1-white_check_mark)
   - [1.7. Short- and long-term goals (R1)](#17-short--and-long-term-goals-r1)
-  - [1.8. Explicit statement versus implicit assumptions (R1)](#18-explicit-statement-versus-implicit-assumptions-r1)
-  - [1.9. Responsibilities of SW architects in the greater architectural context (R3)](#19-responsibilities-of-sw-architects-in-the-greater-architectural-context-r3)
-  - [1.10. Types of IT systems (R3)](#110-types-of-it-systems-r3)
-  - [1.11. Challenges of distributed systems (R3)](#111-challenges-of-distributed-systems-r3)
+  - [1.8. Explicit statement versus implicit assumptions (R1) :white_check_mark:](#18-explicit-statement-versus-implicit-assumptions-r1-white_check_mark)
+  - [1.9. Responsibilities of SW architects in the greater architectural context (R3) :x:](#19-responsibilities-of-sw-architects-in-the-greater-architectural-context-r3-x)
+  - [1.10. Types of IT systems (R3) :x:](#110-types-of-it-systems-r3-x)
+  - [1.11. Challenges of distributed systems (R3) :x:](#111-challenges-of-distributed-systems-r3-x)
 ---
 ---
 
@@ -21,11 +21,11 @@
 - R3 - Knowing ... - Will **not** be part of examination
 
 # 1. Basic Concepts
-## 1.1. Definitions of software architecture (R1)
+## 1.1. Definitions of software architecture (R1) :white_check_mark:
 
-*Software architecture: the fundamental organization of a system embodied in its component, their relationships to each other and to the environment, and the principles guiding its design and evolution.*
+>*Software architecture: the fundamental organization of a system embodied in its component, their relationships to each other and to the environment, and the principles guiding its design and evolution.*
 
-*Defines the essential structures, overall technical concepts, and design decisions of a software system, and is the basis for the development of the entire system.*
+>*Defines the essential structures, overall technical concepts, and design decisions of a software system, and is the basis for the development of the entire system.*
 
 ### 1.1.1 Key Terms <!-- omit in toc -->
 - **Fundamental organization**: ordering and given designated place
@@ -42,7 +42,7 @@
 
 
 ---
-## 1.2. Goals and benefits of software architecture (R1)
+## 1.2. Goals and benefits of software architecture (R1) :white_check_mark:
 
 ### Essential goals and benefits <!-- omit in toc -->
 - support the **design, implementation, maintenance, and operation** of systems
@@ -57,7 +57,7 @@
 - specifiy **architectural relevant guidelines** for implementation and operation
   
 ---
-## 1.3. Software architecture in the software lifecycle (R2)
+## 1.3. Software architecture in the software lifecycle (R2) :white_check_mark:
 
 > SW architects can:
 > - **identify the consequences** of changes in requirements (functional, quality), technologies or the system environment in relation to software architecture
@@ -82,7 +82,7 @@
     - data migration still needed to be considered
 
 ---
-## 1.4. Software architects' tasks and responsibilities (R1)
+## 1.4. Software architects' tasks and responsibilities (R1) :white_check_mark:
 
 > Software architects are responsible for achieving the required or necessary quality and creating the architecture design for a solution.
 > - **clarify and scrutinize requirements and constraints**, and refine them if necessary (functional & quality (non-functional) requirements)
@@ -141,7 +141,7 @@
         - quantitative evaluation
 
 ---
-## 1.5. Software architects and other stakeholders (R1)
+## 1.5. Software architects and other stakeholders (R1) :white_check_mark:
 
 > Software architects are able to explain their role. 
 
@@ -170,7 +170,7 @@
 4. **stakeholders focused on specific quality attributes**, like IT security or QA
 
 ---
-## 1.6. Development approach and software architecture (R1)
+## 1.6. Development approach and software architecture (R1) :white_check_mark:
 
 > Architecture work needs feedback, which is an inherent feature of iterative development approaches. Architects have to systematically optain feedback from other stakeholders.
 
@@ -197,7 +197,7 @@
 - systems often remains in use for several years.
 
 ---
-## 1.8. Explicit statement versus implicit assumptions (R1)
+## 1.8. Explicit statement versus implicit assumptions (R1) :white_check_mark:
 
 > Software architects:
 > - excplicitly present assumptions or prerequisites
@@ -218,7 +218,7 @@ Ensure explicitness in your work by:
 - **explicitly asking stakeholders for feedback**
 
 ---
-## 1.9. Responsibilities of SW architects in the greater architectural context (R3)
+## 1.9. Responsibilities of SW architects in the greater architectural context (R3) :x:
 
 > Software architects are familiear with other architectural domains, f.ex.:
 > - enterprise IT architecture
@@ -228,7 +228,7 @@ Ensure explicitness in your work by:
 > - hardware and processor architecture
 
 ---
-## 1.10. Types of IT systems (R3)
+## 1.10. Types of IT systems (R3) :x:
 
 > Software architects know different types of IT systems, f.ex.:
 > - information systems
@@ -238,7 +238,7 @@ Ensure explicitness in your work by:
 > - hardware-related systems
 
 ---
-## 1.11. Challenges of distributed systems (R3)
+## 1.11. Challenges of distributed systems (R3) :x:
 
 > Software architects are able to:
 > - identify distribution in a given SW architecture

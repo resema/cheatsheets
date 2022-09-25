@@ -1,15 +1,15 @@
 # Cheetsheet for CPSA-F <!-- omit in toc -->
 ### Table of Content <!-- omit in toc -->
 - [4. Software architecture and quality](#4-software-architecture-and-quality)
-  - [4.1. Quality models and quality characteristics (R1)](#41-quality-models-and-quality-characteristics-r1)
-  - [4.2. Clarify quality requirements (R1)](#42-clarify-quality-requirements-r1)
-  - [4.3. Qualitative analysis (R2-R3)](#43-qualitative-analysis-r2-r3)
-  - [4.4. Quantitative evaluation (R2)](#44-quantitative-evaluation-r2)
+  - [4.1. Quality models and quality characteristics (R1) :white_check_mark:](#41-quality-models-and-quality-characteristics-r1-white_check_mark)
+  - [4.2. Clarify quality requirements (R1) :white_check_mark:](#42-clarify-quality-requirements-r1-white_check_mark)
+  - [4.3. Qualitative analysis (R2-R3) :white_check_mark:](#43-qualitative-analysis-r2-r3-white_check_mark)
+  - [4.4. Quantitative evaluation (R2) :white_check_mark:](#44-quantitative-evaluation-r2-white_check_mark)
 ---
 ---
 
 # 4. Software architecture and quality
-## 4.1. Quality models and quality characteristics (R1)
+## 4.1. Quality models and quality characteristics (R1) :white_check_mark:
 
 > Software architects can explain:
 > - **concept of quality** (DIN/ISO 25010) and **quality characteristics**,
@@ -86,7 +86,7 @@
 - nealy every quality property requires more time and/or money to implement.
 
 ---
-## 4.2. Clarify quality requirements (R1)
+## 4.2. Clarify quality requirements (R1) :white_check_mark:
 
 > Software architects can
 > - clarify and formulate **specific quality requirements**, f.ex. in the form of scenarios and quality trees,
@@ -106,7 +106,7 @@
 - At the leaves you find scenarios.
 
 ---
-## 4.3. Qualitative analysis (R2-R3)
+## 4.3. Qualitative analysis (R2-R3) :white_check_mark:
 
 > Software architects:
 > - know **methodical approaches** for the qualitative analysis and assessment of software architectures (R2), f.ex. as specified by Architecture Tradeoff Analysis Method (ATAM) (R3),
@@ -156,7 +156,7 @@
   - users
 
 ---
-## 4.4. Quantitative evaluation (R2)
+## 4.4. Quantitative evaluation (R2) :white_check_mark:
 
 > Software architects know approaches for the quantitative analysis and evaluation
 > - quantitative evaluation can help to **identify critical parts** within systems.
