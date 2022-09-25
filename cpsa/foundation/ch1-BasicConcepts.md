@@ -190,11 +190,21 @@
 ---
 ## 1.7. Short- and long-term goals (R1)
 
+> Software architects can:
+> - explain long-term quality requirements and their differentiation from (short-term) project goals,
+> - explain potential conflicts between short-term and long-term goals, in order to find a suitable solution for all stakeholders,
+> - identify and specify quality requirements. 
+
 *Usually project goals tend to be more short-term, whereas architecture goals tend to be long-term.*
 
 ### Short-term and long-term <!-- omit in toc -->
 - projects (sprints) typically last for a couple of weeks up to one or two years
 - systems often remains in use for several years.
+
+### Conclusion <!-- omit in toc -->
+- project goals are often short-term and can include **functional** as well as **quality requirements**,
+- architecture or system goals are often long-term,
+- architectural goals usually contribute to the achievement of project goals, but they can also be in conflict with each other.
 
 ---
 ## 1.8. Explicit statement versus implicit assumptions (R1) :white_check_mark:
