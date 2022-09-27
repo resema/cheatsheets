@@ -17,7 +17,7 @@
 # 2. Design and Development
 ## 2.1. Approaches and heuristics for architecture development (R1, R3) :white_check_mark:
 
-> Software architects are able to **name, explain, and use the fundamental approaches** of architecture > development, f.ex.:
+> Software architects are able to **name, explain, and use the fundamental approaches** of architecture development, f.ex.:
 > - **top-down** and **bottom-up** approaches for design (R1),
 > - **view-based** architecture development (R1),
 > - **iterative** and **incremental** design (R1),
@@ -118,7 +118,7 @@ focus on specific concerns, parts or aspects of a system
     - **independent interface** defined by both building blocks that **requires** and **provides** it.
   
 ### **Properties of [black/gray/white] box representations** <!-- omit in toc -->
-  - **black box** hides the interior structure --> information hidding principle:
+  - **black box** hides the interior structure --> information hiding principle:
     - exposes by appropriate name and description:
       - its responsibilities,
       - provided interface(s),
